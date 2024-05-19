@@ -1,162 +1,89 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 -- Gui to Lua
 -- Version: 3.2
 
 -- Instances:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 local AsuraX = {
-ScreenGui = Instance.new("ScreenGui", game:GetService("CoreGui"));
+ScreenGui = Instance.new("ScreenGui"), --game:GetService("CoreGui"));
  MainFrame = Instance.new("Frame"),
  UICorner = Instance.new("UICorner"),
  Buttons = Instance.new("Folder"),
@@ -3044,7 +2971,7 @@ AsuraX.TextUsername.BorderSizePixel = 0
 AsuraX.TextUsername.Position = UDim2.new(0.247677311, 0, 0.485246003, 0)
 AsuraX.TextUsername.Size = UDim2.new(0, 51, 0, 40)
 AsuraX.TextUsername.Font = Enum.Font.Unknown
-AsuraX.TextUsername.Text = "failed to get username"
+AsuraX.TextUsername.Text = "Failed to get username"
 AsuraX.TextUsername.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextUsername.TextSize = 11.000
 AsuraX.TextUsername.TextXAlignment = Enum.TextXAlignment.Left
@@ -3103,7 +3030,7 @@ AsuraX.TextUsername2.BorderSizePixel = 0
 AsuraX.TextUsername2.Position = UDim2.new(0.282971442, 0, 0.649180412, 0)
 AsuraX.TextUsername2.Size = UDim2.new(0, 51, 0, 40)
 AsuraX.TextUsername2.Font = Enum.Font.Unknown
-AsuraX.TextUsername2.Text = "failed to get username"
+AsuraX.TextUsername2.Text = "Failed to get username"
 AsuraX.TextUsername2.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextUsername2.TextSize = 10.000
 AsuraX.TextUsername2.TextTransparency = 0.840
@@ -3252,7 +3179,7 @@ AsuraX.TextExecutorStatus1.BorderSizePixel = 0
 AsuraX.TextExecutorStatus1.Position = UDim2.new(0.234819487, 0, 1.39000881, 0)
 AsuraX.TextExecutorStatus1.Size = UDim2.new(0, 55, 0, 37)
 AsuraX.TextExecutorStatus1.Font = Enum.Font.Unknown
-AsuraX.TextExecutorStatus1.Text = "LoadstringFake"
+AsuraX.TextExecutorStatus1.Text = "Undetected"
 AsuraX.TextExecutorStatus1.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextExecutorStatus1.TextSize = 11.000
 AsuraX.TextExecutorStatus1.TextXAlignment = Enum.TextXAlignment.Left
@@ -3842,7 +3769,7 @@ local CoreGui = true
 local Multiinstance = true
 local Fpsrate = false
 local SaveFolder = true
-local makefolder = true--so uh this is loadstring version of asurax executor
+local makefolder = true--KEEP THIS TRUE
 
 
 	local Editor1Text = ""
@@ -3931,7 +3858,9 @@ test("setfpscap", {}, function()
 	return step60 .. "fps @60 • " .. step0 .. "fps @0"
 end)--]]
 
-	
+local player = game.Players.LocalPlayer
+MainGui.PanelFrame.HubFrame3.Buttons3.Button2Panel.TextUsername.Text = player.Name
+MainGui.PanelFrame.HubFrame3.Buttons3.Button2Panel.TextUsername2.Text = player.Name
 	local url = "https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"
 	
 	-- Fetch the Lua script from the URL
@@ -4057,18 +3986,8 @@ end
 				TextNotify="Text Empty."
 				ImageID="rbxassetid://9405926389"
 				NotifyColor=Color3.new(255, 255, 255)
-				Notify()
-			
-				end
-				
-
-
-
-				
-				
-				
-
-				
+				Notify()		
+		
 			else
 					--warn("loadstring success")
 				--local script = HttpService:GetAsync(url)
