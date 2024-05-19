@@ -1,67 +1,162 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 -- Gui to Lua
 -- Version: 3.2
 
 -- Instances:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 local AsuraX = {
- ScreenGui = Instance.new("ScreenGui"),
+ScreenGui = Instance.new("ScreenGui", game:GetService("CoreGui"));
  MainFrame = Instance.new("Frame"),
  UICorner = Instance.new("UICorner"),
  Buttons = Instance.new("Folder"),
@@ -202,6 +297,11 @@ UIStrokeCustom11 = Instance.new("UIStroke"),
 	UIStrokeCustom22 = Instance.new("UIStroke"),
 	UIStrokeCustom23 = Instance.new("UIStroke"),
 	UIStrokeCustom24 = Instance.new("UIStroke"),
+	UIStrokeCustom25 = Instance.new("UIStroke"),
+	UIStrokeCustom26 = Instance.new("UIStroke"),
+	UIStrokeCustom27 = Instance.new("UIStroke"),
+	UIStrokeCustom28 = Instance.new("UIStroke"),
+	UIStrokeCustom29 = Instance.new("UIStroke"),
  UIStrokeCustomImage1 = Instance.new("UIStroke"),
  UIStrokeCustomImage2 = Instance.new("UIStroke"),
  UIStrokeCustomImage3 = Instance.new("UIStroke"),
@@ -226,6 +326,12 @@ UIStrokeCustom11 = Instance.new("UIStroke"),
 	UIStrokeCustomImage22= Instance.new("UIStroke"),
 	UIStrokeCustomImage23= Instance.new("UIStroke"),
 	UIStrokeCustomImage24= Instance.new("UIStroke"),
+	UIStrokeCustomImage25= Instance.new("UIStroke"),
+	UIStrokeCustomImage25_1= Instance.new("UIStroke"),
+	UIStrokeCustomImage26= Instance.new("UIStroke"),
+	UIStrokeCustomImage27= Instance.new("UIStroke"),
+	UIStrokeCustomImage28= Instance.new("UIStroke"),
+	UIStrokeCustomImage29= Instance.new("UIStroke"),
 	UIGradientCustom1 = Instance.new("UIGradient"),
 	UIGradientCustom2 = Instance.new("UIGradient"),
 	UIGradientCustom3 = Instance.new("UIGradient"),
@@ -406,7 +512,7 @@ UIStrokeCustom11 = Instance.new("UIStroke"),
 	Button1SaveTabs = Instance.new("ImageButton"),
 	Button2SaveTabs = Instance.new("ImageButton"),
 	UICorner140 = Instance.new("UICorner"),
-	TextSave1 = Instance.new("TextButton"),
+	TextSave1_1 = Instance.new("TextButton"),
 	UICorner0012 = Instance.new("UICorner"),
 	UIGradient032 = Instance.new("UIGradient"),
 	ImageLabel_2432 = Instance.new("ImageLabel"),
@@ -454,6 +560,62 @@ UIStrokeCustom11 = Instance.new("UIStroke"),
 	UICorner4141 = Instance.new("UICorner"),
 	UIGradient4545 = Instance.new("UIGradient"),
 	TextExecutorStatus1 = Instance.new("TextButton"),
+	Button5Settings = Instance.new("Frame"),
+	Text2Alt13 = Instance.new("TextLabel"),
+	Button13 = Instance.new("Frame"),
+	Button1FrameRate = Instance.new("ImageButton"),
+	Button2FrameRate = Instance.new("ImageButton"),
+	UICorner1411 = Instance.new("UICorner"),
+	TextSave1 = Instance.new("TextButton"),
+	UICorner0010 = Instance.new("UICorner"),
+	UIGradient030 = Instance.new("UIGradient"),
+	ImageLabel3331 = Instance.new("ImageLabel"),
+	UIGradient3241 = Instance.new("UIGradient"),
+	Button2Fps = Instance.new("Frame"),
+	UICorner1419 = Instance.new("UICorner"),
+	FpsTextValue = Instance.new("TextBox"),
+	Button6Settings = Instance.new("Frame"),
+	Text2Alt_239 = Instance.new("TextLabel"),
+	Button1_231 = Instance.new("Frame"),
+	Button1SaveFile = Instance.new("ImageButton"),
+	Button2SaveFile = Instance.new("ImageButton"),
+	UICorner140_31 = Instance.new("UICorner"),
+	TextSave1_2 = Instance.new("TextButton"),
+	UICorner0014 = Instance.new("UICorner"),
+	UIGradient034 = Instance.new("UIGradient"),
+	ImageLabel_242 = Instance.new("ImageLabel"),
+	UIGradient414 = Instance.new("UIGradient"),
+	Button7Settings = Instance.new("Frame"),
+	Text2Alt_323 = Instance.new("TextLabel"),
+	Button1_331 = Instance.new("Frame"),
+	Button1CoreGui = Instance.new("ImageButton"),
+	Button2CoreGui = Instance.new("ImageButton"),
+	UICorner1441 = Instance.new("UICorner"),
+	TextSave1_3 = Instance.new("TextButton"),
+	UICorner0014_2 = Instance.new("UICorner"),
+	UIGradient034_2 = Instance.new("UIGradient"),
+	ImageLabel_304 = Instance.new("ImageLabel"),
+	UIGradient414_2 = Instance.new("UIGradient"),
+	Button2Confirm = Instance.new("Frame"),
+	UICorner140_2 = Instance.new("UICorner"),
+	Text2Alt_442 = Instance.new("TextLabel"),
+	Button2Confirm1 = Instance.new("Frame"),
+	Button2SaveFile_2 = Instance.new("ImageButton"),
+	UICorner140_3 = Instance.new("UICorner"),
+	Button2Confirm2 = Instance.new("Frame"),
+	UICorner140_4 = Instance.new("UICorner"),
+	Button1SaveFile_2 = Instance.new("ImageButton"),
+	Button8Settings = Instance.new("Frame"),
+	Text2Alt_523 = Instance.new("TextLabel"),
+	Button1_413 = Instance.new("Frame"),
+	Button1Multi = Instance.new("ImageButton"),
+	Button2Multi = Instance.new("ImageButton"),
+	UICorner1400 = Instance.new("UICorner"),
+	TextSave1_4 = Instance.new("TextButton"),
+	UICorner0714 = Instance.new("UICorner"),
+	UIGradient534 = Instance.new("UIGradient"),
+	ImageLabel_401 = Instance.new("ImageLabel"),
+	UIGradient414_3 = Instance.new("UIGradient"),
 }
 
 --Properties:
@@ -470,9 +632,7 @@ AsuraX.UIGridLayout.StartCorner = "TopLeft"
 AsuraX.ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 AsuraX.ScreenGui.Enabled = true
 AsuraX.ScreenGui.IgnoreGuiInset=true
-AsuraX.ScreenGui.ClipToDeviceSafeArea=true
 AsuraX.ScreenGui.ResetOnSpawn = false
-AsuraX.ScreenGui.SafeAreaCompatibility="None"
 AsuraX.ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 AsuraX.MainFrame.Name = "MainFrame"
@@ -717,6 +877,50 @@ AsuraX.UIStrokeCustom24.Parent = AsuraX.Button5Panel
 AsuraX.UIStrokeCustomImage24.Color = Color3.fromRGB(255, 0, 4)
 AsuraX.UIStrokeCustomImage24.Thickness = 1 
 AsuraX.UIStrokeCustomImage24.Parent = AsuraX.FrameStatus
+
+AsuraX.UIStrokeCustom25.Color = Color3.fromRGB(48, 85, 65)
+AsuraX.UIStrokeCustom25.Thickness = 1 
+AsuraX.UIStrokeCustom25.Parent = AsuraX.Button5Settings
+
+AsuraX.UIStrokeCustomImage25.Color = Color3.fromRGB(111, 111, 111)
+AsuraX.UIStrokeCustomImage25.Thickness = 1 
+AsuraX.UIStrokeCustomImage25.Parent = AsuraX.Button13
+
+AsuraX.UIStrokeCustomImage25_1.Color = Color3.fromRGB(111, 111, 111)
+AsuraX.UIStrokeCustomImage25_1.Thickness = 1 
+AsuraX.UIStrokeCustomImage25_1.Parent = AsuraX.Button2Fps
+
+AsuraX.UIStrokeCustom26.Color = Color3.fromRGB(48, 85, 65)
+AsuraX.UIStrokeCustom26.Thickness = 1 
+AsuraX.UIStrokeCustom26.Parent = AsuraX.Button6Settings
+
+AsuraX.UIStrokeCustomImage26.Color = Color3.fromRGB(58, 111, 83)
+AsuraX.UIStrokeCustomImage26.Thickness = 1 
+AsuraX.UIStrokeCustomImage26.Parent = AsuraX.Button1_231
+
+AsuraX.UIStrokeCustom27.Color = Color3.fromRGB(48, 85, 65)
+AsuraX.UIStrokeCustom27.Thickness = 1 
+AsuraX.UIStrokeCustom27.Parent = AsuraX.Button7Settings
+
+AsuraX.UIStrokeCustomImage27.Color = Color3.fromRGB(58, 111, 83)
+AsuraX.UIStrokeCustomImage27.Thickness = 1 
+AsuraX.UIStrokeCustomImage27.Parent = AsuraX.Button1_331
+
+AsuraX.UIStrokeCustom28.Color = Color3.fromRGB(198, 0, 7)
+AsuraX.UIStrokeCustom28.Thickness = 1 
+AsuraX.UIStrokeCustom28.Parent = AsuraX.Button2Confirm1
+
+AsuraX.UIStrokeCustomImage28.Color = Color3.fromRGB(1, 158, 1)
+AsuraX.UIStrokeCustomImage28.Thickness = 1 
+AsuraX.UIStrokeCustomImage28.Parent = AsuraX.Button2Confirm2
+
+AsuraX.UIStrokeCustom29.Color = Color3.fromRGB(48, 85, 65)
+AsuraX.UIStrokeCustom29.Thickness = 1 
+AsuraX.UIStrokeCustom29.Parent = AsuraX.Button8Settings
+
+AsuraX.UIStrokeCustomImage29.Color = Color3.fromRGB(58, 111, 83)
+AsuraX.UIStrokeCustomImage29.Thickness = 1 
+AsuraX.UIStrokeCustomImage29.Parent = AsuraX.Button1_413
 
 AsuraX.UIGradientCustom1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(221, 134, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(70, 70, 70))}
 AsuraX.UIGradientCustom1.Parent = AsuraX.Button1
@@ -2635,7 +2839,7 @@ AsuraX.Text2Alt_4.BorderSizePixel = 0
 AsuraX.Text2Alt_4.Position = UDim2.new(0.110560738, 0, 0.940885425, 0)
 AsuraX.Text2Alt_4.Size = UDim2.new(0, 115, 0, 40)
 AsuraX.Text2Alt_4.Font = Enum.Font.Roboto
-AsuraX.Text2Alt_4.Text = "Automatically executes everything in the Autoexec folder when game loads "
+AsuraX.Text2Alt_4.Text = "Automatically Saves tabs when you leave game "
 AsuraX.Text2Alt_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.Text2Alt_4.TextSize = 12.000
 AsuraX.Text2Alt_4.TextTransparency = 0.800
@@ -2686,8 +2890,7 @@ AsuraX.TextSave1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.TextSave1.BorderSizePixel = 0
 AsuraX.TextSave1.Position = UDim2.new(0.109084196, 0, 0.643225491, 0)
 AsuraX.TextSave1.Size = UDim2.new(0, 51, 0, 40)
-AsuraX.TextSave1.Font = Enum.Font.Unknown
-AsuraX.TextSave1.Text = "SaveTabs"
+AsuraX.TextSave1_Font = Enum.Font.Unknown
 AsuraX.TextSave1.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextSave1.TextSize = 11.000
 AsuraX.TextSave1.TextXAlignment = Enum.TextXAlignment.Left
@@ -2841,7 +3044,7 @@ AsuraX.TextUsername.BorderSizePixel = 0
 AsuraX.TextUsername.Position = UDim2.new(0.247677311, 0, 0.485246003, 0)
 AsuraX.TextUsername.Size = UDim2.new(0, 51, 0, 40)
 AsuraX.TextUsername.Font = Enum.Font.Unknown
-AsuraX.TextUsername.Text = "THEGOATKID872"
+AsuraX.TextUsername.Text = "failed to get username"
 AsuraX.TextUsername.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextUsername.TextSize = 11.000
 AsuraX.TextUsername.TextXAlignment = Enum.TextXAlignment.Left
@@ -2900,7 +3103,7 @@ AsuraX.TextUsername2.BorderSizePixel = 0
 AsuraX.TextUsername2.Position = UDim2.new(0.282971442, 0, 0.649180412, 0)
 AsuraX.TextUsername2.Size = UDim2.new(0, 51, 0, 40)
 AsuraX.TextUsername2.Font = Enum.Font.Unknown
-AsuraX.TextUsername2.Text = "THEGOATKID872"
+AsuraX.TextUsername2.Text = "failed to get username"
 AsuraX.TextUsername2.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextUsername2.TextSize = 10.000
 AsuraX.TextUsername2.TextTransparency = 0.840
@@ -3054,6 +3257,518 @@ AsuraX.TextExecutorStatus1.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextExecutorStatus1.TextSize = 11.000
 AsuraX.TextExecutorStatus1.TextXAlignment = Enum.TextXAlignment.Left
 
+AsuraX.MainFrame.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.TextSave1.Text="SaveTabs"
+
+AsuraX.Button5Settings.Name = "Button5Settings"
+AsuraX.Button5Settings.Parent = AsuraX.ScrollingFrame3
+AsuraX.Button5Settings.AnchorPoint = Vector2.new(0, 1)
+AsuraX.Button5Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Button5Settings.BackgroundTransparency = 0.100
+AsuraX.Button5Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button5Settings.BorderSizePixel = 0
+AsuraX.Button5Settings.Position = UDim2.new(-0.00167644722, 0, 0.524647772, 0)
+AsuraX.Button5Settings.Size = UDim2.new(0, 535, 0, 61)
+
+AsuraX.Text2Alt13.Name = "Text2Alt"
+AsuraX.Text2Alt13.Parent = AsuraX.Button5Settings
+AsuraX.Text2Alt13.AnchorPoint = Vector2.new(0, 1)
+AsuraX.Text2Alt13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Text2Alt13.BackgroundTransparency = 1.000
+AsuraX.Text2Alt13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Text2Alt13.BorderSizePixel = 0
+AsuraX.Text2Alt13.Position = UDim2.new(0.110560738, 0, 0.940885425, 0)
+AsuraX.Text2Alt13.Size = UDim2.new(0, 115, 0, 40)
+AsuraX.Text2Alt13.Font = Enum.Font.Roboto
+AsuraX.Text2Alt13.Text = "Changes the fps of the roblox client"
+AsuraX.Text2Alt13.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Text2Alt13.TextSize = 12.000
+AsuraX.Text2Alt13.TextTransparency = 0.800
+AsuraX.Text2Alt13.TextXAlignment = Enum.TextXAlignment.Left
+
+AsuraX.Button13.Name = "Button1"
+AsuraX.Button13.Parent = AsuraX.Button5Settings
+AsuraX.Button13.AnchorPoint = Vector2.new(0, 1)
+AsuraX.Button13.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+AsuraX.Button13.BackgroundTransparency = 0.100
+AsuraX.Button13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button13.BorderSizePixel = 0
+AsuraX.Button13.ClipsDescendants = true
+AsuraX.Button13.Position = UDim2.new(0.927306473, 0, 0.710150063, 0)
+AsuraX.Button13.Size = UDim2.new(0, 27, 0, 27)
+
+AsuraX.Button1FrameRate.Name = "Button1FrameRate"
+AsuraX.Button1FrameRate.Parent = AsuraX.Button13
+AsuraX.Button1FrameRate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Button1FrameRate.BackgroundTransparency = 1.000
+AsuraX.Button1FrameRate.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button1FrameRate.BorderSizePixel = 0
+AsuraX.Button1FrameRate.Position = UDim2.new(0, 2, 0.888999999, 0)
+AsuraX.Button1FrameRate.Size = UDim2.new(0, 22, 0, 22)
+AsuraX.Button1FrameRate.Image = "rbxassetid://2790552399"
+
+AsuraX.Button2FrameRate.Name = "Button2FrameRate"
+AsuraX.Button2FrameRate.Parent = AsuraX.Button13
+AsuraX.Button2FrameRate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Button2FrameRate.BackgroundTransparency = 1.000
+AsuraX.Button2FrameRate.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button2FrameRate.BorderSizePixel = 0
+AsuraX.Button2FrameRate.Position = UDim2.new(0, 2, 0.073999472, 0)
+AsuraX.Button2FrameRate.Size = UDim2.new(0, 22, 0, 22)
+AsuraX.Button2FrameRate.Image = "rbxassetid://2777727756"
+AsuraX.Button2FrameRate.ImageColor3 = Color3.fromRGB(115, 167, 127)
+
+AsuraX.UICorner1411.CornerRadius = UDim.new(0, 4)
+AsuraX.UICorner1411.Name = "UICorner141"
+AsuraX.UICorner1411.Parent = AsuraX.Button13
+
+AsuraX.TextSave1_1.Name = "TextSave1"
+AsuraX.TextSave1_1.Parent = AsuraX.Button5Settings
+AsuraX.TextSave1_1.AnchorPoint = Vector2.new(0, 1)
+AsuraX.TextSave1_1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextSave1_1.BackgroundTransparency = 1.000
+AsuraX.TextSave1_1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextSave1_1.BorderSizePixel = 0
+AsuraX.TextSave1_1.Position =UDim2.new(0.109084196, 0, 0.643225491, 0)
+AsuraX.TextSave1_1.Size = UDim2.new(0, 51, 0, 40)
+AsuraX.TextSave1_1.Font = Enum.Font.Unknown
+AsuraX.TextSave1_1.Text = "FrameRate"
+AsuraX.TextSave1_1.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextSave1_1.TextSize = 13.000
+AsuraX.TextSave1_1.TextXAlignment = Enum.TextXAlignment.Left
+
+AsuraX.UICorner0010.CornerRadius = UDim.new(0, 5)
+AsuraX.UICorner0010.Name = "UICorner0010"
+AsuraX.UICorner0010.Parent = AsuraX.Button5Settings
+
+AsuraX.UIGradient030.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(170, 255, 208)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(26, 20, 29))}
+AsuraX.UIGradient030.Rotation = 90
+AsuraX.UIGradient030.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.80), NumberSequenceKeypoint.new(1.00, 0.80)}
+AsuraX.UIGradient030.Name = "UIGradient030"
+AsuraX.UIGradient030.Parent = AsuraX.Button5Settings
+
+AsuraX.ImageLabel3331.Parent = AsuraX.Button5Settings
+AsuraX.ImageLabel3331.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ImageLabel3331.BackgroundTransparency = 1.000
+AsuraX.ImageLabel3331.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ImageLabel3331.BorderSizePixel = 0
+AsuraX.ImageLabel3331.Position = UDim2.new(0.0261682235, 0, 0.267494082, 0)
+AsuraX.ImageLabel3331.Size = UDim2.new(0, 24, 0, 24)
+AsuraX.ImageLabel3331.Image = "http://www.roblox.com/asset/?id=17535521319"
+
+AsuraX.UIGradient3241.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(134, 96, 97)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 42, 92))}
+AsuraX.UIGradient3241.Name = "UIGradient3241"
+AsuraX.UIGradient3241.Parent = AsuraX.ImageLabel3331
+
+AsuraX.Button2Fps.Name = "Button2Fps"
+AsuraX.Button2Fps.Parent = AsuraX.Button5Settings
+AsuraX.Button2Fps.AnchorPoint = Vector2.new(0, 1)
+AsuraX.Button2Fps.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+AsuraX.Button2Fps.BackgroundTransparency = 0.100
+AsuraX.Button2Fps.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button2Fps.BorderSizePixel = 0
+AsuraX.Button2Fps.ClipsDescendants = true
+AsuraX.Button2Fps.Position = UDim2.new(0.81889528, 0, 0.710150063, 0)
+AsuraX.Button2Fps.Size = UDim2.new(0, 49, 0, 27)
+
+AsuraX.UICorner1419.CornerRadius = UDim.new(0, 4)
+AsuraX.UICorner1419.Name = "UICorner1419"
+AsuraX.UICorner1419.Parent = AsuraX.Button2Fps
+
+AsuraX.FpsTextValue.Name = "FpsTextValue"
+AsuraX.FpsTextValue.Parent = AsuraX.Button2Fps
+AsuraX.FpsTextValue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.FpsTextValue.BackgroundTransparency = 1.000
+AsuraX.FpsTextValue.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.FpsTextValue.BorderSizePixel = 0
+AsuraX.FpsTextValue.Position = UDim2.new(0, 0, 0.111111112, 0)
+AsuraX.FpsTextValue.Size = UDim2.new(0, 49, 0, 22)
+AsuraX.FpsTextValue.Font = Enum.Font.Fantasy
+AsuraX.FpsTextValue.PlaceholderText = "60"
+AsuraX.FpsTextValue.Text = "60"
+AsuraX.FpsTextValue.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.FpsTextValue.TextSize = 14.000
+
+AsuraX.Button6Settings.Name = "Button6Settings"
+AsuraX.Button6Settings.Parent = AsuraX.ScrollingFrame3
+AsuraX.Button6Settings.AnchorPoint = Vector2.new(0, 1)
+AsuraX.Button6Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Button6Settings.BackgroundTransparency = 0.100
+AsuraX.Button6Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button6Settings.BorderSizePixel = 0
+AsuraX.Button6Settings.Position = UDim2.new(-0.00167644722, 0, 0.524647772, 0)
+AsuraX.Button6Settings.Size = UDim2.new(0, 535, 0, 61)
+
+AsuraX.Text2Alt_239.Name = "Text2Alt"
+AsuraX.Text2Alt_239.Parent = AsuraX.Button6Settings
+AsuraX.Text2Alt_239.AnchorPoint = Vector2.new(0, 1)
+AsuraX.Text2Alt_239.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Text2Alt_239.BackgroundTransparency = 1.000
+AsuraX.Text2Alt_239.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Text2Alt_239.BorderSizePixel = 0
+AsuraX.Text2Alt_239.Position = UDim2.new(0.110560738, 0, 0.940885425, 0)
+AsuraX.Text2Alt_239.Size = UDim2.new(0, 115, 0, 40)
+AsuraX.Text2Alt_239.Font = Enum.Font.Roboto
+AsuraX.Text2Alt_239.Text = "Allows to scripts use savefiles"
+AsuraX.Text2Alt_239.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Text2Alt_239.TextSize = 12.000
+AsuraX.Text2Alt_239.TextTransparency = 0.800
+AsuraX.Text2Alt_239.TextXAlignment = Enum.TextXAlignment.Left
+
+AsuraX.Button1_231.Name = "Button1"
+AsuraX.Button1_231.Parent = AsuraX.Button6Settings
+AsuraX.Button1_231.AnchorPoint = Vector2.new(0, 1)
+AsuraX.Button1_231.BackgroundColor3 = Color3.fromRGB(79, 115, 102)
+AsuraX.Button1_231.BackgroundTransparency = 0.100
+AsuraX.Button1_231.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button1_231.BorderSizePixel = 0
+AsuraX.Button1_231.ClipsDescendants = true
+AsuraX.Button1_231.Position = UDim2.new(0.927306473, 0, 0.710150063, 0)
+AsuraX.Button1_231.Size = UDim2.new(0, 27, 0, 27)
+
+AsuraX.Button1SaveFile.Name = "Button1SaveFile"
+AsuraX.Button1SaveFile.Parent = AsuraX.Button1_231
+AsuraX.Button1SaveFile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Button1SaveFile.BackgroundTransparency = 1.000
+AsuraX.Button1SaveFile.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button1SaveFile.BorderSizePixel = 0
+AsuraX.Button1SaveFile.Position = UDim2.new(0, 2, 0.074000001, 0)
+AsuraX.Button1SaveFile.Size = UDim2.new(0, 22, 0, 22)
+AsuraX.Button1SaveFile.Image = "rbxassetid://2790552399"
+
+AsuraX.Button2SaveFile.Name = "Button2SaveFile"
+AsuraX.Button2SaveFile.Parent = AsuraX.Button1_231
+AsuraX.Button2SaveFile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Button2SaveFile.BackgroundTransparency = 1.000
+AsuraX.Button2SaveFile.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button2SaveFile.BorderSizePixel = 0
+AsuraX.Button2SaveFile.Position = UDim2.new(0, 2, 0.888999999, 0)
+AsuraX.Button2SaveFile.Size = UDim2.new(0, 22, 0, 22)
+AsuraX.Button2SaveFile.Image = "rbxassetid://2777727756"
+AsuraX.Button2SaveFile.ImageColor3 = Color3.fromRGB(115, 167, 127)
+
+AsuraX.UICorner140_31.CornerRadius = UDim.new(0, 4)
+AsuraX.UICorner140_31.Name = "UICorner140"
+AsuraX.UICorner140_31.Parent = AsuraX.Button1_231
+
+AsuraX.TextSave1_2.Name = "TextSave1"
+AsuraX.TextSave1_2.Parent = AsuraX.Button6Settings
+AsuraX.TextSave1_2.AnchorPoint = Vector2.new(0, 1)
+AsuraX.TextSave1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextSave1_2.BackgroundTransparency = 1.000
+AsuraX.TextSave1_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextSave1_2.BorderSizePixel = 0
+AsuraX.TextSave1_2.Position = UDim2.new(0.109084196, 0, 0.643225491, 0)
+AsuraX.TextSave1_2.Size = UDim2.new(0, 51, 0, 40)
+AsuraX.TextSave1_2.Font = Enum.Font.Unknown
+AsuraX.TextSave1_2.Text = "SaveFile"
+AsuraX.TextSave1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextSave1_2.TextSize = 13.000
+AsuraX.TextSave1_2.TextXAlignment = Enum.TextXAlignment.Left
+
+AsuraX.UICorner0014.CornerRadius = UDim.new(0, 5)
+AsuraX.UICorner0014.Name = "UICorner0014"
+AsuraX.UICorner0014.Parent = AsuraX.Button6Settings
+
+AsuraX.UIGradient034.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(170, 255, 208)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(26, 20, 29))}
+AsuraX.UIGradient034.Rotation = 90
+AsuraX.UIGradient034.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.80), NumberSequenceKeypoint.new(1.00, 0.80)}
+AsuraX.UIGradient034.Name = "UIGradient034"
+AsuraX.UIGradient034.Parent = AsuraX.Button6Settings
+
+AsuraX.ImageLabel_242.Parent = AsuraX.Button6Settings
+AsuraX.ImageLabel_242.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ImageLabel_242.BackgroundTransparency = 1.000
+AsuraX.ImageLabel_242.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ImageLabel_242.BorderSizePixel = 0
+AsuraX.ImageLabel_242.Position = UDim2.new(0.0261682235, 0, 0.267494082, 0)
+AsuraX.ImageLabel_242.Size = UDim2.new(0, 24, 0, 24)
+AsuraX.ImageLabel_242.Image = "http://www.roblox.com/asset/?id=17535661642"
+
+AsuraX.UIGradient414.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
+AsuraX.UIGradient414.Name = "UIGradient414"
+AsuraX.UIGradient414.Parent = AsuraX.ImageLabel_242
+
+AsuraX.Button7Settings.Name = "Button7Settings"
+AsuraX.Button7Settings.Parent = AsuraX.ScrollingFrame3
+AsuraX.Button7Settings.AnchorPoint = Vector2.new(0, 1)
+AsuraX.Button7Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Button7Settings.BackgroundTransparency = 0.100
+AsuraX.Button7Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button7Settings.BorderSizePixel = 0
+AsuraX.Button7Settings.Position = UDim2.new(-0.00167644722, 0, 0.524647772, 0)
+AsuraX.Button7Settings.Size = UDim2.new(0, 535, 0, 61)
+
+AsuraX.Text2Alt_323.Name = "Text2Alt"
+AsuraX.Text2Alt_323.Parent = AsuraX.Button7Settings
+AsuraX.Text2Alt_323.AnchorPoint = Vector2.new(0, 1)
+AsuraX.Text2Alt_323.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Text2Alt_323.BackgroundTransparency = 1.000
+AsuraX.Text2Alt_323.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Text2Alt_323.BorderSizePixel = 0
+AsuraX.Text2Alt_323.Position = UDim2.new(0.110560738, 0, 0.940885425, 0)
+AsuraX.Text2Alt_323.Size = UDim2.new(0, 115, 0, 40)
+AsuraX.Text2Alt_323.Font = Enum.Font.Roboto
+AsuraX.Text2Alt_323.Text = "Recommended to keep enable allows u to get more fps in roblox client"
+AsuraX.Text2Alt_323.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Text2Alt_323.TextSize = 12.000
+AsuraX.Text2Alt_323.TextTransparency = 0.800
+AsuraX.Text2Alt_323.TextXAlignment = Enum.TextXAlignment.Left
+
+AsuraX.Button1_331.Name = "Button1"
+AsuraX.Button1_331.Parent = AsuraX.Button7Settings
+AsuraX.Button1_331.AnchorPoint = Vector2.new(0, 1)
+AsuraX.Button1_331.BackgroundColor3 = Color3.fromRGB(79, 115, 102)
+AsuraX.Button1_331.BackgroundTransparency = 0.100
+AsuraX.Button1_331.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button1_331.BorderSizePixel = 0
+AsuraX.Button1_331.ClipsDescendants = true
+AsuraX.Button1_331.Position = UDim2.new(0.927306473, 0, 0.710150063, 0)
+AsuraX.Button1_331.Size = UDim2.new(0, 27, 0, 27)
+
+AsuraX.Button1CoreGui.Name = "Button1CoreGui"
+AsuraX.Button1CoreGui.Parent = AsuraX.Button1_331
+AsuraX.Button1CoreGui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Button1CoreGui.BackgroundTransparency = 1.000
+AsuraX.Button1CoreGui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button1CoreGui.BorderSizePixel = 0
+AsuraX.Button1CoreGui.Position = UDim2.new(0, 2, 0.074000001, 0)
+AsuraX.Button1CoreGui.Size = UDim2.new(0, 22, 0, 22)
+AsuraX.Button1CoreGui.Image = "rbxassetid://2790552399"
+
+AsuraX.Button2CoreGui.Name = "Button2CoreGui"
+AsuraX.Button2CoreGui.Parent = AsuraX.Button1_331
+AsuraX.Button2CoreGui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Button2CoreGui.BackgroundTransparency = 1.000
+AsuraX.Button2CoreGui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button2CoreGui.BorderSizePixel = 0
+AsuraX.Button2CoreGui.Position = UDim2.new(0, 2, 0.888999999, 0)
+AsuraX.Button2CoreGui.Size = UDim2.new(0, 22, 0, 22)
+AsuraX.Button2CoreGui.Image = "rbxassetid://2777727756"
+AsuraX.Button2CoreGui.ImageColor3 = Color3.fromRGB(115, 167, 127)
+
+AsuraX.UICorner1441.CornerRadius = UDim.new(0, 4)
+AsuraX.UICorner1441.Name = "UICorner1441"
+AsuraX.UICorner1441.Parent = AsuraX.Button1_331
+
+AsuraX.TextSave1_3.Name = "TextSave1"
+AsuraX.TextSave1_3.Parent = AsuraX.Button7Settings
+AsuraX.TextSave1_3.AnchorPoint = Vector2.new(0, 1)
+AsuraX.TextSave1_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextSave1_3.BackgroundTransparency = 1.000
+AsuraX.TextSave1_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextSave1_3.BorderSizePixel = 0
+AsuraX.TextSave1_3.Position = UDim2.new(0.109084196, 0, 0.643225491, 0)
+AsuraX.TextSave1_3.Size = UDim2.new(0, 51, 0, 40)
+AsuraX.TextSave1_3.Font = Enum.Font.Unknown
+AsuraX.TextSave1_3.Text = "CoreGui"
+AsuraX.TextSave1_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextSave1_3.TextSize = 13.000
+AsuraX.TextSave1_3.TextXAlignment = Enum.TextXAlignment.Left
+
+AsuraX.UICorner0014_2.CornerRadius = UDim.new(0, 5)
+AsuraX.UICorner0014_2.Name = "UICorner0014"
+AsuraX.UICorner0014_2.Parent = AsuraX.Button7Settings
+
+AsuraX.UIGradient034_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(170, 255, 208)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(26, 20, 29))}
+AsuraX.UIGradient034_2.Rotation = 90
+AsuraX.UIGradient034_2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.80), NumberSequenceKeypoint.new(1.00, 0.80)}
+AsuraX.UIGradient034_2.Name = "UIGradient034"
+AsuraX.UIGradient034_2.Parent = AsuraX.Button7Settings
+
+AsuraX.ImageLabel_304.Parent = AsuraX.Button7Settings
+AsuraX.ImageLabel_304.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ImageLabel_304.BackgroundTransparency = 1.000
+AsuraX.ImageLabel_304.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ImageLabel_304.BorderSizePixel = 0
+AsuraX.ImageLabel_304.Position = UDim2.new(0.0261682235, 0, 0.267494082, 0)
+AsuraX.ImageLabel_304.Size = UDim2.new(0, 24, 0, 24)
+AsuraX.ImageLabel_304.Image = "http://www.roblox.com/asset/?id=17535725181"
+
+AsuraX.UIGradient414_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
+AsuraX.UIGradient414_2.Name = "UIGradient414"
+AsuraX.UIGradient414_2.Parent = AsuraX.ImageLabel_304
+
+AsuraX.Button2Confirm.Name = "Button2Confirm"
+AsuraX.Button2Confirm.Parent = AsuraX.Button7Settings
+AsuraX.Button2Confirm.AnchorPoint = Vector2.new(0, 1)
+AsuraX.Button2Confirm.BackgroundColor3 = Color3.fromRGB(115, 42, 43)
+AsuraX.Button2Confirm.BackgroundTransparency = 0.100
+AsuraX.Button2Confirm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button2Confirm.BorderSizePixel = 0
+AsuraX.Button2Confirm.ClipsDescendants = true
+AsuraX.Button2Confirm.Position = UDim2.new(-5.70422038e-08, 0, 0.99999994, 0)
+AsuraX.Button2Confirm.Size = UDim2.new(0, 535, 0, 61)
+AsuraX.Button2Confirm.Visible = false
+
+AsuraX.UICorner140_2.CornerRadius = UDim.new(0, 4)
+AsuraX.UICorner140_2.Name = "UICorner140"
+AsuraX.UICorner140_2.Parent = AsuraX.Button2Confirm
+
+AsuraX.Text2Alt_442.Name = "Text2Alt"
+AsuraX.Text2Alt_442.Parent = AsuraX.Button2Confirm
+AsuraX.Text2Alt_442.AnchorPoint = Vector2.new(0, 1)
+AsuraX.Text2Alt_442.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Text2Alt_442.BackgroundTransparency = 1.000
+AsuraX.Text2Alt_442.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Text2Alt_442.BorderSizePixel = 0
+AsuraX.Text2Alt_442.Position = UDim2.new(0.365, 0,0.55, 0)
+AsuraX.Text2Alt_442.Size = UDim2.new(0, 115, 0, 40)
+AsuraX.Text2Alt_442.Font = Enum.Font.Unknown
+AsuraX.Text2Alt_442.Text = "Are you sure?"
+AsuraX.Text2Alt_442.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Text2Alt_442.TextSize = 12.000
+
+AsuraX.Button2Confirm1.Name = "Button2Confirm1"
+AsuraX.Button2Confirm1.Parent = AsuraX.Button2Confirm
+AsuraX.Button2Confirm1.AnchorPoint = Vector2.new(0, 1)
+AsuraX.Button2Confirm1.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+AsuraX.Button2Confirm1.BackgroundTransparency = 0.100
+AsuraX.Button2Confirm1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button2Confirm1.BorderSizePixel = 0
+AsuraX.Button2Confirm1.ClipsDescendants = true
+AsuraX.Button2Confirm1.Position = UDim2.new(0.325437278, 0, 0.792117238, 0)
+AsuraX.Button2Confirm1.Size = UDim2.new(0, 27, 0, 27)
+
+AsuraX.Button2SaveFile_2.Name = "Button2SaveFile"
+AsuraX.Button2SaveFile_2.Parent = AsuraX.Button2Confirm1
+AsuraX.Button2SaveFile_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Button2SaveFile_2.BackgroundTransparency = 1.000
+AsuraX.Button2SaveFile_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button2SaveFile_2.BorderSizePixel = 0
+AsuraX.Button2SaveFile_2.Position = UDim2.new(0, 2, 0.074000001, 0)
+AsuraX.Button2SaveFile_2.Size = UDim2.new(0, 22, 0, 22)
+AsuraX.Button2SaveFile_2.Image = "rbxassetid://2777727756"
+AsuraX.Button2SaveFile_2.ImageColor3 = Color3.fromRGB(115, 167, 127)
+
+AsuraX.UICorner140_3.CornerRadius = UDim.new(0, 4)
+AsuraX.UICorner140_3.Name = "UICorner140"
+AsuraX.UICorner140_3.Parent = AsuraX.Button2Confirm1
+
+AsuraX.Button2Confirm2.Name = "Button2Confirm2"
+AsuraX.Button2Confirm2.Parent = AsuraX.Button2Confirm
+AsuraX.Button2Confirm2.AnchorPoint = Vector2.new(0, 1)
+AsuraX.Button2Confirm2.BackgroundColor3 = Color3.fromRGB(79, 115, 102)
+AsuraX.Button2Confirm2.BackgroundTransparency = 0.100
+AsuraX.Button2Confirm2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button2Confirm2.BorderSizePixel = 0
+AsuraX.Button2Confirm2.ClipsDescendants = true
+AsuraX.Button2Confirm2.Position = UDim2.new(0.570297122, 0, 0.792117238, 0)
+AsuraX.Button2Confirm2.Size = UDim2.new(0, 27, 0, 27)
+
+AsuraX.UICorner140_4.CornerRadius = UDim.new(0, 4)
+AsuraX.UICorner140_4.Name = "UICorner140"
+AsuraX.UICorner140_4.Parent = AsuraX.Button2Confirm2
+
+AsuraX.Button1SaveFile_2.Name = "Button1SaveFile"
+AsuraX.Button1SaveFile_2.Parent = AsuraX.Button2Confirm2
+AsuraX.Button1SaveFile_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Button1SaveFile_2.BackgroundTransparency = 1.000
+AsuraX.Button1SaveFile_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button1SaveFile_2.BorderSizePixel = 0
+AsuraX.Button1SaveFile_2.Position = UDim2.new(0, 2, 0.074000001, 0)
+AsuraX.Button1SaveFile_2.Size = UDim2.new(0, 22, 0, 22)
+AsuraX.Button1SaveFile_2.Image = "rbxassetid://2790552399"
+
+AsuraX.Button8Settings.Name = "Button8Settings"
+AsuraX.Button8Settings.Parent = AsuraX.ScrollingFrame3
+AsuraX.Button8Settings.AnchorPoint = Vector2.new(0, 1)
+AsuraX.Button8Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Button8Settings.BackgroundTransparency = 0.100
+AsuraX.Button8Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button8Settings.BorderSizePixel = 0
+AsuraX.Button8Settings.Position = UDim2.new(-0.193014711, 0, 0.965753436, 0)
+AsuraX.Button8Settings.Size = UDim2.new(0, 535, 0, 61)
+
+AsuraX.Text2Alt_523.Name = "Text2Alt"
+AsuraX.Text2Alt_523.Parent = AsuraX.Button8Settings
+AsuraX.Text2Alt_523.AnchorPoint = Vector2.new(0, 1)
+AsuraX.Text2Alt_523.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Text2Alt_523.BackgroundTransparency = 1.000
+AsuraX.Text2Alt_523.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Text2Alt_523.BorderSizePixel = 0
+AsuraX.Text2Alt_523.Position = UDim2.new(0.110560738, 0, 0.940885425, 0)
+AsuraX.Text2Alt_523.Size = UDim2.new(0, 115, 0, 40)
+AsuraX.Text2Alt_523.Font = Enum.Font.Roboto
+AsuraX.Text2Alt_523.Text = "Allows you to open more roblox at time and attach multiple roblox process"
+AsuraX.Text2Alt_523.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Text2Alt_523.TextSize = 12.000
+AsuraX.Text2Alt_523.TextTransparency = 0.800
+AsuraX.Text2Alt_523.TextXAlignment = Enum.TextXAlignment.Left
+
+AsuraX.Button1_413.Name = "Button1"
+AsuraX.Button1_413.Parent = AsuraX.Button8Settings
+AsuraX.Button1_413.AnchorPoint = Vector2.new(0, 1)
+AsuraX.Button1_413.BackgroundColor3 = Color3.fromRGB(79, 115, 102)
+AsuraX.Button1_413.BackgroundTransparency = 0.100
+AsuraX.Button1_413.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button1_413.BorderSizePixel = 0
+AsuraX.Button1_413.ClipsDescendants = true
+AsuraX.Button1_413.Position = UDim2.new(0.927306473, 0, 0.710150063, 0)
+AsuraX.Button1_413.Size = UDim2.new(0, 27, 0, 27)
+
+AsuraX.Button1Multi.Name = "Button1Multi"
+AsuraX.Button1Multi.Parent = AsuraX.Button1_413
+AsuraX.Button1Multi.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Button1Multi.BackgroundTransparency = 1.000
+AsuraX.Button1Multi.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button1Multi.BorderSizePixel = 0
+AsuraX.Button1Multi.Position = UDim2.new(0, 2, 0.074000001, 0)
+AsuraX.Button1Multi.Size = UDim2.new(0, 22, 0, 22)
+AsuraX.Button1Multi.Image = "rbxassetid://2790552399"
+
+AsuraX.Button2Multi.Name = "Button2Multi"
+AsuraX.Button2Multi.Parent = AsuraX.Button1_413
+AsuraX.Button2Multi.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Button2Multi.BackgroundTransparency = 1.000
+AsuraX.Button2Multi.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button2Multi.BorderSizePixel = 0
+AsuraX.Button2Multi.Position = UDim2.new(0, 2, 0.888999999, 0)
+AsuraX.Button2Multi.Size = UDim2.new(0, 22, 0, 22)
+AsuraX.Button2Multi.Image = "rbxassetid://2777727756"
+AsuraX.Button2Multi.ImageColor3 = Color3.fromRGB(115, 167, 127)
+
+AsuraX.UICorner1400.CornerRadius = UDim.new(0, 4)
+AsuraX.UICorner1400.Name = "UICorner1400"
+AsuraX.UICorner1400.Parent = AsuraX.Button1_413
+
+AsuraX.TextSave1_4.Name = "TextSave1"
+AsuraX.TextSave1_4.Parent = AsuraX.Button8Settings
+AsuraX.TextSave1_4.AnchorPoint = Vector2.new(0, 1)
+AsuraX.TextSave1_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextSave1_4.BackgroundTransparency = 1.000
+AsuraX.TextSave1_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextSave1_4.BorderSizePixel = 0
+AsuraX.TextSave1_4.Position = UDim2.new(0.109084196, 0, 0.643225491, 0)
+AsuraX.TextSave1_4.Size = UDim2.new(0, 51, 0, 40)
+AsuraX.TextSave1_4.Font = Enum.Font.Unknown
+AsuraX.TextSave1_4.Text = "Multi instance"
+AsuraX.TextSave1_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextSave1_4.TextSize = 13.000
+AsuraX.TextSave1_4.TextXAlignment = Enum.TextXAlignment.Left
+
+AsuraX.UICorner0714.CornerRadius = UDim.new(0, 5)
+AsuraX.UICorner0714.Name = "UICorner0714"
+AsuraX.UICorner0714.Parent = AsuraX.Button8Settings
+
+AsuraX.UIGradient534.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(170, 255, 208)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(26, 20, 29))}
+AsuraX.UIGradient534.Rotation = 90
+AsuraX.UIGradient534.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.80), NumberSequenceKeypoint.new(1.00, 0.80)}
+AsuraX.UIGradient534.Name = "UIGradient534"
+AsuraX.UIGradient534.Parent = AsuraX.Button8Settings
+
+AsuraX.ImageLabel_401.Parent = AsuraX.Button8Settings
+AsuraX.ImageLabel_401.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ImageLabel_401.BackgroundTransparency = 1.000
+AsuraX.ImageLabel_401.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ImageLabel_401.BorderSizePixel = 0
+AsuraX.ImageLabel_401.Position = UDim2.new(0.0261682235, 0, 0.267494082, 0)
+AsuraX.ImageLabel_401.Size = UDim2.new(0, 24, 0, 24)
+AsuraX.ImageLabel_401.Image = "http://www.roblox.com/asset/?id=17539268246"
+
+AsuraX.UIGradient414_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
+AsuraX.UIGradient414_3.Name = "UIGradient414"
+AsuraX.UIGradient414_3.Parent = AsuraX.ImageLabel_401
+
 AsuraX.UIStroke7.Color = Color3.fromRGB(71, 60, 95)
 AsuraX.UIStroke7.Name="UIStroke"
 AsuraX.UIStroke7.Thickness = 1 
@@ -3116,13 +3831,18 @@ local Attached = false
 local AutoInject = true
 local AutoExec = false
 local Injecting = false
-local NotPatched = true
+local NotPatched = false
 local LoadstringRQ = false
-local AutoUpdater = false--brokencuzloadstring
+local AutoUpdater = false
 local HttpsGameGet = true
 local TopMost = false
-local SaveTabs = true
+local SaveTabs = false
 local GuiHidden = false
+local CoreGui = true
+local Multiinstance = true
+local Fpsrate = false
+local SaveFolder = true
+local makefolder = true--so uh this is loadstring version of asurax executor
 
 
 	local Editor1Text = ""
@@ -3150,6 +3870,9 @@ local PanelFrameActive = false
 local TransparencyValue1 = Instances.TransparencyValue1
 local TextTransparencyValue1 = Instances.TextTransparencyValue1
 local ImageTransparencyValue1 = Instances.ImageTransparencyValue1
+
+local fpsText = MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.FpsTextValue.Text
+local fps = tonumber(fpsText)
 
 --[[local function getGlobal(path)
 	local value = getfenv(0)
@@ -3314,8 +4037,18 @@ if SaveTabs==true then
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.ImageLabel_2432.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(58, 111, 83)}):Play()
 end
+--framerate
+local function setFrameRate(fps)
+	if fps > 0 then
+		game:GetService("RunService").RenderStepped:Connect(function(step)
+			if step < 1/fps then
+				wait(1/fps - step)
+			end
+		end)
+	end
+end
+
 --
-	
 	MainGui.ExecutorFrame.DownGui.ExecuteFrame.ImageButton.MouseButton1Click:Connect(function()
 		--print("ran success")
 	if Attached==true then
@@ -3325,6 +4058,17 @@ end
 				ImageID="rbxassetid://9405926389"
 				NotifyColor=Color3.new(255, 255, 255)
 				Notify()
+			
+				end
+				
+
+
+
+				
+				
+				
+
+				
 			else
 					--warn("loadstring success")
 				--local script = HttpService:GetAsync(url)
@@ -5621,6 +6365,7 @@ function Show()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button2Auto,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.1)
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Image325,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.TextAutoExec1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
@@ -5630,6 +6375,7 @@ function Show()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.Button2AutoExec,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.1)
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.TextTop1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
@@ -5639,6 +6385,7 @@ function Show()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.Button2TopMost,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.1)
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.ImageLabel_2432,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
@@ -5648,6 +6395,57 @@ function Show()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button2SaveTabs,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.1)
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button1FrameRate,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button2FrameRate,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.FpsTextValue,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.1)
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button1SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button2SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.1)
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button1CoreGui,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button2CoreGui,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.Button2SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2.Button1SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.1)
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button1Multi,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button2Multi,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
 		elseif PanelFrameActive==true then
 			game:GetService("TweenService"):Create(MainGui.PanelFrame.HubFrame3.Buttons3.Button1Panel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
 			game:GetService("TweenService"):Create(MainGui.PanelFrame.HubFrame3.Buttons3.Button1Panel.Image3241,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
@@ -5740,6 +6538,7 @@ function Show()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button2Auto,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.1)
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Image325,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.TextAutoExec1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
@@ -5749,6 +6548,7 @@ function Show()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.Button2AutoExec,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.1)
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.TextTop1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
@@ -5758,6 +6558,7 @@ function Show()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.Button2TopMost,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.1)
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.ImageLabel_2432,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
@@ -5766,7 +6567,58 @@ function Show()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button1SaveTabs,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button2SaveTabs,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
-			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.1)
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button1FrameRate,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button2FrameRate,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.FpsTextValue,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.1)
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button1SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button2SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.1)
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button1CoreGui,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button2CoreGui,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.Button2SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2.Button1SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.1)
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button1Multi,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button2Multi,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
 		elseif PanelFrameActive==true then
 			game:GetService("TweenService"):Create(MainGui.PanelFrame.HubFrame3.Buttons3.Button1Panel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
 			game:GetService("TweenService"):Create(MainGui.PanelFrame.HubFrame3.Buttons3.Button1Panel.Image3241,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
@@ -5983,6 +6835,20 @@ function Show()
 			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button2SaveTabs,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
 			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
 			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
+			wait(0.8)
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 0}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 0.8}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button1FrameRate,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button2FrameRate,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.FpsTextValue,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+			
 		end
 		elseif HideName=="PanelFrame" then
 			MainGui.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 21, 21)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(63, 24, 24))}
@@ -6030,7 +6896,8 @@ function Show()
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button1Auto,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button2Auto,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
-				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+			    game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+			    wait(0.1)
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Image325,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.TextAutoExec1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
@@ -6039,7 +6906,8 @@ function Show()
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.Button1AutoExec,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.Button2AutoExec,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
-				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+			wait(0.1)
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.TextTop1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
@@ -6048,7 +6916,8 @@ function Show()
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.Button1TopMost,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.Button2TopMost,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
-				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+			wait(0.1)
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.ImageLabel_2432,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
@@ -6057,7 +6926,59 @@ function Show()
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button1SaveTabs,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button2SaveTabs,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
-				game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+			wait(0.1)
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button1FrameRate,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button2FrameRate,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.FpsTextValue,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+			wait(0.1)
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button1SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button2SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+			wait(0.1)
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button1CoreGui,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button2CoreGui,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.Button2SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2.Button1SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+			wait(0.1)
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button1Multi,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button2Multi,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+			wait(0.1)
 			end
 			--enable
 			MainGui.ExecutorFrame.ExecutorFrame.Visible = false
@@ -6236,34 +7157,93 @@ MainGui.SettingsFrame.HubFrame.Buttons2.Button1SettingsBackground.Button1Setting
 		0.2,
 		false
 	)--disable
+	if Settings4==true then
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.TextTop1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.Button1TopMost,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.Button2TopMost,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.3)
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.ImageLabel_2432,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button1SaveTabs,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button2SaveTabs,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.3)
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button1FrameRate,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button2FrameRate,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.FpsTextValue,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.3)
+	elseif Settings2==true then
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button1CoreGui,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button2CoreGui,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.Button2SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2.Button1SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.3)
+	elseif Settings3==true then
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button1SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button2SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.3)
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button1Multi,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button2Multi,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.3)
+	end
 	Settings1=true
 	Settings2=false
 	Settings3=false
 	Settings4=false
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.TextTop1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.Button1TopMost,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.Button2TopMost,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
-	wait(0.3)
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.ImageLabel_2432,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button1SaveTabs,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button2SaveTabs,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
-	wait(0.3)
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Visible=true
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Visible=true
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Visible=false
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Visible=false
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Visible=false
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Visible=false
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Visible=false
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Visible=false
 	--enable
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.1}):Play()
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Image324,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
@@ -6359,10 +7339,7 @@ MainGui.SettingsFrame.HubFrame.Buttons2.Button2SettingsBackground.Button2Setting
 		0.2,
 		false
 	)
-	Settings1=false
-	Settings2=true
-	Settings3=false
-	Settings4=false
+	if Settings1==true then
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Image324,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.TextAutoInject1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
@@ -6383,10 +7360,111 @@ MainGui.SettingsFrame.HubFrame.Buttons2.Button2SettingsBackground.Button2Setting
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
 	wait(0.3)
+	elseif Settings4==true then
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.TextTop1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.Button1TopMost,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.Button2TopMost,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.3)
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.ImageLabel_2432,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button1SaveTabs,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button2SaveTabs,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.3)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button1FrameRate,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button2FrameRate,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.FpsTextValue,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	wait(0.3)
+	elseif Settings2==true then
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button1CoreGui,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button2CoreGui,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.Button2SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2.Button1SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.3)
+	elseif Settings3==true then
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button1SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button2SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	wait(0.3)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button1Multi,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button2Multi,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	wait(0.3)
+	end
+	Settings1=false
+	Settings2=true
+	Settings3=false
+	Settings4=false
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Visible=false
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Visible=false
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Visible=false
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Visible=false
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Visible=false
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Visible=false
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Visible=true
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Visible=false
+	--enable
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 0.8}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button1CoreGui,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button2CoreGui,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.Button2SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2.Button1SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
 end)
 
 MainGui.SettingsFrame.HubFrame.Buttons2.Button3SettingsBackground.Button3Settings.MouseButton1Click:Connect(function()
@@ -6462,34 +7540,112 @@ MainGui.SettingsFrame.HubFrame.Buttons2.Button3SettingsBackground.Button3Setting
 		0.2,
 		false
 	)
+	if Settings1==true then
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Image324,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.TextAutoInject1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button1Auto,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button2Auto,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.3)
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Image325,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.TextAutoExec1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.Button1AutoExec,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.Button2AutoExec,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.3)
+	elseif Settings4==true then
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.TextTop1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.Button1TopMost,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.Button2TopMost,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.3)
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.ImageLabel_2432,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button1SaveTabs,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button2SaveTabs,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.3)
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button1FrameRate,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button2FrameRate,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.FpsTextValue,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.3)
+	elseif Settings2==true then
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button1CoreGui,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button2CoreGui,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.Button2SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2.Button1SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.3)
+	end
 	Settings1=false
 	Settings2=false
 	Settings3=true
 	Settings4=false
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Image324,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.TextAutoInject1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button1Auto,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button2Auto,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
-	wait(0.3)
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Image325,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.TextAutoExec1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.Button1AutoExec,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.Button2AutoExec,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
-	wait(0.3)
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Visible=false
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Visible=false
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Visible=false
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Visible=false
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Visible=false
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Visible=true
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Visible=false
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Visible=true
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 0.8}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button1SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button2SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
+	wait(0.4)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 0.8}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button1Multi,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button2Multi,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
 end)
 
 MainGui.SettingsFrame.HubFrame.Buttons2.Button4SettingsBackground.Button4Settings.MouseButton1Click:Connect(function()
@@ -6565,34 +7721,80 @@ MainGui.SettingsFrame.HubFrame.Buttons2.Button4SettingsBackground.Button4Setting
 		0.2,
 		false
 	)--disable
+	if Settings1==true then
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Image324,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.TextAutoInject1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button1Auto,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button2Auto,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.3)
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Image325,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.TextAutoExec1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.Button1AutoExec,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.Button2AutoExec,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.3)
+	elseif Settings2==true then
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button1CoreGui,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button2CoreGui,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.Button2SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2.Button1SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.3)
+	elseif Settings3==true then
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button1SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button2SaveFile,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.3)
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button1Multi,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button2Multi,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+		wait(0.3)
+	end
 	Settings1=false
 	Settings2=false
 	Settings3=false
 	Settings4=true
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Image324,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.TextAutoInject1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button1Auto,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button2Auto,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
-	wait(0.3)
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Image325,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.TextAutoExec1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.Button1AutoExec,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.Button2AutoExec,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
-	wait(0.3)
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Visible=false
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Visible=false
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Visible=true
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Visible=true
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Visible=true
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Visible=false
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Visible=false
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Visible=false
 	--enable
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.1}):Play()
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
@@ -6613,6 +7815,19 @@ MainGui.SettingsFrame.HubFrame.Buttons2.Button4SettingsBackground.Button4Setting
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button2SaveTabs,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
+	wait(0.4)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.TextSave1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Text2Alt,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 0.8}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button1FrameRate,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button2FrameRate,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.FpsTextValue,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
 end)
 
 MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button1Auto.MouseButton1Click:Connect(function()
@@ -6787,6 +8002,250 @@ MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button1Sa
 	SaveTabs=false
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.ImageLabel_2432.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 183, 184)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 42, 92))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(111, 111, 111)}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(111, 111, 111)}):Play()
+end)
+
+MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button2FrameRate.MouseButton1Click:Connect(function()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button1FrameRate:TweenPosition(--Timer
+		UDim2.new(0, 2,0.074, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundColor3=Color3.fromRGB(79, 115, 102)}):Play()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button2FrameRate:TweenPosition(--Timer
+		UDim2.new(0, 2,0.889, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button1FrameRate,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(255, 255, 255)}):Play()
+	Fpsrate=true
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.ImageLabel.UIGradient3241.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(58, 111, 83)}):Play()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps:TweenSizeAndPosition(--Timer
+		UDim2.new(0, 49,0, 27),
+		UDim2.new(0.819, 0,0.71, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundTransparency=0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.FpsTextValue,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{TextTransparency=0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Transparency=0}):Play()
+end)
+
+MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button1FrameRate.MouseButton1Click:Connect(function()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button1FrameRate:TweenPosition(--Timer
+		UDim2.new(0, 2,0.889, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundColor3=Color3.fromRGB(34, 34, 34)}):Play()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button2FrameRate:TweenPosition(--Timer
+		UDim2.new(0, 2,0.074, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button2FrameRate,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(115, 167, 127)}):Play()
+	Fpsrate=false
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.ImageLabel.UIGradient3241.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 183, 184)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 42, 92))}
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundTransparency=1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.FpsTextValue,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{TextTransparency=1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Transparency=1}):Play()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps:TweenSizeAndPosition(--Timer
+		UDim2.new(0,0,0, 27),
+		UDim2.new(0.91, 0,0.71, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+end)
+
+MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button2SaveFile.MouseButton1Click:Connect(function()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button1SaveFile:TweenPosition(--Timer
+		UDim2.new(0, 2,0.074, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundColor3=Color3.fromRGB(79, 115, 102)}):Play()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button2SaveFile:TweenPosition(--Timer
+		UDim2.new(0, 2,0.889, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button1SaveFile,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(255, 255, 255)}):Play()
+	SaveFolder=true
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.ImageLabel.UIGradient414.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(58, 111, 83)}):Play()
+end)
+
+MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button1SaveFile.MouseButton1Click:Connect(function()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button1SaveFile:TweenPosition(--Timer
+		UDim2.new(0, 2,0.889, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundColor3=Color3.fromRGB(34, 34, 34)}):Play()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button2SaveFile:TweenPosition(--Timer
+		UDim2.new(0, 2,0.074, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button2SaveFile,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(115, 167, 127)}):Play()
+	SaveFolder=false
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.ImageLabel.UIGradient414.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 183, 184)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 42, 92))}
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.Button2SaveFile.MouseButton1Click:Connect(function()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundTransparency=1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundTransparency=1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.Button2SaveFile,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageTransparency=1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2.Button1SaveFile,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageTransparency=1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Text2Alt,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{TextTransparency=1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundTransparency=1}):Play()
+end)
+
+MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2.Button1SaveFile.MouseButton1Click:Connect(function()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button1CoreGui:TweenPosition(--Timer
+		UDim2.new(0, 2,0.889, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundColor3=Color3.fromRGB(34, 34, 34)}):Play()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button2CoreGui:TweenPosition(--Timer
+		UDim2.new(0, 2,0.074, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button2CoreGui,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(115, 167, 127)}):Play()
+	CoreGui=false
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.ImageLabel.UIGradient414.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 183, 184)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 42, 92))}
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundTransparency=1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundTransparency=1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.Button2SaveFile,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageTransparency=1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2.Button1SaveFile,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageTransparency=1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Text2Alt,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{TextTransparency=1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundTransparency=1}):Play()
+end)
+
+
+
+MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button2CoreGui.MouseButton1Click:Connect(function()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button1CoreGui:TweenPosition(--Timer
+		UDim2.new(0, 2,0.074, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundColor3=Color3.fromRGB(79, 115, 102)}):Play()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button2CoreGui:TweenPosition(--Timer
+		UDim2.new(0, 2,0.889, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button1CoreGui,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(255, 255, 255)}):Play()
+	CoreGui=true
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.ImageLabel.UIGradient414.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(58, 111, 83)}):Play()
+end)
+
+MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button1CoreGui.MouseButton1Click:Connect(function()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Visible = true
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundTransparency=0.1}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Text2Alt,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{TextTransparency=0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundTransparency=0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundTransparency=0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.Button2SaveFile,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageTransparency=0}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2.Button1SaveFile,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageTransparency=0}):Play()
+end)
+
+
+
+
+
+
+
+
+MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button2Multi.MouseButton1Click:Connect(function()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button1Multi:TweenPosition(--Timer
+		UDim2.new(0, 2,0.074, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundColor3=Color3.fromRGB(79, 115, 102)}):Play()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button2Multi:TweenPosition(--Timer
+		UDim2.new(0, 2,0.889, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button1Multi,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(255, 255, 255)}):Play()
+	Multiinstance=true
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.ImageLabel.UIGradient414.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(58, 111, 83)}):Play()
+end)
+
+MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button1Multi.MouseButton1Click:Connect(function()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button1Multi:TweenPosition(--Timer
+		UDim2.new(0, 2,0.889, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundColor3=Color3.fromRGB(34, 34, 34)}):Play()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button2Multi:TweenPosition(--Timer
+		UDim2.new(0, 2,0.074, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button2Multi,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(115, 167, 127)}):Play()
+	Multiinstance=false
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.ImageLabel.UIGradient414.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 183, 184)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 42, 92))}
 end)
 
 --script hub
@@ -7012,7 +8471,10 @@ MainGui.PanelFrame.HubFrame3.Buttons3.Button3Panel.Image3244.MouseButton1Click:C
 	NotifyTime = 3.1
 end)
 MainGui.PanelFrame.HubFrame3.Buttons3.Button4Panel.Image3247.MouseButton1Click:Connect(function()
-	game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId)
+    game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId)
+	game:GetService("TweenService"):Create(MainGui.PanelFrame.HubFrame3.Buttons3.Button4Panel.Image3247,TweenInfo.new(0.6,Enum.EasingStyle.Linear),{Rotation = 360}):Play()
+	wait(0.6)
+	MainGui.PanelFrame.HubFrame3.Buttons3.Button4Panel.Image3247.Rotation = 0
 	TextNotify="Rejoining"
 	ImageID="rbxassetid://9405926389"
 	NotifyColor=Color3.new(255, 255, 255)
@@ -7362,7 +8824,7 @@ end
 			TabOpen=2
 		end)
 	end
-	if Tab3==true then
+	--[[if Tab3==true then
 		MainGui.ExecutorFrame.ListGui["Editor#3"].TextButton.MouseButton1Click:Connect(function()
 			Editor3Text=MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text
 			wait(0.1)
@@ -7393,7 +8855,12 @@ end
 			MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=""..Editor6Text
 			TabOpen=6
 		end)
-	end
+	end--]]
 	--scriptframe
-	
+	if fps and fps > 0 then
+		setFrameRate(fps)
+	else
+		print("Invalid FPS value. Setting default frame rate to 60.")
+		setFrameRate(60)
+	end
 end
