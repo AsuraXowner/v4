@@ -78,13 +78,59 @@
 
 
 
--- Gui to Lua
--- Version: 3.2
 
--- Instances:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 local AsuraX = {
-ScreenGui = Instance.new("ScreenGui"), --game:GetService("CoreGui"));
+ScreenGui = Instance.new("ScreenGui", game:GetService("CoreGui"));
  MainFrame = Instance.new("Frame"),
+ TextLabelTextbox = Instance.new("TextLabel"),
  UICorner = Instance.new("UICorner"),
  Buttons = Instance.new("Folder"),
  Button1Background = Instance.new("Frame"),
@@ -110,6 +156,11 @@ ScreenGui = Instance.new("ScreenGui"), --game:GetService("CoreGui"));
  UICorner_7 = Instance.new("UICorner"),
  ScrollingFrame = Instance.new("ScrollingFrame"),
  TextBox = Instance.new("TextBox"),
+ TextBox2 = Instance.new("TextBox"),
+ TextBox3 = Instance.new("TextBox"),
+ TextBox4 = Instance.new("TextBox"),
+ TextBox5 = Instance.new("TextBox"),
+ TextBox6 = Instance.new("TextBox"),
  ExecutorFrameSide = Instance.new("Frame"),
  ListGui = Instance.new("Frame"),
  Editor1 = Instance.new("Frame"),
@@ -807,30 +858,37 @@ AsuraX.UIStrokeCustomImage24.Parent = AsuraX.FrameStatus
 
 AsuraX.UIStrokeCustom25.Color = Color3.fromRGB(48, 85, 65)
 AsuraX.UIStrokeCustom25.Thickness = 1 
+AsuraX.UIStrokeCustom25.Transparency = 1
 AsuraX.UIStrokeCustom25.Parent = AsuraX.Button5Settings
 
 AsuraX.UIStrokeCustomImage25.Color = Color3.fromRGB(111, 111, 111)
 AsuraX.UIStrokeCustomImage25.Thickness = 1 
+AsuraX.UIStrokeCustomImage25.Transparency = 1
 AsuraX.UIStrokeCustomImage25.Parent = AsuraX.Button13
 
 AsuraX.UIStrokeCustomImage25_1.Color = Color3.fromRGB(111, 111, 111)
 AsuraX.UIStrokeCustomImage25_1.Thickness = 1 
+AsuraX.UIStrokeCustomImage25_1.Transparency = 1
 AsuraX.UIStrokeCustomImage25_1.Parent = AsuraX.Button2Fps
 
 AsuraX.UIStrokeCustom26.Color = Color3.fromRGB(48, 85, 65)
-AsuraX.UIStrokeCustom26.Thickness = 1 
+AsuraX.UIStrokeCustom26.Thickness = 1
+AsuraX.UIStrokeCustom26.Transparency = 1
 AsuraX.UIStrokeCustom26.Parent = AsuraX.Button6Settings
 
 AsuraX.UIStrokeCustomImage26.Color = Color3.fromRGB(58, 111, 83)
 AsuraX.UIStrokeCustomImage26.Thickness = 1 
+AsuraX.UIStrokeCustomImage26.Transparency = 1
 AsuraX.UIStrokeCustomImage26.Parent = AsuraX.Button1_231
 
 AsuraX.UIStrokeCustom27.Color = Color3.fromRGB(48, 85, 65)
-AsuraX.UIStrokeCustom27.Thickness = 1 
+AsuraX.UIStrokeCustom27.Thickness = 1
+AsuraX.UIStrokeCustom27.Transparency = 1
 AsuraX.UIStrokeCustom27.Parent = AsuraX.Button7Settings
 
 AsuraX.UIStrokeCustomImage27.Color = Color3.fromRGB(58, 111, 83)
 AsuraX.UIStrokeCustomImage27.Thickness = 1 
+AsuraX.UIStrokeCustomImage27.Transparency = 1
 AsuraX.UIStrokeCustomImage27.Parent = AsuraX.Button1_331
 
 AsuraX.UIStrokeCustom28.Color = Color3.fromRGB(198, 0, 7)
@@ -843,10 +901,12 @@ AsuraX.UIStrokeCustomImage28.Parent = AsuraX.Button2Confirm2
 
 AsuraX.UIStrokeCustom29.Color = Color3.fromRGB(48, 85, 65)
 AsuraX.UIStrokeCustom29.Thickness = 1 
+AsuraX.UIStrokeCustom29.Transparency = 1
 AsuraX.UIStrokeCustom29.Parent = AsuraX.Button8Settings
 
 AsuraX.UIStrokeCustomImage29.Color = Color3.fromRGB(58, 111, 83)
 AsuraX.UIStrokeCustomImage29.Thickness = 1 
+AsuraX.UIStrokeCustomImage29.Transparency = 1
 AsuraX.UIStrokeCustomImage29.Parent = AsuraX.Button1_413
 
 AsuraX.UIGradientCustom1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(221, 134, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(70, 70, 70))}
@@ -1014,9 +1074,9 @@ AsuraX.ScrollingFrame.BackgroundTransparency = 1.000
 AsuraX.ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.ScrollingFrame.BorderSizePixel = 0
 AsuraX.ScrollingFrame.ClipsDescendants = false
-AsuraX.ScrollingFrame.Position = UDim2.new(0.0110000046, 0, 0.0199996177, 0)
-AsuraX.ScrollingFrame.Size = UDim2.new(0, 528, 0, 231)
-AsuraX.ScrollingFrame.CanvasSize = UDim2.new(0, 0, 30, 0)
+AsuraX.ScrollingFrame.Position = UDim2.new(0.035, 0,0.02, 0)
+AsuraX.ScrollingFrame.Size = UDim2.new(0, 515, 0, 231)
+AsuraX.ScrollingFrame.CanvasSize = UDim2.new(0, 0, 200, 0)
 AsuraX.ScrollingFrame.ScrollBarThickness = 4
 
 AsuraX.TextBox.Parent = AsuraX.ScrollingFrame
@@ -1024,11 +1084,14 @@ AsuraX.TextBox.BackgroundColor3 = Color3.fromRGB(62, 38, 72)
 AsuraX.TextBox.BackgroundTransparency = 1.000
 AsuraX.TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.TextBox.BorderSizePixel = AsuraX.ScriptFrameSide
-AsuraX.TextBox.Position = UDim2.new(0.00100000005, 0, 0, 0)
-AsuraX.TextBox.Size = UDim2.new(0, 539, 0, 33604)
+AsuraX.TextBox.Position = UDim2.new(0.001, 0,0, 0)
+AsuraX.TextBox.Size = UDim2.new(0, 510, 0, 33604)
 AsuraX.TextBox.Font = Enum.Font.Bodoni
 AsuraX.TextBox.PlaceholderColor3 = Color3.fromRGB(194, 179, 203)
 AsuraX.TextBox.PlaceholderText = "Loadstring"
+AsuraX.TextBox.ClearTextOnFocus = false
+AsuraX.TextBox.MultiLine = true
+AsuraX.TextBox.RichText = true
 AsuraX.TextBox.ShowNativeInput = false
 AsuraX.TextBox.Text = ""
 AsuraX.TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -1037,6 +1100,142 @@ AsuraX.TextBox.TextStrokeTransparency = 0.740
 AsuraX.TextBox.TextWrapped = true
 AsuraX.TextBox.TextXAlignment = Enum.TextXAlignment.Left
 AsuraX.TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+AsuraX.TextBox2.Parent = AsuraX.ScrollingFrame
+AsuraX.TextBox2.Name = "TextBox2"
+AsuraX.TextBox2.BackgroundColor3 = Color3.fromRGB(62, 38, 72)
+AsuraX.TextBox2.BackgroundTransparency = 1.000
+AsuraX.TextBox2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextBox2.BorderSizePixel = AsuraX.ScriptFrameSide
+AsuraX.TextBox2.Visible = false
+AsuraX.TextBox2.Position = UDim2.new(0.001, 0,0, 0)
+AsuraX.TextBox2.Size = UDim2.new(0, 510, 0, 33604)
+AsuraX.TextBox2.Font = Enum.Font.Bodoni
+AsuraX.TextBox2.PlaceholderColor3 = Color3.fromRGB(194, 179, 203)
+AsuraX.TextBox2.PlaceholderText = "Loadstring"
+AsuraX.TextBox2.ClearTextOnFocus = false
+AsuraX.TextBox2.MultiLine = true
+AsuraX.TextBox2.RichText = true
+AsuraX.TextBox2.ShowNativeInput = false
+AsuraX.TextBox2.Text = ""
+AsuraX.TextBox2.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextBox2.TextSize = 14.000
+AsuraX.TextBox2.TextStrokeTransparency = 0.740
+AsuraX.TextBox2.TextWrapped = true
+AsuraX.TextBox2.TextXAlignment = Enum.TextXAlignment.Left
+AsuraX.TextBox2.TextYAlignment = Enum.TextYAlignment.Top
+
+AsuraX.TextBox3.Parent = AsuraX.ScrollingFrame
+AsuraX.TextBox3.Name = "TextBox3"
+AsuraX.TextBox3.BackgroundColor3 = Color3.fromRGB(62, 38, 72)
+AsuraX.TextBox3.BackgroundTransparency = 1.000
+AsuraX.TextBox3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextBox3.BorderSizePixel = AsuraX.ScriptFrameSide
+AsuraX.TextBox3.Visible = false
+AsuraX.TextBox3.Position = UDim2.new(0.001, 0,0, 0)
+AsuraX.TextBox3.Size = UDim2.new(0, 510, 0, 33604)
+AsuraX.TextBox3.Font = Enum.Font.Bodoni
+AsuraX.TextBox3.PlaceholderColor3 = Color3.fromRGB(194, 179, 203)
+AsuraX.TextBox3.PlaceholderText = "Loadstring"
+AsuraX.TextBox3.ClearTextOnFocus = false
+AsuraX.TextBox3.MultiLine = true
+AsuraX.TextBox3.RichText = true
+AsuraX.TextBox3.ShowNativeInput = false
+AsuraX.TextBox3.Text = ""
+AsuraX.TextBox3.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextBox3.TextSize = 14.000
+AsuraX.TextBox3.TextStrokeTransparency = 0.740
+AsuraX.TextBox3.TextWrapped = true
+AsuraX.TextBox3.TextXAlignment = Enum.TextXAlignment.Left
+AsuraX.TextBox3.TextYAlignment = Enum.TextYAlignment.Top
+
+AsuraX.TextBox4.Parent = AsuraX.ScrollingFrame
+AsuraX.TextBox4.Name = "TextBox4"
+AsuraX.TextBox4.BackgroundColor3 = Color3.fromRGB(62, 38, 72)
+AsuraX.TextBox4.BackgroundTransparency = 1.000
+AsuraX.TextBox4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextBox4.BorderSizePixel = AsuraX.ScriptFrameSide
+AsuraX.TextBox4.Visible = false
+AsuraX.TextBox4.Position = UDim2.new(0.001, 0,0, 0)
+AsuraX.TextBox4.Size = UDim2.new(0, 510, 0, 33604)
+AsuraX.TextBox4.Font = Enum.Font.Bodoni
+AsuraX.TextBox4.PlaceholderColor3 = Color3.fromRGB(194, 179, 203)
+AsuraX.TextBox4.PlaceholderText = "Loadstring"
+AsuraX.TextBox4.ClearTextOnFocus = false
+AsuraX.TextBox4.MultiLine = true
+AsuraX.TextBox4.RichText = true
+AsuraX.TextBox4.ShowNativeInput = false
+AsuraX.TextBox4.Text = ""
+AsuraX.TextBox4.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextBox4.TextSize = 14.000
+AsuraX.TextBox4.TextStrokeTransparency = 0.740
+AsuraX.TextBox4.TextWrapped = true
+AsuraX.TextBox4.TextXAlignment = Enum.TextXAlignment.Left
+AsuraX.TextBox4.TextYAlignment = Enum.TextYAlignment.Top
+
+AsuraX.TextBox5.Parent = AsuraX.ScrollingFrame
+AsuraX.TextBox5.Name = "TextBox5"
+AsuraX.TextBox5.BackgroundColor3 = Color3.fromRGB(62, 38, 72)
+AsuraX.TextBox5.BackgroundTransparency = 1.000
+AsuraX.TextBox5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextBox5.BorderSizePixel = AsuraX.ScriptFrameSide
+AsuraX.TextBox5.Visible = false
+AsuraX.TextBox5.Position = UDim2.new(0.001, 0,0, 0)
+AsuraX.TextBox5.Size = UDim2.new(0, 510, 0, 33604)
+AsuraX.TextBox5.Font = Enum.Font.Bodoni
+AsuraX.TextBox5.PlaceholderColor3 = Color3.fromRGB(194, 179, 203)
+AsuraX.TextBox5.PlaceholderText = "Loadstring"
+AsuraX.TextBox5.ClearTextOnFocus = false
+AsuraX.TextBox5.MultiLine = true
+AsuraX.TextBox5.RichText = true
+AsuraX.TextBox5.ShowNativeInput = false
+AsuraX.TextBox5.Text = ""
+AsuraX.TextBox5.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextBox5.TextSize = .000
+AsuraX.TextBox5.TextStrokeTransparency = 0.740
+AsuraX.TextBox5.TextWrapped = true
+AsuraX.TextBox5.TextXAlignment = Enum.TextXAlignment.Left
+AsuraX.TextBox5.TextYAlignment = Enum.TextYAlignment.Top
+
+AsuraX.TextBox6.Parent = AsuraX.ScrollingFrame
+AsuraX.TextBox6.Name = "TextBox6"
+AsuraX.TextBox6.BackgroundColor3 = Color3.fromRGB(62, 38, 72)
+AsuraX.TextBox6.BackgroundTransparency = 1.000
+AsuraX.TextBox6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextBox6.BorderSizePixel = AsuraX.ScriptFrameSide
+AsuraX.TextBox6.Visible = false
+AsuraX.TextBox6.Position = UDim2.new(0.001, 0,0, 0)
+AsuraX.TextBox6.Size = UDim2.new(0, 510, 0, 33604)
+AsuraX.TextBox6.Font = Enum.Font.Bodoni
+AsuraX.TextBox6.PlaceholderColor3 = Color3.fromRGB(194, 179, 203)
+AsuraX.TextBox6.PlaceholderText = "Loadstring"
+AsuraX.TextBox6.ClearTextOnFocus = false
+AsuraX.TextBox6.MultiLine = true
+AsuraX.TextBox6.RichText = true
+AsuraX.TextBox6.ShowNativeInput = false
+AsuraX.TextBox6.Text = ""
+AsuraX.TextBox6.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextBox6.TextSize = .000
+AsuraX.TextBox6.TextStrokeTransparency = 0.740
+AsuraX.TextBox6.TextWrapped = true
+AsuraX.TextBox6.TextXAlignment = Enum.TextXAlignment.Left
+AsuraX.TextBox6.TextYAlignment = Enum.TextYAlignment.Top
+
+AsuraX.TextLabelTextbox.Parent = AsuraX.ScrollingFrame
+AsuraX.TextLabelTextbox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextLabelTextbox.BackgroundTransparency = 1.000
+AsuraX.TextLabelTextbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextLabelTextbox.BorderSizePixel = 0
+AsuraX.TextLabelTextbox.Position = UDim2.new(-0.0368761383, 0, 0, 0)
+AsuraX.TextLabelTextbox.Size = UDim2.new(0, 21, 0, 33604)
+AsuraX.TextLabelTextbox.Font = Enum.Font.Bodoni
+AsuraX.TextLabelTextbox.Text = ""
+AsuraX.TextLabelTextbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextLabelTextbox.TextSize = 15.000
+AsuraX.TextLabelTextbox.TextWrapped = true
+AsuraX.TextLabelTextbox.RichText = true
+AsuraX.TextLabelTextbox.TextYAlignment = Enum.TextYAlignment.Top
+
 
 AsuraX.ExecutorFrameSide.Name = "ExecutorFrameSide"
 AsuraX.ExecutorFrameSide.Parent = AsuraX.ExecutorFrame
@@ -2749,7 +2948,7 @@ AsuraX.Button4Settings_2.Name = "Button4Settings"
 AsuraX.Button4Settings_2.Parent = AsuraX.ScrollingFrame3
 AsuraX.Button4Settings_2.AnchorPoint = Vector2.new(0, 1)
 AsuraX.Button4Settings_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.Button4Settings_2.BackgroundTransparency = 0.100
+AsuraX.Button4Settings_2.BackgroundTransparency = 1
 AsuraX.Button4Settings_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button4Settings_2.BorderSizePixel = 0
 AsuraX.Button4Settings_2.Position = UDim2.new(-0.00167644722, 0, 0.524647772, 0)
@@ -2769,14 +2968,14 @@ AsuraX.Text2Alt_4.Font = Enum.Font.Roboto
 AsuraX.Text2Alt_4.Text = "Automatically Saves tabs when you leave game "
 AsuraX.Text2Alt_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.Text2Alt_4.TextSize = 12.000
-AsuraX.Text2Alt_4.TextTransparency = 0.800
+AsuraX.Text2Alt_4.TextTransparency = 1
 AsuraX.Text2Alt_4.TextXAlignment = Enum.TextXAlignment.Left
 
 AsuraX.Button1_4.Name = "Button1"
 AsuraX.Button1_4.Parent = AsuraX.Button4Settings_2
 AsuraX.Button1_4.AnchorPoint = Vector2.new(0, 1)
 AsuraX.Button1_4.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-AsuraX.Button1_4.BackgroundTransparency = 0.100
+AsuraX.Button1_4.BackgroundTransparency = 1
 AsuraX.Button1_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button1_4.BorderSizePixel = 0
 AsuraX.Button1_4.ClipsDescendants = true
@@ -2786,7 +2985,7 @@ AsuraX.Button1_4.Size = UDim2.new(0, 27, 0, 27)
 AsuraX.Button1SaveTabs.Name = "Button1SaveTabs"
 AsuraX.Button1SaveTabs.Parent = AsuraX.Button1_4
 AsuraX.Button1SaveTabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.Button1SaveTabs.BackgroundTransparency = 1.000
+AsuraX.Button1SaveTabs.BackgroundTransparency = 1
 AsuraX.Button1SaveTabs.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button1SaveTabs.BorderSizePixel = 0
 AsuraX.Button1SaveTabs.Position = UDim2.new(0, 2, 0.888999999, 0)
@@ -2796,7 +2995,7 @@ AsuraX.Button1SaveTabs.Image = "rbxassetid://2790552399"
 AsuraX.Button2SaveTabs.Name = "Button2SaveTabs"
 AsuraX.Button2SaveTabs.Parent = AsuraX.Button1_4
 AsuraX.Button2SaveTabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.Button2SaveTabs.BackgroundTransparency = 1.000
+AsuraX.Button2SaveTabs.BackgroundTransparency = 1
 AsuraX.Button2SaveTabs.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button2SaveTabs.BorderSizePixel = 0
 AsuraX.Button2SaveTabs.Position = UDim2.new(0, 2, 0.073999472, 0)
@@ -2812,7 +3011,7 @@ AsuraX.TextSave1.Name = "TextSave1"
 AsuraX.TextSave1.Parent = AsuraX.Button4Settings_2
 AsuraX.TextSave1.AnchorPoint = Vector2.new(0, 1)
 AsuraX.TextSave1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.TextSave1.BackgroundTransparency = 1.000
+AsuraX.TextSave1.BackgroundTransparency = 1
 AsuraX.TextSave1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.TextSave1.BorderSizePixel = 0
 AsuraX.TextSave1.Position = UDim2.new(0.109084196, 0, 0.643225491, 0)
@@ -2837,6 +3036,7 @@ AsuraX.ImageLabel_2432.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.ImageLabel_2432.BorderSizePixel = 0
 AsuraX.ImageLabel_2432.Position = UDim2.new(0.0261682235, 0, 0.267494082, 0)
 AsuraX.ImageLabel_2432.Size = UDim2.new(0, 24, 0, 24)
+AsuraX.ImageLabel_2432.ImageTransparency = 1
 AsuraX.ImageLabel_2432.Image = "http://www.roblox.com/asset/?id=17511333867"
 
 AsuraX.UIGradient324.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(134, 96, 97)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 42, 92))}
@@ -2971,7 +3171,7 @@ AsuraX.TextUsername.BorderSizePixel = 0
 AsuraX.TextUsername.Position = UDim2.new(0.247677311, 0, 0.485246003, 0)
 AsuraX.TextUsername.Size = UDim2.new(0, 51, 0, 40)
 AsuraX.TextUsername.Font = Enum.Font.Unknown
-AsuraX.TextUsername.Text = "Failed to get username"
+AsuraX.TextUsername.Text = "Failed to get name"
 AsuraX.TextUsername.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextUsername.TextSize = 11.000
 AsuraX.TextUsername.TextXAlignment = Enum.TextXAlignment.Left
@@ -3030,7 +3230,7 @@ AsuraX.TextUsername2.BorderSizePixel = 0
 AsuraX.TextUsername2.Position = UDim2.new(0.282971442, 0, 0.649180412, 0)
 AsuraX.TextUsername2.Size = UDim2.new(0, 51, 0, 40)
 AsuraX.TextUsername2.Font = Enum.Font.Unknown
-AsuraX.TextUsername2.Text = "Failed to get username"
+AsuraX.TextUsername2.Text = "Failed to get name"
 AsuraX.TextUsername2.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextUsername2.TextSize = 10.000
 AsuraX.TextUsername2.TextTransparency = 0.840
@@ -3179,7 +3379,7 @@ AsuraX.TextExecutorStatus1.BorderSizePixel = 0
 AsuraX.TextExecutorStatus1.Position = UDim2.new(0.234819487, 0, 1.39000881, 0)
 AsuraX.TextExecutorStatus1.Size = UDim2.new(0, 55, 0, 37)
 AsuraX.TextExecutorStatus1.Font = Enum.Font.Unknown
-AsuraX.TextExecutorStatus1.Text = "LoadstringFake"
+AsuraX.TextExecutorStatus1.Text = "Undetected"
 AsuraX.TextExecutorStatus1.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextExecutorStatus1.TextSize = 11.000
 AsuraX.TextExecutorStatus1.TextXAlignment = Enum.TextXAlignment.Left
@@ -3190,10 +3390,11 @@ AsuraX.Button5Settings.Name = "Button5Settings"
 AsuraX.Button5Settings.Parent = AsuraX.ScrollingFrame3
 AsuraX.Button5Settings.AnchorPoint = Vector2.new(0, 1)
 AsuraX.Button5Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.Button5Settings.BackgroundTransparency = 0.100
+AsuraX.Button5Settings.BackgroundTransparency = 1
 AsuraX.Button5Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button5Settings.BorderSizePixel = 0
 AsuraX.Button5Settings.Position = UDim2.new(-0.00167644722, 0, 0.524647772, 0)
+AsuraX.Button5Settings.Visible = false
 AsuraX.Button5Settings.Size = UDim2.new(0, 535, 0, 61)
 
 AsuraX.Text2Alt13.Name = "Text2Alt"
@@ -3209,14 +3410,14 @@ AsuraX.Text2Alt13.Font = Enum.Font.Roboto
 AsuraX.Text2Alt13.Text = "Changes the fps of the roblox client"
 AsuraX.Text2Alt13.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.Text2Alt13.TextSize = 12.000
-AsuraX.Text2Alt13.TextTransparency = 0.800
+AsuraX.Text2Alt13.TextTransparency = 1
 AsuraX.Text2Alt13.TextXAlignment = Enum.TextXAlignment.Left
 
 AsuraX.Button13.Name = "Button1"
 AsuraX.Button13.Parent = AsuraX.Button5Settings
 AsuraX.Button13.AnchorPoint = Vector2.new(0, 1)
 AsuraX.Button13.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-AsuraX.Button13.BackgroundTransparency = 0.100
+AsuraX.Button13.BackgroundTransparency = 1
 AsuraX.Button13.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button13.BorderSizePixel = 0
 AsuraX.Button13.ClipsDescendants = true
@@ -3226,7 +3427,7 @@ AsuraX.Button13.Size = UDim2.new(0, 27, 0, 27)
 AsuraX.Button1FrameRate.Name = "Button1FrameRate"
 AsuraX.Button1FrameRate.Parent = AsuraX.Button13
 AsuraX.Button1FrameRate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.Button1FrameRate.BackgroundTransparency = 1.000
+AsuraX.Button1FrameRate.BackgroundTransparency = 1
 AsuraX.Button1FrameRate.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button1FrameRate.BorderSizePixel = 0
 AsuraX.Button1FrameRate.Position = UDim2.new(0, 2, 0.888999999, 0)
@@ -3236,7 +3437,7 @@ AsuraX.Button1FrameRate.Image = "rbxassetid://2790552399"
 AsuraX.Button2FrameRate.Name = "Button2FrameRate"
 AsuraX.Button2FrameRate.Parent = AsuraX.Button13
 AsuraX.Button2FrameRate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.Button2FrameRate.BackgroundTransparency = 1.000
+AsuraX.Button2FrameRate.BackgroundTransparency = 1
 AsuraX.Button2FrameRate.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button2FrameRate.BorderSizePixel = 0
 AsuraX.Button2FrameRate.Position = UDim2.new(0, 2, 0.073999472, 0)
@@ -3261,6 +3462,7 @@ AsuraX.TextSave1_1.Font = Enum.Font.Unknown
 AsuraX.TextSave1_1.Text = "FrameRate"
 AsuraX.TextSave1_1.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextSave1_1.TextSize = 13.000
+AsuraX.TextSave1_1.TextTransparency = 1
 AsuraX.TextSave1_1.TextXAlignment = Enum.TextXAlignment.Left
 
 AsuraX.UICorner0010.CornerRadius = UDim.new(0, 5)
@@ -3280,6 +3482,7 @@ AsuraX.ImageLabel3331.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.ImageLabel3331.BorderSizePixel = 0
 AsuraX.ImageLabel3331.Position = UDim2.new(0.0261682235, 0, 0.267494082, 0)
 AsuraX.ImageLabel3331.Size = UDim2.new(0, 24, 0, 24)
+AsuraX.ImageLabel3331.ImageTransparency = 1
 AsuraX.ImageLabel3331.Image = "http://www.roblox.com/asset/?id=17535521319"
 
 AsuraX.UIGradient3241.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(134, 96, 97)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 42, 92))}
@@ -3290,7 +3493,7 @@ AsuraX.Button2Fps.Name = "Button2Fps"
 AsuraX.Button2Fps.Parent = AsuraX.Button5Settings
 AsuraX.Button2Fps.AnchorPoint = Vector2.new(0, 1)
 AsuraX.Button2Fps.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-AsuraX.Button2Fps.BackgroundTransparency = 0.100
+AsuraX.Button2Fps.BackgroundTransparency = 1
 AsuraX.Button2Fps.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button2Fps.BorderSizePixel = 0
 AsuraX.Button2Fps.ClipsDescendants = true
@@ -3312,6 +3515,7 @@ AsuraX.FpsTextValue.Size = UDim2.new(0, 49, 0, 22)
 AsuraX.FpsTextValue.Font = Enum.Font.Fantasy
 AsuraX.FpsTextValue.PlaceholderText = "60"
 AsuraX.FpsTextValue.Text = "60"
+AsuraX.FpsTextValue.TextTransparency = 1
 AsuraX.FpsTextValue.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.FpsTextValue.TextSize = 14.000
 
@@ -3319,7 +3523,7 @@ AsuraX.Button6Settings.Name = "Button6Settings"
 AsuraX.Button6Settings.Parent = AsuraX.ScrollingFrame3
 AsuraX.Button6Settings.AnchorPoint = Vector2.new(0, 1)
 AsuraX.Button6Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.Button6Settings.BackgroundTransparency = 0.100
+AsuraX.Button6Settings.BackgroundTransparency = 1
 AsuraX.Button6Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button6Settings.BorderSizePixel = 0
 AsuraX.Button6Settings.Position = UDim2.new(-0.00167644722, 0, 0.524647772, 0)
@@ -3338,14 +3542,14 @@ AsuraX.Text2Alt_239.Font = Enum.Font.Roboto
 AsuraX.Text2Alt_239.Text = "Allows to scripts use savefiles"
 AsuraX.Text2Alt_239.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.Text2Alt_239.TextSize = 12.000
-AsuraX.Text2Alt_239.TextTransparency = 0.800
+AsuraX.Text2Alt_239.TextTransparency = 1
 AsuraX.Text2Alt_239.TextXAlignment = Enum.TextXAlignment.Left
 
 AsuraX.Button1_231.Name = "Button1"
 AsuraX.Button1_231.Parent = AsuraX.Button6Settings
 AsuraX.Button1_231.AnchorPoint = Vector2.new(0, 1)
 AsuraX.Button1_231.BackgroundColor3 = Color3.fromRGB(79, 115, 102)
-AsuraX.Button1_231.BackgroundTransparency = 0.100
+AsuraX.Button1_231.BackgroundTransparency = 1
 AsuraX.Button1_231.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button1_231.BorderSizePixel = 0
 AsuraX.Button1_231.ClipsDescendants = true
@@ -3360,6 +3564,7 @@ AsuraX.Button1SaveFile.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button1SaveFile.BorderSizePixel = 0
 AsuraX.Button1SaveFile.Position = UDim2.new(0, 2, 0.074000001, 0)
 AsuraX.Button1SaveFile.Size = UDim2.new(0, 22, 0, 22)
+AsuraX.Button1SaveFile.ImageTransparency = 1
 AsuraX.Button1SaveFile.Image = "rbxassetid://2790552399"
 
 AsuraX.Button2SaveFile.Name = "Button2SaveFile"
@@ -3370,6 +3575,7 @@ AsuraX.Button2SaveFile.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button2SaveFile.BorderSizePixel = 0
 AsuraX.Button2SaveFile.Position = UDim2.new(0, 2, 0.888999999, 0)
 AsuraX.Button2SaveFile.Size = UDim2.new(0, 22, 0, 22)
+AsuraX.Button2SaveFile.ImageTransparency = 1
 AsuraX.Button2SaveFile.Image = "rbxassetid://2777727756"
 AsuraX.Button2SaveFile.ImageColor3 = Color3.fromRGB(115, 167, 127)
 
@@ -3390,6 +3596,7 @@ AsuraX.TextSave1_2.Font = Enum.Font.Unknown
 AsuraX.TextSave1_2.Text = "SaveFile"
 AsuraX.TextSave1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextSave1_2.TextSize = 13.000
+AsuraX.TextSave1_2.TextTransparency = 1
 AsuraX.TextSave1_2.TextXAlignment = Enum.TextXAlignment.Left
 
 AsuraX.UICorner0014.CornerRadius = UDim.new(0, 5)
@@ -3409,6 +3616,7 @@ AsuraX.ImageLabel_242.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.ImageLabel_242.BorderSizePixel = 0
 AsuraX.ImageLabel_242.Position = UDim2.new(0.0261682235, 0, 0.267494082, 0)
 AsuraX.ImageLabel_242.Size = UDim2.new(0, 24, 0, 24)
+AsuraX.ImageLabel_242.ImageTransparency = 1
 AsuraX.ImageLabel_242.Image = "http://www.roblox.com/asset/?id=17535661642"
 
 AsuraX.UIGradient414.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
@@ -3419,7 +3627,7 @@ AsuraX.Button7Settings.Name = "Button7Settings"
 AsuraX.Button7Settings.Parent = AsuraX.ScrollingFrame3
 AsuraX.Button7Settings.AnchorPoint = Vector2.new(0, 1)
 AsuraX.Button7Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.Button7Settings.BackgroundTransparency = 0.100
+AsuraX.Button7Settings.BackgroundTransparency = 1
 AsuraX.Button7Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button7Settings.BorderSizePixel = 0
 AsuraX.Button7Settings.Position = UDim2.new(-0.00167644722, 0, 0.524647772, 0)
@@ -3438,14 +3646,14 @@ AsuraX.Text2Alt_323.Font = Enum.Font.Roboto
 AsuraX.Text2Alt_323.Text = "Recommended to keep enable allows u to get more fps in roblox client"
 AsuraX.Text2Alt_323.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.Text2Alt_323.TextSize = 12.000
-AsuraX.Text2Alt_323.TextTransparency = 0.800
+AsuraX.Text2Alt_323.TextTransparency = 1
 AsuraX.Text2Alt_323.TextXAlignment = Enum.TextXAlignment.Left
 
 AsuraX.Button1_331.Name = "Button1"
 AsuraX.Button1_331.Parent = AsuraX.Button7Settings
 AsuraX.Button1_331.AnchorPoint = Vector2.new(0, 1)
 AsuraX.Button1_331.BackgroundColor3 = Color3.fromRGB(79, 115, 102)
-AsuraX.Button1_331.BackgroundTransparency = 0.100
+AsuraX.Button1_331.BackgroundTransparency = 1
 AsuraX.Button1_331.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button1_331.BorderSizePixel = 0
 AsuraX.Button1_331.ClipsDescendants = true
@@ -3460,6 +3668,7 @@ AsuraX.Button1CoreGui.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button1CoreGui.BorderSizePixel = 0
 AsuraX.Button1CoreGui.Position = UDim2.new(0, 2, 0.074000001, 0)
 AsuraX.Button1CoreGui.Size = UDim2.new(0, 22, 0, 22)
+AsuraX.Button1CoreGui.ImageTransparency = 1
 AsuraX.Button1CoreGui.Image = "rbxassetid://2790552399"
 
 AsuraX.Button2CoreGui.Name = "Button2CoreGui"
@@ -3470,6 +3679,7 @@ AsuraX.Button2CoreGui.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button2CoreGui.BorderSizePixel = 0
 AsuraX.Button2CoreGui.Position = UDim2.new(0, 2, 0.888999999, 0)
 AsuraX.Button2CoreGui.Size = UDim2.new(0, 22, 0, 22)
+AsuraX.Button2CoreGui.ImageTransparency = 1
 AsuraX.Button2CoreGui.Image = "rbxassetid://2777727756"
 AsuraX.Button2CoreGui.ImageColor3 = Color3.fromRGB(115, 167, 127)
 
@@ -3490,6 +3700,7 @@ AsuraX.TextSave1_3.Font = Enum.Font.Unknown
 AsuraX.TextSave1_3.Text = "CoreGui"
 AsuraX.TextSave1_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextSave1_3.TextSize = 13.000
+AsuraX.TextSave1_3.TextTransparency = 1
 AsuraX.TextSave1_3.TextXAlignment = Enum.TextXAlignment.Left
 
 AsuraX.UICorner0014_2.CornerRadius = UDim.new(0, 5)
@@ -3509,6 +3720,7 @@ AsuraX.ImageLabel_304.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.ImageLabel_304.BorderSizePixel = 0
 AsuraX.ImageLabel_304.Position = UDim2.new(0.0261682235, 0, 0.267494082, 0)
 AsuraX.ImageLabel_304.Size = UDim2.new(0, 24, 0, 24)
+AsuraX.ImageLabel_304.ImageTransparency = 1
 AsuraX.ImageLabel_304.Image = "http://www.roblox.com/asset/?id=17535725181"
 
 AsuraX.UIGradient414_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
@@ -3600,7 +3812,7 @@ AsuraX.Button8Settings.Name = "Button8Settings"
 AsuraX.Button8Settings.Parent = AsuraX.ScrollingFrame3
 AsuraX.Button8Settings.AnchorPoint = Vector2.new(0, 1)
 AsuraX.Button8Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.Button8Settings.BackgroundTransparency = 0.100
+AsuraX.Button8Settings.BackgroundTransparency = 1
 AsuraX.Button8Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button8Settings.BorderSizePixel = 0
 AsuraX.Button8Settings.Position = UDim2.new(-0.193014711, 0, 0.965753436, 0)
@@ -3619,14 +3831,14 @@ AsuraX.Text2Alt_523.Font = Enum.Font.Roboto
 AsuraX.Text2Alt_523.Text = "Allows you to open more roblox at time and attach multiple roblox process"
 AsuraX.Text2Alt_523.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.Text2Alt_523.TextSize = 12.000
-AsuraX.Text2Alt_523.TextTransparency = 0.800
+AsuraX.Text2Alt_523.TextTransparency = 1
 AsuraX.Text2Alt_523.TextXAlignment = Enum.TextXAlignment.Left
 
 AsuraX.Button1_413.Name = "Button1"
 AsuraX.Button1_413.Parent = AsuraX.Button8Settings
 AsuraX.Button1_413.AnchorPoint = Vector2.new(0, 1)
 AsuraX.Button1_413.BackgroundColor3 = Color3.fromRGB(79, 115, 102)
-AsuraX.Button1_413.BackgroundTransparency = 0.100
+AsuraX.Button1_413.BackgroundTransparency = 1
 AsuraX.Button1_413.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button1_413.BorderSizePixel = 0
 AsuraX.Button1_413.ClipsDescendants = true
@@ -3641,6 +3853,7 @@ AsuraX.Button1Multi.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button1Multi.BorderSizePixel = 0
 AsuraX.Button1Multi.Position = UDim2.new(0, 2, 0.074000001, 0)
 AsuraX.Button1Multi.Size = UDim2.new(0, 22, 0, 22)
+AsuraX.Button1Multi.ImageTransparency = 1
 AsuraX.Button1Multi.Image = "rbxassetid://2790552399"
 
 AsuraX.Button2Multi.Name = "Button2Multi"
@@ -3651,6 +3864,7 @@ AsuraX.Button2Multi.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Button2Multi.BorderSizePixel = 0
 AsuraX.Button2Multi.Position = UDim2.new(0, 2, 0.888999999, 0)
 AsuraX.Button2Multi.Size = UDim2.new(0, 22, 0, 22)
+AsuraX.Button2Multi.ImageTransparency = 1
 AsuraX.Button2Multi.Image = "rbxassetid://2777727756"
 AsuraX.Button2Multi.ImageColor3 = Color3.fromRGB(115, 167, 127)
 
@@ -3671,6 +3885,7 @@ AsuraX.TextSave1_4.Font = Enum.Font.Unknown
 AsuraX.TextSave1_4.Text = "Multi instance"
 AsuraX.TextSave1_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextSave1_4.TextSize = 13.000
+AsuraX.TextSave1_4.TextTransparency = 1
 AsuraX.TextSave1_4.TextXAlignment = Enum.TextXAlignment.Left
 
 AsuraX.UICorner0714.CornerRadius = UDim.new(0, 5)
@@ -3690,6 +3905,7 @@ AsuraX.ImageLabel_401.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.ImageLabel_401.BorderSizePixel = 0
 AsuraX.ImageLabel_401.Position = UDim2.new(0.0261682235, 0, 0.267494082, 0)
 AsuraX.ImageLabel_401.Size = UDim2.new(0, 24, 0, 24)
+AsuraX.ImageLabel_401.ImageTransparency = 1
 AsuraX.ImageLabel_401.Image = "http://www.roblox.com/asset/?id=17539268246"
 
 AsuraX.UIGradient414_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
@@ -3858,9 +4074,7 @@ test("setfpscap", {}, function()
 	return step60 .. "fps @60 • " .. step0 .. "fps @0"
 end)--]]
 
-local player = game.Players.LocalPlayer
-MainGui.PanelFrame.HubFrame3.Buttons3.Button2Panel.TextUsername.Text = player.Name
-MainGui.PanelFrame.HubFrame3.Buttons3.Button2Panel.TextUsername2.Text = player.Name
+	
 	local url = "https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"
 	
 	-- Fetch the Lua script from the URL
@@ -3873,9 +4087,24 @@ MainGui.PanelFrame.HubFrame3.Buttons3.Button2Panel.TextUsername2.Text = player.N
 local vas = "Dex"
 	
 	
-	local ExecutorText = MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox
+local ExecutorText  = MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox
+local ExecutorText2 = MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox2
+local ExecutorText3 = MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox3
+local ExecutorText4 = MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox4
+local ExecutorText5 = MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox5
+local ExecutorText6 = MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox6
+
 local Sound3 = Instances.Sound3
 
+
+--[[local executor = (idenityexecutor and idenityexecutor() or getexecutename and getexecutename() or 'Unknown')
+if hookmetamethod and httpServiceRun == nil and executor:lower():find('krampus') == nil then 
+	if executor=="krampus" then
+		warn("krampus")
+	elseif hookmetamethod and httpServiceRun == nil and executor:lower():find('Solara') == nil then
+		warn("solara")
+	end
+end--]]
 --buttonchecker
 if AutoInject==true then
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button1Auto:TweenPosition(--Timer
@@ -3968,6 +4197,12 @@ local function setFrameRate(fps)
 	end
 end
 
+local Tab1Active=true
+local Tab2Active=false
+local Tab3Active=false
+local Tab4Active=false
+local Tab5Active=false
+local Tab6Active=false
 --
 	MainGui.ExecutorFrame.DownGui.ExecuteFrame.ImageButton.MouseButton1Click:Connect(function()
 		--print("ran success")
@@ -3977,8 +4212,14 @@ end
 				TextNotify="Text Empty."
 				ImageID="rbxassetid://9405926389"
 				NotifyColor=Color3.new(255, 255, 255)
-				Notify()		
-		
+				Notify()
+				end
+				
+			elseif ExecutorText.Text==("saveinstance()") then
+				TextNotify="Svaeinstance currently down"
+				ImageID="rbxassetid://12988744896"
+				NotifyColor=Color3.new(1, 0.666667, 0.00392157)
+				Notify()
 			else
 					--warn("loadstring success")
 				--local script = HttpService:GetAsync(url)
@@ -4055,7 +4296,8 @@ end
 		NotifyColor=Color3.new(1, 0.313725, 0.439216)
 		Notify()
 		end
-	end)
+end)
+
 	
 	MainGui.ExecutorFrame.DownGui.ClearFrame.ImageButton.MouseButton1Click:Connect(function()
 		if TabOpen==1 then
@@ -4081,42 +4323,6 @@ end
 			Editor7Text=""
 		end
 	end)
-	
-MainGui.ExecutorFrame.DownGui.AttachFrame.ImageButton.MouseButton1Click:Connect(function()
-	if NotPatched==true then
-	if Attached==false then
-		if Injecting==false then
-			if HttpsGameGet==true then
-			Injecting=true
-			TextNotify="Attaching."
-			ImageID="rbxassetid://9405926389"
-			NotifyColor=Color3.new(255, 255, 255)
-			Notify()
-			wait(3)
-			Injecting=false
-				Attached=true
-			elseif HttpsGameGet==false then
-				TextNotify="Cannot inject in studio"
-				ImageID="rbxassetid://12988744896"
-				NotifyColor=Color3.new(1, 0.584314, 0.223529)
-				Notify()
-			end
-		elseif Injecting==true then
-			TextNotify="Auto attaching."
-			ImageID="rbxassetid://9405926389"
-			NotifyColor=Color3.new(255, 255, 255)
-				Notify()
-		end
-		elseif Attached==true then
-			if Injecting==false then
-				TextNotify="Already attached."
-				ImageID="rbxassetid://9405926389"
-				NotifyColor=Color3.new(255, 255, 255)
-			Notify()
-			end
-		end
-	end
-end)
 	
 	
 	local UserInputService = game:GetService("UserInputService")
@@ -6927,27 +7133,6 @@ function Show()
 	end
 end
 
-if AutoInject==true then
-	if HttpsGameGet==true then
-	Injecting=true
-	TextNotify="Attaching."
-	ImageID="rbxassetid://9405926389"
-	NotifyColor=Color3.new(255, 255, 255)
-	Notify()
-	wait(3)
-	Injecting=false
-		Attached=true
-	elseif HttpsGameGet==false then
-		TextNotify="Cannot inject in roblo studio"
-		ImageID="rbxassetid://12988744896"
-		NotifyColor=Color3.new(1, 0.584314, 0.223529)
-		Notify()
-	end
-	
-elseif AutoInject==false then
-
-end
-
 MainGui.Icons.CloseButton.MouseButton1Click:Connect(function()
 	MainGui.Parent:Destroy()
 end)
@@ -8018,19 +8203,174 @@ MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button1Sa
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.ImageLabel.UIGradient414.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 183, 184)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 42, 92))}
 end)
 
+--[[local textBox = ExecutorText -- Assuming the TextBox is a child of the script's parent
+local previousLineCount = 0
 
+local function countLines(text)
+	local _, lineCount = text:gsub('\n', '\n')
+	return lineCount + 1
+end
 
+local function updateLineCount()
+	local text = textBox.Text
+	local lineCount = countLines(text)
+	if lineCount ~= previousLineCount then
+		previousLineCount = lineCount
+		AsuraX.TextLabelTextbox.Text= ('\n'..lineCount)
+	end
+end
 
+textBox:GetPropertyChangedSignal("Text"):Connect(updateLineCount)--]]
 
+local textBox = ExecutorText
+local textBox2 = ExecutorText2
+local textBox3 = ExecutorText3
+local textBox4 = ExecutorText4
+local textBox5 = ExecutorText5
+local textBox6 = ExecutorText6
 
+local previousLineCount = 0
+local previousLineCount2 = 0
+local previousLineCount3 = 0
+local previousLineCount4 = 0
+local previousLineCount5 = 0
+local previousLineCount6 = 0
 
+local function countLines(text)
+	local _, lineCount = text:gsub('\n', '\n')
+	return lineCount + 1
+end
+local function countLines2(text2)
+	local _, lineCount2 = text2:gsub('\n', '\n')
+	return lineCount2 + 1
+end
+local function countLines3(text3)
+	local _, lineCount3 = text3:gsub('\n', '\n')
+	return lineCount3 + 1
+end
+local function countLines4(text4)
+	local _, lineCount4 = text4:gsub('\n', '\n')
+	return lineCount4 + 1
+end
+local function countLines5(text5)
+	local _, lineCount5 = text5:gsub('\n', '\n')
+	return lineCount5 + 1
+end
+local function countLines6(text6)
+	local _, lineCount6 = text6:gsub('\n', '\n')
+	return lineCount6 + 1
+end
 
+local function updateLineCount()
+	if TabOpen==1 then
+	local text = textBox.Text
+	local lineCount = countLines(text)
+	if lineCount ~= previousLineCount then
+		previousLineCount = lineCount
+		-- Construct line numbers string
+		local lineNumbers = ""
+		for i = 1, lineCount do
+			lineNumbers = lineNumbers .. i .. "\n"
+		end
+		-- Update the Text property of AsuraX TextBox
+		AsuraX.TextLabelTextbox.Text = lineNumbers
+		end
+	elseif TabOpen==2 then
+		local text2 = textBox2.Text
+		local lineCount2 = countLines2(text2)
+		if lineCount2 ~= previousLineCount2 then
+			previousLineCount2 = lineCount2
+			local lineNumbers2 = ""
+			for i = 1, lineCount2 do
+				lineNumbers2 = lineNumbers2 .. i .. "\n"
+			end
+			AsuraX.TextLabelTextbox.Text = lineNumbers2
+		end
+	elseif TabOpen==3 then
+		local text3 = textBox3.Text
+		local lineCount3 = countLines3(text3)
+		if lineCount3 ~= previousLineCount3 then
+			previousLineCount3 = lineCount3
+			local lineNumbers3 = ""
+			for i = 1, lineCount3 do
+				lineNumbers3 = lineNumbers3 .. i .. "\n"
+			end
+			AsuraX.TextLabelTextbox.Text = lineNumbers3
+		end
+	elseif TabOpen==4 then
+		local text4 = textBox4.Text
+		local lineCount4 = countLines4(text4)
+		if lineCount4 ~= previousLineCount4 then
+			previousLineCount4 = lineCount4
+			local lineNumbers4 = ""
+			for i = 1, lineCount4 do
+				lineNumbers4 = lineNumbers4 .. i .. "\n"
+			end
+			AsuraX.TextLabelTextbox.Text = lineNumbers4
+		end
+	elseif TabOpen==5 then
+		local text5 = textBox5.Text
+		local lineCount5 = countLines5(text5)
+		if lineCount5 ~= previousLineCount5 then
+			previousLineCount5 = lineCount5
+			local lineNumbers5 = ""
+			for i = 1, lineCount5 do
+				lineNumbers5 = lineNumbers5 .. i .. "\n"
+			end
+			AsuraX.TextLabelTextbox.Text = lineNumbers5
+		end
+	elseif TabOpen==6 then
+		local text6 = textBox6.Text
+		local lineCount6 = countLines6(text6)
+		if lineCount6 ~= previousLineCount6 then
+			previousLineCount6 = lineCount6
+			local lineNumbers6 = ""
+			for i = 1, lineCount6 do
+				lineNumbers6 = lineNumbers6 .. i .. "\n"
+			end
+			AsuraX.TextLabelTextbox.Text = lineNumbers6
+		end
+		
+	end
+end
 
+textBox:GetPropertyChangedSignal("Text"):Connect(updateLineCount)
+textBox2:GetPropertyChangedSignal("Text"):Connect(updateLineCount)
+textBox3:GetPropertyChangedSignal("Text"):Connect(updateLineCount)
+textBox4:GetPropertyChangedSignal("Text"):Connect(updateLineCount)
+textBox5:GetPropertyChangedSignal("Text"):Connect(updateLineCount)
+textBox6:GetPropertyChangedSignal("Text"):Connect(updateLineCount)
 
-
-
-
-
+textBox.Changed:Connect(function(property)
+	if property == "Text" then
+		updateLineCount()
+	end
+end)
+textBox2.Changed:Connect(function(property)
+	if property == "Text" then
+		updateLineCount()
+	end
+end)
+textBox3.Changed:Connect(function(property)
+	if property == "Text" then
+		updateLineCount()
+	end
+end)
+textBox4.Changed:Connect(function(property)
+	if property == "Text" then
+		updateLineCount()
+	end
+end)
+textBox5.Changed:Connect(function(property)
+	if property == "Text" then
+		updateLineCount()
+	end
+end)
+textBox6.Changed:Connect(function(property)
+	if property == "Text" then
+		updateLineCount()
+	end
+end)
 
 
 MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1.Button2SaveFile.MouseButton1Click:Connect(function()
@@ -8478,19 +8818,6 @@ end)
 --MainFrame.Buttons.Button2Background.UIGradient:Clone().Parent = MainFrame.Buttons.Button3Background
 --end)A
 
-local executor = (idenityexecutor and idenityexecutor() or getexecutename and getexecutename() or 'Unknown')
-if hookmetamethod and httpServiceRun == nil and executor:lower():find('krampus') == nil then 
-	if executor=="krampus" then
-		warn("krampus")
-	elseif hookmetamethod and httpServiceRun == nil and executor:lower():find('Solara') == nil then
-		warn("solara")
-                                 TextNotify="Solara is patched."
-				ImageID="rbxassetid://12988744896"
-				NotifyColor=Color3.new(255, 0, 0)
-				Notify()	
-	end
-end
-
 if AutoUpdater==true then
 	TextNotify="Updated!"
 	ImageID="rbxassetid://9405926389"
@@ -8627,14 +8954,71 @@ userInputService.InputBegan:Connect(function(input, gameProccesedEvent)
 		end
 	end
 end)
-local Tab1 = true
-local Tab2 = false
-local Tab3 = false
-local Tab4 = false
-local Tab5 = false
-local Tab6 = false
-local Tab7 = false
 
+
+MainGui.ExecutorFrame.DownGui.AttachFrame.ImageButton.MouseButton1Click:Connect(function()
+	if NotPatched==true then
+		if Attached==false then
+			if Injecting==false then
+				if HttpsGameGet==true then
+					Injecting=true
+					TextNotify="Attaching."
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					Notify()
+					wait(3)
+					Injecting=false
+					Attached=true
+				elseif HttpsGameGet==false then
+					TextNotify="Cannot inject in studio"
+					ImageID="rbxassetid://12988744896"
+					NotifyColor=Color3.new(1, 0.584314, 0.223529)
+					Notify()
+				end
+			elseif Injecting==true then
+				TextNotify="Auto attaching."
+				ImageID="rbxassetid://9405926389"
+				NotifyColor=Color3.new(255, 255, 255)
+				Notify()
+			end
+		elseif Attached==true then
+			if Injecting==false then
+				TextNotify="Already attached."
+				ImageID="rbxassetid://9405926389"
+				NotifyColor=Color3.new(255, 255, 255)
+				Notify()
+			end
+		end
+	elseif NotPatched==false then
+		TextNotify="Roblox version mismatch probably executor patched"
+		ImageID="rbxassetid://12988744896"
+		NotifyColor=Color3.new(1, 0.313725, 0.439216)
+		Notify()
+	end
+end)
+
+if AutoInject==true then
+	if HttpsGameGet==true then
+		Injecting=true
+		TextNotify="Attaching."
+		ImageID="rbxassetid://9405926389"
+		NotifyColor=Color3.new(255, 255, 255)
+		Notify()
+		wait(3)
+		Injecting=false
+		Attached=true
+	elseif HttpsGameGet==false then
+		TextNotify="Cannot inject in roblo studio"
+		ImageID="rbxassetid://12988744896"
+		NotifyColor=Color3.new(1, 0.584314, 0.223529)
+		Notify()
+	end
+
+elseif AutoInject==false then
+
+end
+
+MainGui.ExecutorFrame.ListGui["Editor#2"]:Destroy()
 
 function AddTab()
 	
@@ -8644,74 +9028,226 @@ end
 		wait(0.1)
 		--warn("tabnumber  "..TabNumber,"Text1"..Editor1Text,"Text2"..Editor2Text)
 		MainGui.ExecutorFrame.ListGui.ADDTabFrame.ADDTab.MouseButton1Click:Connect(function()
-		if TabNumber==1 then
-			Editor1Text=MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text
-		end
-		TabNumber = TabNumber + 1
-			TabOpen = TabOpen + 1
-			if TabNumber==2 then
-			Editor2Text=MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text
-			elseif  TabNumber==3 then
-				Editor3Text=MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text
-			end
-			--print("numberoftab"..TabNumber)
 		MainGui.ExecutorFrame.ListGui.ADDTabFrame:Destroy()
 		Instances["Editor#"]:Clone().Parent = MainGui.ExecutorFrame.ListGui
 		MainGui.ExecutorFrame.ListGui["Editor#"].Visible = true
 		Instances.ADDTabFrame:Clone().Parent = MainGui.ExecutorFrame.ListGui
+		TabNumber = TabNumber + 1
 		MainGui.ExecutorFrame.ListGui["Editor#"].TextButton.Text = "Editor #"..TabNumber
 		MainGui.ExecutorFrame.ListGui["Editor#"].Name = "Editor#"..TabNumber
 		MainGui.ExecutorFrame.ListGui.ADDTabFrame.Visible=true
-		MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text="Editor2Text"
-		end)
-		MainGui.ExecutorFrame.ListGui["Editor#"..TabNumber].RemoveIcon.MouseButton1Click:Connect(function()
-			MainGui.ExecutorFrame.ListGui["Editor#"..TabNumber]:Destroy()
-			if TabNumber==1 then
-				MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=""..Editor1Text
-			elseif TabNumber==2 then
-				MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=""..Editor2Text
-			elseif TabNumber==3 then
-				Editor3Text=MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text
-			elseif TabNumber==4 then
-				MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=Editor4Text
-				Editor4Text=MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text
-			elseif TabNumber==5 then
-				MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=Editor5Text
-				Editor5Text=MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text
-			elseif TabNumber==6 then
-				MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=Editor6Text
-				Editor6Text=MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text
-			elseif TabNumber==7 then
-				MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=Editor7Text
-				Editor7Text=MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text
-			end
+		if TabNumber==2 then
+			Tab2Active=true
+			TabOpen=2
+			ExecutorText2.Text=""
+			ExecutorText.Visible = false
+			ExecutorText2.Visible = true
+			ExecutorText3.Visible = false
+			ExecutorText4.Visible = false
+			ExecutorText5.Visible = false
+			ExecutorText6.Visible = false
+			updateLineCount()
+		elseif  TabNumber==3 then
+			Tab3Active=true
+			TabOpen=3
+			ExecutorText3.Text=""
+			ExecutorText.Visible = false
+			ExecutorText2.Visible = false
+			ExecutorText3.Visible = true
+			ExecutorText4.Visible = false
+			ExecutorText5.Visible = false
+			ExecutorText6.Visible = false
+			updateLineCount()
+		elseif  TabNumber==4 then
+			Tab4Active=true
+			TabOpen=4
+			ExecutorText4.Text=""
+			ExecutorText.Visible = false
+			ExecutorText2.Visible = false
+			ExecutorText3.Visible = false
+			ExecutorText4.Visible = true
+			ExecutorText5.Visible = false
+			ExecutorText6.Visible = false
+			updateLineCount()
+		elseif  TabNumber==5 then
+			Tab5Active=true
+			TabOpen=5
+			ExecutorText5.Text=""
+			ExecutorText.Visible = false
+			ExecutorText2.Visible = false
+			ExecutorText3.Visible = false
+			ExecutorText4.Visible = false
+			ExecutorText5.Visible = true
+			ExecutorText6.Visible = false
+			updateLineCount()
+		elseif  TabNumber==6 then
+			Tab6Active=true
+			TabOpen=6
+			ExecutorText6.Text=""
+			ExecutorText.Visible = false
+			ExecutorText2.Visible = false
+			ExecutorText3.Visible = false
+			ExecutorText4.Visible = false
+			ExecutorText5.Visible = false
+			ExecutorText6.Visible = true
+			updateLineCount()
+		elseif  TabNumber==7 then
+			TextNotify="Reached Limit"
+			ImageID="rbxassetid://12988744896"
+			NotifyColor=Color3.new(1, 0.584314, 0.223529)
+			Notify()
 			TabNumber = TabNumber - 1
+			MainGui.ExecutorFrame.ListGui["Editor#7"]:Destroy()
+		end
+	end)
+	if Tab2Active==true then
+	MainGui.ExecutorFrame.ListGui["Editor#2"].RemoveIcon.MouseButton1Click:Connect(function()
+		MainGui.ExecutorFrame.ListGui["Editor#2"]:Destroy()
+			Tab2Active=false
+			ExecutorText.Visible = true
+			ExecutorText2.Visible = false
+			ExecutorText3.Visible = false
+			ExecutorText4.Visible = false
+			ExecutorText5.Visible = false
+			ExecutorText6.Visible = false
+			TabOpen=1
+			TabNumber = TabNumber - 1
+			updateLineCount()
 		end)
-	--[[	MainGui.ExecutorFrame.ListGui["Editor#"..TabNumber].TextButton.MouseButton1Click:Connect(function()
-			if TabNumber==2 then
-				MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=""..Editor2Text
-			elseif TabNumber==3 then
-				Editor3Text=MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text
-			elseif TabNumber==4 then
-				MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=Editor4Text
-				Editor4Text=MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text
-			elseif TabNumber==5 then
-				MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=Editor5Text
-				Editor5Text=MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text
-			elseif TabNumber==6 then
-				MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=Editor6Text
-				Editor6Text=MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text
-			elseif TabNumber==7 then
-				MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=Editor7Text
-				Editor7Text=MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text
-			end
-		end)--]]
+	end
+	if Tab3Active==true then
+		MainGui.ExecutorFrame.ListGui["Editor#3"].RemoveIcon.MouseButton1Click:Connect(function()
+			MainGui.ExecutorFrame.ListGui["Editor#3"]:Destroy()
+			Tab3Active=false
+			ExecutorText.Visible = false
+			ExecutorText2.Visible = true
+			ExecutorText3.Visible = false
+			ExecutorText4.Visible = false
+			ExecutorText5.Visible = false
+			ExecutorText6.Visible = false
+			TabOpen=2
+			TabNumber = TabNumber - 1
+			updateLineCount()
+		end)
+	end
+	if Tab4Active==true then
+		MainGui.ExecutorFrame.ListGui["Editor#4"].RemoveIcon.MouseButton1Click:Connect(function()
+			MainGui.ExecutorFrame.ListGui["Editor#4"]:Destroy()
+			Tab4Active=false
+			ExecutorText.Visible = false
+			ExecutorText2.Visible = false
+			ExecutorText3.Visible = true
+			ExecutorText4.Visible = false
+			ExecutorText5.Visible = false
+			ExecutorText6.Visible = false
+			TabOpen=3
+			TabNumber = TabNumber - 1
+			updateLineCount()
+		end)
+	end
+	if Tab5Active==true then
+		MainGui.ExecutorFrame.ListGui["Editor#5"].RemoveIcon.MouseButton1Click:Connect(function()
+			MainGui.ExecutorFrame.ListGui["Editor#5"]:Destroy()
+			Tab5Active=false
+			ExecutorText.Visible = false
+			ExecutorText2.Visible = false
+			ExecutorText3.Visible = false
+			ExecutorText4.Visible = true
+			ExecutorText5.Visible = false
+			ExecutorText6.Visible = false
+			TabOpen=4
+			TabNumber = TabNumber - 1
+			updateLineCount()
+		end)
+	end
+	if Tab6Active==true then
+		MainGui.ExecutorFrame.ListGui["Editor#6"].RemoveIcon.MouseButton1Click:Connect(function()
+			MainGui.ExecutorFrame.ListGui["Editor#6"]:Destroy()
+			Tab6Active=false
+			ExecutorText.Visible = false
+			ExecutorText2.Visible = false
+			ExecutorText3.Visible = false
+			ExecutorText4.Visible = false
+			ExecutorText5.Visible = true
+			ExecutorText6.Visible = false
+			TabOpen=5
+			TabNumber = TabNumber - 1
+			updateLineCount()
+		end)
+	end
+	
+	if Tab1Active==true then
 		MainGui.ExecutorFrame.ListGui["Editor#1"].TextButton.MouseButton1Click:Connect(function()
-			Editor2Text=MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text
-			wait(0.1)
-			MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=""..Editor1Text
+			ExecutorText.Visible = true
+			ExecutorText2.Visible = false
+			ExecutorText3.Visible = false
+			ExecutorText4.Visible = false
+			ExecutorText5.Visible = false
+			ExecutorText6.Visible = false
+			updateLineCount()
 			TabOpen=1
 		end)
+	end
+	if Tab2Active==true then
+		MainGui.ExecutorFrame.ListGui["Editor#2"].TextButton.MouseButton1Click:Connect(function()
+			ExecutorText.Visible = false
+			ExecutorText2.Visible = true
+			ExecutorText3.Visible = false
+			ExecutorText4.Visible = false
+			ExecutorText5.Visible = false
+			ExecutorText6.Visible = false
+			updateLineCount()
+			TabOpen=2
+		end)
+	end
+	if Tab3Active==true then
+		MainGui.ExecutorFrame.ListGui["Editor#3"].TextButton.MouseButton1Click:Connect(function()
+			ExecutorText.Visible = false
+			ExecutorText2.Visible = false
+			ExecutorText3.Visible = true
+			ExecutorText4.Visible = false
+			ExecutorText5.Visible = false
+			ExecutorText6.Visible = false
+			updateLineCount()
+			TabOpen=2
+		end)
+	end
+	if Tab4Active==true then
+		MainGui.ExecutorFrame.ListGui["Editor#4"].TextButton.MouseButton1Click:Connect(function()
+			ExecutorText.Visible = false
+			ExecutorText2.Visible = false
+			ExecutorText3.Visible = false
+			ExecutorText4.Visible = true
+			ExecutorText5.Visible = false
+			ExecutorText6.Visible = false
+			updateLineCount()
+			TabOpen=2
+		end)
+	end
+	if Tab5Active==true then
+		MainGui.ExecutorFrame.ListGui["Editor#5"].TextButton.MouseButton1Click:Connect(function()
+			ExecutorText.Visible = false
+			ExecutorText2.Visible = false
+			ExecutorText3.Visible = false
+			ExecutorText4.Visible = false
+			ExecutorText5.Visible = true
+			ExecutorText6.Visible = false
+			updateLineCount()
+			TabOpen=2
+		end)
+	end
+	if Tab6Active==true then
+		MainGui.ExecutorFrame.ListGui["Editor#6"].TextButton.MouseButton1Click:Connect(function()
+			ExecutorText.Visible = false
+			ExecutorText2.Visible = false
+			ExecutorText3.Visible = false
+			ExecutorText4.Visible = false
+			ExecutorText5.Visible = false
+			ExecutorText6.Visible = true
+			updateLineCount()
+			TabOpen=2
+		end)
+	end
 	MainGui.ExecutorFrame.DownGui.BackgroundTransparency = TransparencyValue1.BackgroundTransparency
 	MainGui.ExecutorFrame.BackgroundTransparency = TransparencyValue1.BackgroundTransparency
 	MainGui.ExecutorFrame.ExecutorFrameSide.BackgroundTransparency = TransparencyValue1.BackgroundTransparency
@@ -8724,9 +9260,9 @@ end
 	MainGui.ExecutorFrame.ListGui["Editor#1"].BackgroundTransparency = TransparencyValue1.BackgroundTransparency
 	MainGui.ExecutorFrame.ListGui["Editor#1"].TextButton.TextTransparency = TransparencyValue1.BackgroundTransparency
 	MainGui.ExecutorFrame.ListGui["Editor#1"].RemoveIcon.ImageTransparency = ImageTransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.ListGui["Editor#2"].BackgroundTransparency = TransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.ListGui["Editor#2"].TextButton.TextTransparency = TransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.ListGui["Editor#2"].RemoveIcon.ImageTransparency = ImageTransparencyValue1.BackgroundTransparency
+	--MainGui.ExecutorFrame.ListGui["Editor#2"].BackgroundTransparency = TransparencyValue1.BackgroundTransparency
+	--MainGui.ExecutorFrame.ListGui["Editor#2"].TextButton.TextTransparency = TransparencyValue1.BackgroundTransparency
+	--MainGui.ExecutorFrame.ListGui["Editor#2"].RemoveIcon.ImageTransparency = ImageTransparencyValue1.BackgroundTransparency
 	MainGui.ExecutorFrame.DownGui.ExecuteFrame.BackgroundTransparency = TransparencyValue1.BackgroundTransparency
 	MainGui.ExecutorFrame.DownGui.ExecuteFrame.ImageButton.ImageTransparency = TextTransparencyValue1.BackgroundTransparency
 	MainGui.ExecutorFrame.DownGui.AttachFrame.ImageButton.ImageTransparency = TextTransparencyValue1.BackgroundTransparency
@@ -8734,46 +9270,6 @@ end
 	MainGui.ExecutorFrame.DownGui.AttachFrame.UIStroke.Transparency = TransparencyValue1.BackgroundTransparency
 	MainGui.ExecutorFrame.DownGui.ClearFrame.UIStroke.Transparency = TransparencyValue1.BackgroundTransparency
 	MainGui.ExecutorFrame.DownGui.ExecuteFrame.UIStroke.Transparency = TransparencyValue1.BackgroundTransparency
-	if Tab2==true then
-		MainGui.ExecutorFrame.ListGui["Editor#2"].TextButton.MouseButton1Click:Connect(function()
-			Editor2Text=MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text
-			wait(0.1)
-			MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=""..Editor2Text
-			TabOpen=2
-		end)
-	end
-	--[[if Tab3==true then
-		MainGui.ExecutorFrame.ListGui["Editor#3"].TextButton.MouseButton1Click:Connect(function()
-			Editor3Text=MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text
-			wait(0.1)
-			MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=""..Editor3Text
-			TabOpen=3
-		end)
-	end
-	if Tab4==true then
-		MainGui.ExecutorFrame.ListGui["Editor#4"].TextButton.MouseButton1Click:Connect(function()
-			Editor4Text=MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text
-			wait(0.1)
-			MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=""..Editor4Text
-			TabOpen=4
-		end)
-	end
-	if Tab5==true then
-		MainGui.ExecutorFrame.ListGui["Editor#5"].TextButton.MouseButton1Click:Connect(function()
-			Editor5Text=MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text
-			wait(0.1)
-			MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=""..Editor5Text
-			TabOpen=5
-		end)
-	end
-	if Tab6==true then
-		MainGui.ExecutorFrame.ListGui["Editor#6"].TextButton.MouseButton1Click:Connect(function()
-			Editor6Text=MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text
-			wait(0.1)
-			MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=""..Editor6Text
-			TabOpen=6
-		end)
-	end--]]
 	--scriptframe
 	if fps and fps > 0 then
 		setFrameRate(fps)
