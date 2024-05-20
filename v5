@@ -4213,7 +4213,6 @@ local Tab6Active=false
 				ImageID="rbxassetid://9405926389"
 				NotifyColor=Color3.new(255, 255, 255)
 				Notify()
-				end
 				
 			elseif ExecutorText.Text==("saveinstance()") then
 				TextNotify="Svaeinstance currently down"
