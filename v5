@@ -3876,15 +3876,6 @@ local vas = "Dex"
 	local ExecutorText = MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox
 local Sound3 = Instances.Sound3
 
-
---[[local executor = (idenityexecutor and idenityexecutor() or getexecutename and getexecutename() or 'Unknown')
-if hookmetamethod and httpServiceRun == nil and executor:lower():find('krampus') == nil then 
-	if executor=="krampus" then
-		warn("krampus")
-	elseif hookmetamethod and httpServiceRun == nil and executor:lower():find('Solara') == nil then
-		warn("solara")
-	end
-end--]]
 --buttonchecker
 if AutoInject==true then
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button1Auto:TweenPosition(--Timer
@@ -4124,11 +4115,6 @@ MainGui.ExecutorFrame.DownGui.AttachFrame.ImageButton.MouseButton1Click:Connect(
 			Notify()
 			end
 		end
-	elseif NotPatched==false then
-		TextNotify="Roblox version mismatch probably executor patched"
-		ImageID="rbxassetid://12988744896"
-		NotifyColor=Color3.new(1, 0.313725, 0.439216)
-		Notify()
 	end
 end)
 	
@@ -8491,6 +8477,19 @@ end)
 --MainGui.Buttons.Button4Background.Button4.MouseButton1Click:Connect(function()
 --MainFrame.Buttons.Button2Background.UIGradient:Clone().Parent = MainFrame.Buttons.Button3Background
 --end)A
+
+local executor = (idenityexecutor and idenityexecutor() or getexecutename and getexecutename() or 'Unknown')
+if hookmetamethod and httpServiceRun == nil and executor:lower():find('krampus') == nil then 
+	if executor=="krampus" then
+		warn("krampus")
+	elseif hookmetamethod and httpServiceRun == nil and executor:lower():find('Solara') == nil then
+		warn("solara")
+                                 TextNotify="Solara is patched."
+				ImageID="rbxassetid://12988744896"
+				NotifyColor=Color3.new(255, 0, 0)
+				Notify()	
+	end
+end
 
 if AutoUpdater==true then
 	TextNotify="Updated!"
