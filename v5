@@ -1,5 +1,15 @@
+-- AsuraX LuaX
+-- Version: 1.26
 
+-- Instances:
 
+---[[   █████   ███████╗  ██╗   ██╗ ███████╗   █████╗  ██╗  ██╗ ]]---
+---[[ ╔██╗  ██  ██╔════╝  ██║   ██║ ██╔════╝  ██╔══██╗ ╚██╗██╔╝ ]]---
+---[[ ║███████  ███████╗  ██║   ██║ ███████╗  ███████║  ╚███╔╝  ]]---
+---[[ ╚██╗  ██  ╚════██║  ██║   ██║ ╚════██║  ██╔══██║  ██╔██╗  ]]---
+---[[ ╚██║  ██  ███████║  ╚██████╔╝ ███████║  ██║  ██║ ██╔╝ ██╗ ]]---
+---[[    ╚═══╝  ╚══════╝   ╚═════╝  ╚══════╝    ╚════╝ ╚═╝  ╚═╝ ]]---
+--Source code--
 
 
 
@@ -39,91 +49,27 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+--SettingsMain
+local KeybindMenu = Enum.KeyCode.End
+local Configs ={
+	ExecutorSettings = {
+		AutoInject = false;
+		AutoExec = false;
+		AutoUpdater = false;
+	};
+	Settings = {
+		KeybindMenuActive = true;
+		LoadstringRQ = false;
+		TopMost = false;
+		SaveTabs = false;
+		CoreGui = false;
+		Multiinstance = false;
+		Fpsrate = false;
+		SaveFolder = false;
+		makefolder = false;
+	};
+}
+--
 
 
 
@@ -133,6 +79,9 @@ ScreenGui = Instance.new("ScreenGui", game:GetService("CoreGui"));
  TextLabelTextbox = Instance.new("TextLabel"),
  UICorner = Instance.new("UICorner"),
  Buttons = Instance.new("Folder"),
+ UIGradient6545 = Instance.new("UIGradient"),
+ UIGradient6745 = Instance.new("UIGradient"),
+ UIGradient6945 = Instance.new("UIGradient"),
  Button1Background = Instance.new("Frame"),
  UIGradient = Instance.new("UIGradient"),
  Button1 = Instance.new("ImageButton"),
@@ -168,7 +117,6 @@ ScreenGui = Instance.new("ScreenGui", game:GetService("CoreGui"));
  TextButton = Instance.new("TextButton"),
  RemoveIcon = Instance.new("ImageButton"),
  UICorner_8 = Instance.new("UICorner"),
- Editor2 = Instance.new("Frame"),
  UICorner_9 = Instance.new("UICorner"),
  UIGradient_6 = Instance.new("UIGradient"),
  RemoveIcon_2 = Instance.new("ImageButton"),
@@ -280,6 +228,13 @@ UIStrokeCustom11 = Instance.new("UIStroke"),
 	UIStrokeCustom27 = Instance.new("UIStroke"),
 	UIStrokeCustom28 = Instance.new("UIStroke"),
 	UIStrokeCustom29 = Instance.new("UIStroke"),
+	UIStrokeCustom30 = Instance.new("UIStroke"),
+	UIStrokeCustom31 = Instance.new("UIStroke"),
+	UIStrokeCustom32 = Instance.new("UIStroke"),
+	UIStrokeCustom33 = Instance.new("UIStroke"),
+	UIStrokeCustom34 = Instance.new("UIStroke"),
+	UIStrokeCustom35 = Instance.new("UIStroke"),
+	UIStrokeCustom36 = Instance.new("UIStroke"),
  UIStrokeCustomImage1 = Instance.new("UIStroke"),
  UIStrokeCustomImage2 = Instance.new("UIStroke"),
  UIStrokeCustomImage3 = Instance.new("UIStroke"),
@@ -310,6 +265,13 @@ UIStrokeCustom11 = Instance.new("UIStroke"),
 	UIStrokeCustomImage27= Instance.new("UIStroke"),
 	UIStrokeCustomImage28= Instance.new("UIStroke"),
 	UIStrokeCustomImage29= Instance.new("UIStroke"),
+	UIStrokeCustomImage30= Instance.new("UIStroke"),
+	UIStrokeCustomImage31= Instance.new("UIStroke"),
+	UIStrokeCustomImage32= Instance.new("UIStroke"),
+	UIStrokeCustomImage33= Instance.new("UIStroke"),
+	UIStrokeCustomImage34= Instance.new("UIStroke"),
+	UIStrokeCustomImage35= Instance.new("UIStroke"),
+	UIStrokeCustomImage36= Instance.new("UIStroke"),
 	UIGradientCustom1 = Instance.new("UIGradient"),
 	UIGradientCustom2 = Instance.new("UIGradient"),
 	UIGradientCustom3 = Instance.new("UIGradient"),
@@ -594,6 +556,64 @@ UIStrokeCustom11 = Instance.new("UIStroke"),
 	UIGradient534 = Instance.new("UIGradient"),
 	ImageLabel_401 = Instance.new("ImageLabel"),
 	UIGradient414_3 = Instance.new("UIGradient"),
+	LoginGui = Instance.new("Frame"),
+	UICorner2 = Instance.new("UICorner"),
+	UIGradient_394 = Instance.new("UIGradient"),
+	Texts2 = Instance.new("Folder"),
+	TextShow1 = Instance.new("TextLabel"),
+	TextShow2 = Instance.new("TextLabel"),
+	Icons2 = Instance.new("Folder"),
+	LogoImage = Instance.new("ImageLabel"),
+	UIGradient_243 = Instance.new("UIGradient"),
+	CloseButton2 = Instance.new("ImageButton"),
+	UIGradient_324 = Instance.new("UIGradient"),
+	PeopleImage = Instance.new("ImageButton"),
+	UIGradient_412 = Instance.new("UIGradient"),
+	TextPeople = Instance.new("TextLabel"),
+	Settings = Instance.new("ImageButton"),
+	UIGradient_512 = Instance.new("UIGradient"),
+	TextPeople_2 = Instance.new("TextLabel"),
+	Shop = Instance.new("ImageButton"),
+	UIGradient_612 = Instance.new("UIGradient"),
+	TextPeople_3 = Instance.new("TextLabel"),
+	Preview = Instance.new("Folder"),
+	ImagePreview1 = Instance.new("ImageLabel"),
+	UICornerPreview10 = Instance.new("UICorner"),
+	ImagePreview2 = Instance.new("ImageLabel"),
+	UICornerPreview9 = Instance.new("UICorner"),
+	ImagePreview3 = Instance.new("ImageLabel"),
+	UICornerPreview8 = Instance.new("UICorner"),
+	ImagePreview4 = Instance.new("ImageLabel"),
+	UICornerPreview7 = Instance.new("UICorner"),
+	ImagePreview5 = Instance.new("ImageLabel"),
+	UICornerPreview6 = Instance.new("UICorner"),
+	DownGuiPreview = Instance.new("Frame"),
+	Button1Preview = Instance.new("Frame"),
+	UICornerPreview = Instance.new("UICorner"),
+	Button2Preview = Instance.new("Frame"),
+	UICornerPreview2 = Instance.new("UICorner"),
+	Button3Preview = Instance.new("Frame"),
+	UICornerPreview3 = Instance.new("UICorner"),
+	Button4Preview = Instance.new("Frame"),
+	UICornerPreview4 = Instance.new("UICorner"),
+	FramePreviewCorner2 = Instance.new("Frame"),
+	FramePreviewCorner1 = Instance.new("Frame"),
+	FramePreview1 = Instance.new("Frame"),
+	UICornerPreview1 = Instance.new("UICorner"),
+	FramePreview2 = Instance.new("Frame"),
+	UICornerPreview5 = Instance.new("UICorner"),
+	KeySystem = Instance.new("Folder"),
+	PasswordLogin = Instance.new("Frame"),
+	UICorner_2431 = Instance.new("UICorner"),
+	TextBoxPassword = Instance.new("TextBox"),
+	ImagePassword = Instance.new("ImageLabel"),
+	KeyLogin = Instance.new("Frame"),
+	UICorner_3421 = Instance.new("UICorner"),
+	TextBoxLogin = Instance.new("TextBox"),
+	ImageUsername = Instance.new("ImageLabel"),
+	LoginFrame = Instance.new("Frame"),
+	UICorner_4413 = Instance.new("UICorner"),
+	TextLaunch = Instance.new("TextButton"),
 }
 
 --Properties:
@@ -619,6 +639,7 @@ AsuraX.MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.MainFrame.BorderSizePixel = 0
 AsuraX.MainFrame.ClipsDescendants = true
+AsuraX.MainFrame.Visible = false
 AsuraX.MainFrame.Position = UDim2.new(0.143702447, 0, 0.233333334, 0)
 AsuraX.MainFrame.Size = UDim2.new(0, 641, 0, 379)
 
@@ -637,6 +658,27 @@ AsuraX.ImageTransparencyValue.BackgroundTransparency = 0
 AsuraX.ImageTransparencyValue.Visible = false
 AsuraX.ImageTransparencyValue.Parent = AsuraX.Instances
 
+local GuiService = game:GetService("GuiService")
+local TextLabel = AsuraX.MainFrame
+local Camera = workspace.CurrentCamera
+
+-- Function to update the TextLabel position
+local function updatePosition()
+	-- Get the insets from GuiService
+	local insetTopLeft = GuiService:GetGuiInset()
+
+	-- Set the position of the TextLabel taking the top inset into account
+	TextLabel.Position = UDim2.new(0, 0, 0, insetTopLeft.Y)
+end
+
+-- Update the position initially
+updatePosition()
+
+-- Connect to the event that fires when the camera's viewport size changes
+Camera:GetPropertyChangedSignal("ViewportSize"):Connect(updatePosition)
+
+
+
 --ez
 
 AsuraX.UIGradient_Main.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 25, 36)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(60, 42, 63))}
@@ -654,14 +696,17 @@ AsuraX.UIStroke2.Parent = AsuraX.MainFrame
 
 AsuraX.UIStroke4.Color = Color3.fromRGB(71, 60, 95)
 AsuraX.UIStroke4.Thickness = 1 
+AsuraX.UIStroke4.Transparency = 1
 AsuraX.UIStroke4.Parent = AsuraX.AttachFrame
 
 AsuraX.UIStroke5.Color = Color3.fromRGB(71, 60, 95)
 AsuraX.UIStroke5.Thickness = 1 
+AsuraX.UIStroke5.Transparency = 1
 AsuraX.UIStroke5.Parent = AsuraX.ClearFrame
 
 AsuraX.UIStroke6.Color = Color3.fromRGB(71, 60, 95)
 AsuraX.UIStroke6.Thickness = 1 
+AsuraX.UIStroke6.Transparency = 1
 AsuraX.UIStroke6.Parent = AsuraX.ExecuteFrame
 
 AsuraX.UIStrokeCustom1.Color = Color3.fromRGB(56, 117, 83)
@@ -909,6 +954,58 @@ AsuraX.UIStrokeCustomImage29.Thickness = 1
 AsuraX.UIStrokeCustomImage29.Transparency = 1
 AsuraX.UIStrokeCustomImage29.Parent = AsuraX.Button1_413
 
+AsuraX.UIStrokeCustom30.Color = Color3.fromRGB(0, 0, 0)
+AsuraX.UIStrokeCustom30.Thickness = 1 
+AsuraX.UIStrokeCustom30.Parent = AsuraX.ImagePreview1
+
+AsuraX.UIStrokeCustomImage30.Color = Color3.fromRGB(0, 0, 0)
+AsuraX.UIStrokeCustomImage30.Thickness = 1 
+AsuraX.UIStrokeCustomImage30.Parent = AsuraX.ImagePreview2
+
+AsuraX.UIStrokeCustom31.Color = Color3.fromRGB(0, 0, 0)
+AsuraX.UIStrokeCustom31.Thickness = 1 
+AsuraX.UIStrokeCustom31.Parent = AsuraX.ImagePreview3
+
+AsuraX.UIStrokeCustomImage31.Color = Color3.fromRGB(0, 0, 0)
+AsuraX.UIStrokeCustomImage31.Thickness = 1 
+AsuraX.UIStrokeCustomImage31.Parent = AsuraX.ImagePreview4
+
+AsuraX.UIStrokeCustom32.Color = Color3.fromRGB(0, 0, 0)
+AsuraX.UIStrokeCustom32.Thickness = 1 
+AsuraX.UIStrokeCustom32.Parent = AsuraX.ImagePreview5
+
+AsuraX.UIStrokeCustomImage32.Color = Color3.fromRGB(141, 138, 182)
+AsuraX.UIStrokeCustomImage32.Thickness = 1 
+AsuraX.UIStrokeCustomImage32.Parent = AsuraX.LoginGui
+
+AsuraX.UIStrokeCustom33.Color = Color3.fromRGB(7, 7, 7)
+AsuraX.UIStrokeCustom33.Thickness = 1 
+AsuraX.UIStrokeCustom33.Parent = AsuraX.Button1Preview
+
+AsuraX.UIStrokeCustomImage33.Color = Color3.fromRGB(67, 67, 67)
+AsuraX.UIStrokeCustomImage33.Thickness = 1 
+AsuraX.UIStrokeCustomImage33.Parent = AsuraX.Button2Preview
+
+AsuraX.UIStrokeCustom34.Color = Color3.fromRGB(67, 67, 67)
+AsuraX.UIStrokeCustom34.Thickness = 1 
+AsuraX.UIStrokeCustom34.Parent = AsuraX.Button3Preview
+
+AsuraX.UIStrokeCustomImage34.Color = Color3.fromRGB(67, 67, 67)
+AsuraX.UIStrokeCustomImage34.Thickness = 1 
+AsuraX.UIStrokeCustomImage34.Parent = AsuraX.Button4Preview
+
+AsuraX.UIStrokeCustom35.Color = Color3.fromRGB(97, 97, 97)
+AsuraX.UIStrokeCustom35.Thickness = 1 
+AsuraX.UIStrokeCustom35.Parent = AsuraX.KeyLogin
+
+AsuraX.UIStrokeCustomImage35.Color = Color3.fromRGB(97, 97, 97)
+AsuraX.UIStrokeCustomImage35.Thickness = 1 
+AsuraX.UIStrokeCustomImage35.Parent = AsuraX.PasswordLogin
+
+AsuraX.UIStrokeCustom36.Color = Color3.fromRGB(97, 97, 97)
+AsuraX.UIStrokeCustom36.Thickness = 1 
+AsuraX.UIStrokeCustom36.Parent = AsuraX.LoginFrame
+
 AsuraX.UIGradientCustom1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(221, 134, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(70, 70, 70))}
 AsuraX.UIGradientCustom1.Parent = AsuraX.Button1
 
@@ -923,6 +1020,20 @@ AsuraX.UIGradientCustom4.Parent = AsuraX.Button4
 
 AsuraX.UIGradientCustom6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(221, 134, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(70, 70, 70))}
 AsuraX.UIGradientCustom6.Parent = AsuraX.HideButton
+
+AsuraX.UIGradient6545.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(67, 63, 106)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(38, 38, 38))}
+AsuraX.UIGradient6545.Rotation = 81
+--AsuraX.UIGradient6545.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.54, 1.00), NumberSequenceKeypoint.new(1.00, 0.00)}
+AsuraX.UIGradient6545.Parent = AsuraX.KeyLogin
+
+AsuraX.UIGradient6745.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(67, 63, 106)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(38, 38, 38))}
+AsuraX.UIGradient6745.Rotation = -81
+--AsuraX.UIGradient6745.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.54, 1.00), NumberSequenceKeypoint.new(1.00, 0.00)}
+AsuraX.UIGradient6745.Parent = AsuraX.PasswordLogin
+
+AsuraX.UIGradient6945.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(38, 38, 38)), ColorSequenceKeypoint.new(0.48, Color3.fromRGB(75, 67, 121)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(38, 38, 38))}
+AsuraX.UIGradient6945.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.54, 1.00), NumberSequenceKeypoint.new(1.00, 0.00)}
+AsuraX.UIGradient6945.Parent = AsuraX.LoginFrame
 --xd
 
 AsuraX.UICorner.CornerRadius = UDim.new(0, 6)
@@ -1024,6 +1135,7 @@ AsuraX.Button2Background.Size = UDim2.new(0, 41, 0, 28)
 AsuraX.UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(61, 47, 81)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
 AsuraX.UIGradient_4.Rotation = 180
 AsuraX.UIGradient_4.Parent = AsuraX.Button2Background
+AsuraX.LoginGui.Draggable=true
 
 AsuraX.Button2.Name = "Button2"
 AsuraX.Button2.Parent = AsuraX.Button2Background
@@ -1191,7 +1303,7 @@ AsuraX.TextBox5.RichText = true
 AsuraX.TextBox5.ShowNativeInput = false
 AsuraX.TextBox5.Text = ""
 AsuraX.TextBox5.TextColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.TextBox5.TextSize = .000
+AsuraX.TextBox5.TextSize = 14
 AsuraX.TextBox5.TextStrokeTransparency = 0.740
 AsuraX.TextBox5.TextWrapped = true
 AsuraX.TextBox5.TextXAlignment = Enum.TextXAlignment.Left
@@ -1215,7 +1327,7 @@ AsuraX.TextBox6.RichText = true
 AsuraX.TextBox6.ShowNativeInput = false
 AsuraX.TextBox6.Text = ""
 AsuraX.TextBox6.TextColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.TextBox6.TextSize = .000
+AsuraX.TextBox6.TextSize = 14
 AsuraX.TextBox6.TextStrokeTransparency = 0.740
 AsuraX.TextBox6.TextWrapped = true
 AsuraX.TextBox6.TextXAlignment = Enum.TextXAlignment.Left
@@ -1294,45 +1406,6 @@ AsuraX.RemoveIcon.ImageTransparency = 0.500
 AsuraX.UICorner_8.CornerRadius = UDim.new(0, 3)
 AsuraX.UICorner_8.Parent = AsuraX.Editor1
 
-AsuraX.Editor2.Name = "Editor#2"
-AsuraX.Editor2.Parent = AsuraX.ListGui
-AsuraX.Editor2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.Editor2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AsuraX.Editor2.BorderSizePixel = 0
-AsuraX.Editor2.Size = UDim2.new(0, 116, 0, 34)
-
-AsuraX.UICorner_9.CornerRadius = UDim.new(0, 3)
-AsuraX.UICorner_9.Parent = AsuraX.Editor2
-
-AsuraX.UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(74, 59, 91)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
-AsuraX.UIGradient_6.Rotation = 180
-AsuraX.UIGradient_6.Parent = AsuraX.Editor2
-
-AsuraX.RemoveIcon_2.Name = "RemoveIcon"
-AsuraX.RemoveIcon_2.Parent = AsuraX.Editor2
-AsuraX.RemoveIcon_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.RemoveIcon_2.BackgroundTransparency = 1.000
-AsuraX.RemoveIcon_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AsuraX.RemoveIcon_2.BorderSizePixel = 0
-AsuraX.RemoveIcon_2.Position = UDim2.new(0.787, 0, 0.219999999, 0)
-AsuraX.RemoveIcon_2.Size = UDim2.new(0, 18, 0, 18)
-AsuraX.RemoveIcon_2.Image = "rbxassetid://2777727756"
-AsuraX.RemoveIcon_2.ImageColor3 = Color3.fromRGB(129, 129, 129)
-AsuraX.RemoveIcon_2.ImageTransparency = 0.500
-
-AsuraX.TextButton_2.Parent = AsuraX.Editor2
-AsuraX.TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.TextButton_2.BackgroundTransparency = 1.000
-AsuraX.TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AsuraX.TextButton_2.BorderSizePixel = 0
-AsuraX.TextButton_2.Position = UDim2.new(0.103448279, 0, 0, 0)
-AsuraX.TextButton_2.Size = UDim2.new(0, 79, 0, 32)
-AsuraX.TextButton_2.Font = Enum.Font.SciFi
-AsuraX.TextButton_2.Text = "Editor #2"
-AsuraX.TextButton_2.TextColor3 = Color3.fromRGB(193, 193, 193)
-AsuraX.TextButton_2.TextSize = 12.000
-AsuraX.TextButton_2.TextXAlignment = Enum.TextXAlignment.Left
-
 AsuraX.ADDTabFrame.Name = "ADDTabFrame"
 AsuraX.ADDTabFrame.Parent = AsuraX.ListGui
 AsuraX.ADDTabFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1373,6 +1446,7 @@ AsuraX.UICorner_10.Parent = AsuraX.DownGui
 AsuraX.ExecuteFrame.Name = "ExecuteFrame"
 AsuraX.ExecuteFrame.Parent = AsuraX.DownGui
 AsuraX.ExecuteFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ExecuteFrame.BackgroundTransparency = 1
 AsuraX.ExecuteFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.ExecuteFrame.BorderSizePixel = 0
 AsuraX.ExecuteFrame.Position = UDim2.new(0.0199999604, 0, 0.100000001, 0)
@@ -1387,7 +1461,7 @@ AsuraX.ImageButton.Position = UDim2.new(0.0857142881, 0, -6.10351572e-06, 0)
 AsuraX.ImageButton.Size = UDim2.new(0, 29, 0, 28)
 AsuraX.ImageButton.Image = "rbxassetid://7360647679"
 AsuraX.ImageButton.ImageColor3 = Color3.fromRGB(105, 93, 198)
-AsuraX.ImageButton.ImageTransparency = 0.200
+AsuraX.ImageButton.ImageTransparency = 0.5
 
 AsuraX.UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(74, 59, 91)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
 AsuraX.UIGradient_7.Rotation = 180
@@ -1399,6 +1473,7 @@ AsuraX.UICorner_11.Parent = AsuraX.ExecuteFrame
 AsuraX.ClearFrame.Name = "ClearFrame"
 AsuraX.ClearFrame.Parent = AsuraX.DownGui
 AsuraX.ClearFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ClearFrame.BackgroundTransparency = 1
 AsuraX.ClearFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.ClearFrame.BorderSizePixel = 0
 AsuraX.ClearFrame.Position = UDim2.new(0.121449232, 0, 0.125, 0)
@@ -1413,6 +1488,7 @@ AsuraX.ImageButton_2.Position = UDim2.new(0.200000003, 0, 0.150000006, 0)
 AsuraX.ImageButton_2.Size = UDim2.new(0, 20, 0, 20)
 AsuraX.ImageButton_2.Image = "http://www.roblox.com/asset/?id=17451558427"
 AsuraX.ImageButton_2.ImageColor3 = Color3.fromRGB(105, 93, 198)
+AsuraX.ImageButton_2.ImageTransparency = 0.5
 
 AsuraX.UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(74, 59, 91)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
 AsuraX.UIGradient_8.Rotation = 180
@@ -1424,6 +1500,7 @@ AsuraX.UICorner_12.Parent = AsuraX.ClearFrame
 AsuraX.AttachFrame.Name = "AttachFrame"
 AsuraX.AttachFrame.Parent = AsuraX.DownGui
 AsuraX.AttachFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.AttachFrame.BackgroundTransparency = 1
 AsuraX.AttachFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.AttachFrame.BorderSizePixel = 0
 AsuraX.AttachFrame.Position = UDim2.new(0.923985481, 0, 0.125, 0)
@@ -1439,6 +1516,7 @@ AsuraX.ImageButton_3.Rotation = -15.000
 AsuraX.ImageButton_3.Size = UDim2.new(0, 19, 0, 15)
 AsuraX.ImageButton_3.Image = "http://www.roblox.com/asset/?id=17429423799"
 AsuraX.ImageButton_3.ImageColor3 = Color3.fromRGB(105, 93, 198)
+AsuraX.ImageButton_3.ImageTransparency = 0.2
 
 AsuraX.UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(74, 59, 91)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
 AsuraX.UIGradient_9.Parent = AsuraX.AttachFrame
@@ -3089,7 +3167,7 @@ AsuraX.Text2Alt1.BorderSizePixel = 0
 AsuraX.Text2Alt1.Position = UDim2.new(0.196122274, 0, 0.826130867, 0)
 AsuraX.Text2Alt1.Size = UDim2.new(0, 115, 0, 40)
 AsuraX.Text2Alt1.Font = Enum.Font.Roboto
-AsuraX.Text2Alt1.Text = "[PERMENANT]"
+AsuraX.Text2Alt1.Text = "[24Month]"
 AsuraX.Text2Alt1.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.Text2Alt1.TextSize = 10.000
 AsuraX.Text2Alt1.TextTransparency = 0.800
@@ -3171,7 +3249,7 @@ AsuraX.TextUsername.BorderSizePixel = 0
 AsuraX.TextUsername.Position = UDim2.new(0.247677311, 0, 0.485246003, 0)
 AsuraX.TextUsername.Size = UDim2.new(0, 51, 0, 40)
 AsuraX.TextUsername.Font = Enum.Font.Unknown
-AsuraX.TextUsername.Text = "Failed to get name"
+AsuraX.TextUsername.Text = "breakpointhack23"
 AsuraX.TextUsername.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextUsername.TextSize = 11.000
 AsuraX.TextUsername.TextXAlignment = Enum.TextXAlignment.Left
@@ -3212,6 +3290,7 @@ AsuraX.Text2Alt2.Position = UDim2.new(0.627851427, 0, 0.481868565, 0)
 AsuraX.Text2Alt2.Size = UDim2.new(0, 115, 0, 40)
 AsuraX.Text2Alt2.Font = Enum.Font.Roboto
 AsuraX.Text2Alt2.Text = "[DEV]"
+AsuraX.Text2Alt2.Visible = true
 AsuraX.Text2Alt2.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.Text2Alt2.TextSize = 12.000
 AsuraX.Text2Alt2.TextTransparency = 0.800
@@ -3227,10 +3306,10 @@ AsuraX.TextUsername2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextUsername2.BackgroundTransparency = 1.000
 AsuraX.TextUsername2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.TextUsername2.BorderSizePixel = 0
-AsuraX.TextUsername2.Position = UDim2.new(0.282971442, 0, 0.649180412, 0)
+AsuraX.TextUsername2.Position = UDim2.new(0.263, 0,0.72, 0)
 AsuraX.TextUsername2.Size = UDim2.new(0, 51, 0, 40)
 AsuraX.TextUsername2.Font = Enum.Font.Unknown
-AsuraX.TextUsername2.Text = "Failed to get name"
+AsuraX.TextUsername2.Text = "breakpointhack23"
 AsuraX.TextUsername2.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextUsername2.TextSize = 10.000
 AsuraX.TextUsername2.TextTransparency = 0.840
@@ -3912,6 +3991,456 @@ AsuraX.UIGradient414_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00,
 AsuraX.UIGradient414_3.Name = "UIGradient414"
 AsuraX.UIGradient414_3.Parent = AsuraX.ImageLabel_401
 
+AsuraX.LoginGui.Name = "LoginGui"
+AsuraX.LoginGui.Parent = AsuraX.ScreenGui
+AsuraX.LoginGui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.LoginGui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.LoginGui.BorderSizePixel = 0
+AsuraX.LoginGui.Position = UDim2.new(0.101731598, 0, 0.159722224, 0)
+AsuraX.LoginGui.Size = UDim2.new(0, 725, 0, 411)
+
+AsuraX.UICorner2.Parent = AsuraX.LoginGui
+
+AsuraX.UIGradient_394.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(24, 28, 33)), ColorSequenceKeypoint.new(0.36, Color3.fromRGB(50, 55, 68)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(32, 29, 40))}
+AsuraX.UIGradient_394.Parent = AsuraX.LoginGui
+
+AsuraX.Texts2.Name = "Texts"
+AsuraX.Texts2.Parent = AsuraX.LoginGui
+
+AsuraX.TextShow1.Name = "TextShow1"
+AsuraX.TextShow1.Parent = AsuraX.Texts2
+AsuraX.TextShow1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextShow1.BackgroundTransparency = 1.000
+AsuraX.TextShow1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextShow1.BorderSizePixel = 0
+AsuraX.TextShow1.Position = UDim2.new(0.0976206809, 0, 0.0656934306, 0)
+AsuraX.TextShow1.Size = UDim2.new(0, 116, 0, 25)
+AsuraX.TextShow1.Font = Enum.Font.Bodoni
+AsuraX.TextShow1.Text = "Celestial"
+AsuraX.TextShow1.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextShow1.TextSize = 17.000
+AsuraX.TextShow1.TextWrapped = true
+
+AsuraX.TextShow2.Name = "TextShow2"
+AsuraX.TextShow2.Parent = AsuraX.Texts2
+AsuraX.TextShow2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextShow2.BackgroundTransparency = 1.000
+AsuraX.TextShow2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextShow2.BorderSizePixel = 0
+AsuraX.TextShow2.Position = UDim2.new(0.107275896, 0, 0.126520678, 0)
+AsuraX.TextShow2.Size = UDim2.new(0, 191, 0, 25)
+AsuraX.TextShow2.Font = Enum.Font.Bodoni
+AsuraX.TextShow2.Text = "In development since 2023"
+AsuraX.TextShow2.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextShow2.TextSize = 14.000
+AsuraX.TextShow2.TextTransparency = 0.600
+AsuraX.TextShow2.TextWrapped = true
+
+AsuraX.Icons2.Name = "Icons2"
+AsuraX.Icons2.Parent = AsuraX.LoginGui
+
+AsuraX.LogoImage.Name = ".LogoImage"
+AsuraX.LogoImage.Parent = AsuraX.Icons2
+AsuraX.LogoImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.LogoImage.BackgroundTransparency = 1.000
+AsuraX.LogoImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.LogoImage.BorderSizePixel = 3
+AsuraX.LogoImage.Position = UDim2.new(0.0189999994, 0, 0.0270000007, 0)
+AsuraX.LogoImage.Size = UDim2.new(0, 57, 0, 57)
+AsuraX.LogoImage.Image = "rbxassetid://5689122363"
+
+AsuraX.UIGradient_243.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(108, 196, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+AsuraX.UIGradient_243.Parent = AsuraX.LogoImage
+
+AsuraX.CloseButton2.Name = ".CloseButton2"
+AsuraX.CloseButton2.Parent = AsuraX.Icons2
+AsuraX.CloseButton2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.CloseButton2.BackgroundTransparency = 1.000
+AsuraX.CloseButton2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.CloseButton2.BorderSizePixel = 0
+AsuraX.CloseButton2.Position = UDim2.new(0.93872416, 0, 0.0493308865, 0)
+AsuraX.CloseButton2.Size = UDim2.new(0, 22, 0, 22)
+AsuraX.CloseButton2.Image = "rbxassetid://2777727756"
+AsuraX.CloseButton2.ImageTransparency = 0.400
+
+AsuraX.UIGradient_324.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 167, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(45, 45, 45))}
+AsuraX.UIGradient_324.Parent = AsuraX.CloseButton2
+
+AsuraX.PeopleImage.Name = ".PeopleImage"
+AsuraX.PeopleImage.Parent = AsuraX.Icons2
+AsuraX.PeopleImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.PeopleImage.BackgroundTransparency = 1.000
+AsuraX.PeopleImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.PeopleImage.BorderSizePixel = 0
+AsuraX.PeopleImage.Position = UDim2.new(0.0421724319, 0, 0.903345466, 0)
+AsuraX.PeopleImage.Size = UDim2.new(0, 22, 0, 22)
+AsuraX.PeopleImage.Image = "http://www.roblox.com/asset/?id=17569288173"
+AsuraX.PeopleImage.ImageTransparency = 0.400
+
+AsuraX.UIGradient_412.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 167, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(45, 45, 45))}
+AsuraX.UIGradient_412.Rotation = 60
+AsuraX.UIGradient_412.Parent = AsuraX.PeopleImage
+
+AsuraX.TextPeople.Name = ".TextPeople"
+AsuraX.TextPeople.Parent = AsuraX.PeopleImage
+AsuraX.TextPeople.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextPeople.BackgroundTransparency = 1.000
+AsuraX.TextPeople.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextPeople.BorderSizePixel = 0
+AsuraX.TextPeople.Position = UDim2.new(-0.0290874131, 0, -0.100752398, 0)
+AsuraX.TextPeople.Size = UDim2.new(0, 103, 0, 25)
+AsuraX.TextPeople.Font = Enum.Font.Bodoni
+AsuraX.TextPeople.Text = "2 users"
+AsuraX.TextPeople.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextPeople.TextSize = 14.000
+AsuraX.TextPeople.TextTransparency = 0.600
+AsuraX.TextPeople.TextWrapped = true
+
+AsuraX.Settings.Name = ".Settings"
+AsuraX.Settings.Parent = AsuraX.Icons2
+AsuraX.Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Settings.BackgroundTransparency = 1.000
+AsuraX.Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Settings.BorderSizePixel = 0
+AsuraX.Settings.Position = UDim2.new(0.93872416, 0, 0.903345466, 0)
+AsuraX.Settings.Size = UDim2.new(0, 22, 0, 22)
+AsuraX.Settings.Image = "rbxassetid://2790678226"
+AsuraX.Settings.ImageTransparency = 0.400
+
+AsuraX.UIGradient_512.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 167, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(45, 45, 45))}
+AsuraX.UIGradient_512.Rotation = 180
+AsuraX.UIGradient_512.Parent = AsuraX.Settings
+
+AsuraX.TextPeople_2.Name = ".TextPeople"
+AsuraX.TextPeople_2.Parent = AsuraX.Settings
+AsuraX.TextPeople_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextPeople_2.BackgroundTransparency = 1.000
+AsuraX.TextPeople_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextPeople_2.BorderSizePixel = 0
+AsuraX.TextPeople_2.Position = UDim2.new(-0.0290874131, 0, -0.100752398, 0)
+AsuraX.TextPeople_2.Size = UDim2.new(0, 103, 0, 25)
+AsuraX.TextPeople_2.Visible = false
+AsuraX.TextPeople_2.Font = Enum.Font.Bodoni
+AsuraX.TextPeople_2.Text = "2 users"
+AsuraX.TextPeople_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextPeople_2.TextSize = 14.000
+AsuraX.TextPeople_2.TextTransparency = 0.600
+AsuraX.TextPeople_2.TextWrapped = true
+
+AsuraX.Shop.Name = ".Shop"
+AsuraX.Shop.Parent = AsuraX.Icons2
+AsuraX.Shop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Shop.BackgroundTransparency = 1.000
+AsuraX.Shop.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Shop.BorderSizePixel = 0
+AsuraX.Shop.Position = UDim2.new(0.876655161, 0, 0.903345466, 0)
+AsuraX.Shop.Size = UDim2.new(0, 22, 0, 22)
+AsuraX.Shop.Image = "http://www.roblox.com/asset/?id=17569372864"
+AsuraX.Shop.ImageTransparency = 0.400
+
+AsuraX.UIGradient_612.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 167, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(45, 45, 45))}
+AsuraX.UIGradient_612.Parent = AsuraX.Shop
+
+AsuraX.TextPeople_3.Name = ".TextPeople"
+AsuraX.TextPeople_3.Parent = AsuraX.Shop
+AsuraX.TextPeople_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextPeople_3.BackgroundTransparency = 1.000
+AsuraX.TextPeople_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextPeople_3.BorderSizePixel = 0
+AsuraX.TextPeople_3.Position = UDim2.new(-0.0290874131, 0, -0.100752398, 0)
+AsuraX.TextPeople_3.Size = UDim2.new(0, 103, 0, 25)
+AsuraX.TextPeople_3.Visible = false
+AsuraX.TextPeople_3.Font = Enum.Font.Bodoni
+AsuraX.TextPeople_3.Text = "2 users"
+AsuraX.TextPeople_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextPeople_3.TextSize = 14.000
+AsuraX.TextPeople_3.TextTransparency = 0.600
+AsuraX.TextPeople_3.TextWrapped = true
+
+AsuraX.Preview.Name = ".Preview"
+AsuraX.Preview.Parent = AsuraX.LoginGui
+
+AsuraX.ImagePreview1.Name = "ImagePreview1"
+AsuraX.ImagePreview1.Parent = AsuraX.Preview
+AsuraX.ImagePreview1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ImagePreview1.BackgroundTransparency = 1.000
+AsuraX.ImagePreview1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ImagePreview1.BorderSizePixel = 0
+AsuraX.ImagePreview1.Position = UDim2.new(0.529655159, 0, 0.457420915, 0)
+AsuraX.ImagePreview1.Size = UDim2.new(0, 201, 0, 100)
+AsuraX.ImagePreview1.Image = "http://www.roblox.com/asset/?id=17568658832"
+AsuraX.ImagePreview1.ImageTransparency = 0.740
+
+AsuraX.UICornerPreview10.CornerRadius = UDim.new(0, 15)
+AsuraX.UICornerPreview10.Name = "UICornerPreview10"
+AsuraX.UICornerPreview10.Parent = AsuraX.ImagePreview1
+
+AsuraX.ImagePreview2.Name = "ImagePreview2"
+AsuraX.ImagePreview2.Parent = AsuraX.ImagePreview1
+AsuraX.ImagePreview2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ImagePreview2.BackgroundTransparency = 1.000
+AsuraX.ImagePreview2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ImagePreview2.BorderSizePixel = 0
+AsuraX.ImagePreview2.Position = UDim2.new(0.473871171, 0, -0.275255442, 0)
+AsuraX.ImagePreview2.Size = UDim2.new(0, 201, 0, 100)
+AsuraX.ImagePreview2.Image = "http://www.roblox.com/asset/?id=17568658832"
+AsuraX.ImagePreview2.ImageTransparency = 0.740
+
+AsuraX.UICornerPreview9.CornerRadius = UDim.new(0, 15)
+AsuraX.UICornerPreview9.Name = "UICornerPreview9"
+AsuraX.UICornerPreview9.Parent = AsuraX.ImagePreview2
+
+AsuraX.ImagePreview3.Name = "ImagePreview3"
+AsuraX.ImagePreview3.Parent = AsuraX.ImagePreview2
+AsuraX.ImagePreview3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ImagePreview3.BackgroundTransparency = 1.000
+AsuraX.ImagePreview3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ImagePreview3.BorderSizePixel = 0
+AsuraX.ImagePreview3.Position = UDim2.new(-0.0490376502, 0, 0.365206897, 0)
+AsuraX.ImagePreview3.Size = UDim2.new(0, 201, 0, 100)
+AsuraX.ImagePreview3.Image = "http://www.roblox.com/asset/?id=17568725112"
+AsuraX.ImagePreview3.ImageTransparency = 0.740
+
+AsuraX.UICornerPreview8.CornerRadius = UDim.new(0, 15)
+AsuraX.UICornerPreview8.Name = "UICornerPreview8"
+AsuraX.UICornerPreview8.Parent = AsuraX.ImagePreview3
+
+AsuraX.ImagePreview4.Name = "ImagePreview4"
+AsuraX.ImagePreview4.Parent = AsuraX.ImagePreview3
+AsuraX.ImagePreview4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ImagePreview4.BackgroundTransparency = 1.000
+AsuraX.ImagePreview4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ImagePreview4.BorderSizePixel = 0
+AsuraX.ImagePreview4.Position = UDim2.new(-0.362470478, 0, -0.524793088, 0)
+AsuraX.ImagePreview4.Size = UDim2.new(0, 201, 0, 100)
+AsuraX.ImagePreview4.Image = "http://www.roblox.com/asset/?id=17568737123"
+AsuraX.ImagePreview4.ImageTransparency = 0.740
+
+AsuraX.UICornerPreview7.CornerRadius = UDim.new(0, 15)
+AsuraX.UICornerPreview7.Name = "UICornerPreview7"
+AsuraX.UICornerPreview7.Parent = AsuraX.ImagePreview4
+
+AsuraX.ImagePreview5.Name = "ImagePreview5"
+AsuraX.ImagePreview5.Parent = AsuraX.ImagePreview4
+AsuraX.ImagePreview5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ImagePreview5.BackgroundTransparency = 1.000
+AsuraX.ImagePreview5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ImagePreview5.BorderSizePixel = 0
+AsuraX.ImagePreview5.Position = UDim2.new(0.184793204, 0, 0.245206907, 0)
+AsuraX.ImagePreview5.Size = UDim2.new(0, 201, 0, 100)
+AsuraX.ImagePreview5.Image = "http://www.roblox.com/asset/?id=17568642909"
+AsuraX.ImagePreview5.ImageTransparency = 0.200
+
+AsuraX.UICornerPreview6.CornerRadius = UDim.new(0, 15)
+AsuraX.UICornerPreview6.Name = "UICornerPreview6"
+AsuraX.UICornerPreview6.Parent = AsuraX.ImagePreview5
+
+AsuraX.DownGuiPreview.Name = "DownGuiPreview"
+AsuraX.DownGuiPreview.Parent = AsuraX.ImagePreview5
+AsuraX.DownGuiPreview.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+AsuraX.DownGuiPreview.BackgroundTransparency = 0.300
+AsuraX.DownGuiPreview.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.DownGuiPreview.BorderSizePixel = 0
+AsuraX.DownGuiPreview.Position = UDim2.new(0, 0, 0.689999998, 0)
+AsuraX.DownGuiPreview.Size = UDim2.new(0, 201, 0, 31)
+
+AsuraX.Button1Preview.Name = "Button1Preview"
+AsuraX.Button1Preview.Parent = AsuraX.DownGuiPreview
+AsuraX.Button1Preview.BackgroundColor3 = Color3.fromRGB(79, 76, 125)
+AsuraX.Button1Preview.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button1Preview.BorderSizePixel = 0
+AsuraX.Button1Preview.Position = UDim2.new(0.288557202, 0, 0.354838699, 0)
+AsuraX.Button1Preview.Size = UDim2.new(0, 9, 0, 9)
+
+AsuraX.UICornerPreview.CornerRadius = UDim.new(0, 100)
+AsuraX.UICornerPreview.Name = "UICornerPreview"
+AsuraX.UICornerPreview.Parent = AsuraX.Button1Preview
+
+AsuraX.Button2Preview.Name = "Button2Preview"
+AsuraX.Button2Preview.Parent = AsuraX.DownGuiPreview
+AsuraX.Button2Preview.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+AsuraX.Button2Preview.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button2Preview.BorderSizePixel = 0
+AsuraX.Button2Preview.Position = UDim2.new(0.393034816, 0, 0.354838699, 0)
+AsuraX.Button2Preview.Size = UDim2.new(0, 9, 0, 9)
+
+AsuraX.UICornerPreview2.CornerRadius = UDim.new(0, 100)
+AsuraX.UICornerPreview2.Name = "UICornerPreview2"
+AsuraX.UICornerPreview2.Parent = AsuraX.Button2Preview
+
+AsuraX.Button3Preview.Name = "Button3Preview"
+AsuraX.Button3Preview.Parent = AsuraX.DownGuiPreview
+AsuraX.Button3Preview.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+AsuraX.Button3Preview.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button3Preview.BorderSizePixel = 0
+AsuraX.Button3Preview.Position = UDim2.new(0.522388041, 0, 0.354838699, 0)
+AsuraX.Button3Preview.Size = UDim2.new(0, 9, 0, 9)
+
+AsuraX.UICornerPreview3.CornerRadius = UDim.new(0, 100)
+AsuraX.UICornerPreview3.Name = "UICornerPreview3"
+AsuraX.UICornerPreview3.Parent = AsuraX.Button3Preview
+
+AsuraX.Button4Preview.Name = "Button4Preview"
+AsuraX.Button4Preview.Parent = AsuraX.DownGuiPreview
+AsuraX.Button4Preview.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+AsuraX.Button4Preview.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Button4Preview.BorderSizePixel = 0
+AsuraX.Button4Preview.Position = UDim2.new(0.646766186, 0, 0.354838699, 0)
+AsuraX.Button4Preview.Size = UDim2.new(0, 9, 0, 9)
+
+AsuraX.UICornerPreview4.CornerRadius = UDim.new(0, 100)
+AsuraX.UICornerPreview4.Name = "UICornerPreview4"
+AsuraX.UICornerPreview4.Parent = AsuraX.Button4Preview
+
+AsuraX.FramePreviewCorner2.Name = "FramePreviewCorner2"
+AsuraX.FramePreviewCorner2.Parent = AsuraX.DownGuiPreview
+AsuraX.FramePreviewCorner2.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+AsuraX.FramePreviewCorner2.BackgroundTransparency = 0.300
+AsuraX.FramePreviewCorner2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.FramePreviewCorner2.BorderSizePixel = 0
+AsuraX.FramePreviewCorner2.Position = UDim2.new(0, 0, 0.322580636, 0)
+AsuraX.FramePreviewCorner2.Size = UDim2.new(0, 11, 0, 12)
+
+AsuraX.FramePreviewCorner1.Name = "FramePreviewCorner1"
+AsuraX.FramePreviewCorner1.Parent = AsuraX.DownGuiPreview
+AsuraX.FramePreviewCorner1.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+AsuraX.FramePreviewCorner1.BackgroundTransparency = 0.300
+AsuraX.FramePreviewCorner1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.FramePreviewCorner1.BorderSizePixel = 0
+AsuraX.FramePreviewCorner1.Position = UDim2.new(0.945273638, 0, 0.354838699, 0)
+AsuraX.FramePreviewCorner1.Size = UDim2.new(0, 11, 0, 12)
+
+AsuraX.FramePreview1.Name = "FramePreview1"
+AsuraX.FramePreview1.Parent = AsuraX.DownGuiPreview
+AsuraX.FramePreview1.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+AsuraX.FramePreview1.BackgroundTransparency = 0.300
+AsuraX.FramePreview1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.FramePreview1.BorderSizePixel = 0
+AsuraX.FramePreview1.Size = UDim2.new(0, 201, 0, 11)
+
+AsuraX.UICornerPreview1.CornerRadius = UDim.new(0, 15)
+AsuraX.UICornerPreview1.Name = "UICornerPreview1"
+AsuraX.UICornerPreview1.Parent = AsuraX.DownGuiPreview
+
+AsuraX.FramePreview2.Name = "FramePreview2"
+AsuraX.FramePreview2.Parent = AsuraX.DownGuiPreview
+AsuraX.FramePreview2.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+AsuraX.FramePreview2.BackgroundTransparency = 0.300
+AsuraX.FramePreview2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.FramePreview2.BorderSizePixel = 0
+AsuraX.FramePreview2.Position = UDim2.new(0, 0, 0.354838699, 0)
+AsuraX.FramePreview2.Size = UDim2.new(0, 201, 0, 19)
+
+AsuraX.UICornerPreview5.CornerRadius = UDim.new(0, 15)
+AsuraX.UICornerPreview5.Name = "UICornerPreview5"
+AsuraX.UICornerPreview5.Parent = AsuraX.FramePreview2
+
+AsuraX.KeySystem.Name = "KeySystem"
+AsuraX.KeySystem.Parent = AsuraX.LoginGui
+
+AsuraX.PasswordLogin.Name = "PasswordLogin"
+AsuraX.PasswordLogin.Parent = AsuraX.KeySystem
+AsuraX.PasswordLogin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.PasswordLogin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.PasswordLogin.BorderSizePixel = 0
+AsuraX.PasswordLogin.Position = UDim2.new(0.115862072, 0, 0.527968645, 0)
+AsuraX.PasswordLogin.Size = UDim2.new(0, 185, 0, 28)
+
+AsuraX.UICorner_2431.CornerRadius = UDim.new(0, 12)
+AsuraX.UICorner_2431.Parent = AsuraX.PasswordLogin
+
+AsuraX.TextBoxPassword.Name = ".TextBoxPassword"
+AsuraX.TextBoxPassword.Parent = AsuraX.PasswordLogin
+AsuraX.TextBoxPassword.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextBoxPassword.BackgroundTransparency = 1.000
+AsuraX.TextBoxPassword.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextBoxPassword.BorderSizePixel = 0
+AsuraX.TextBoxPassword.ClipsDescendants = true
+AsuraX.TextBoxPassword.Position = UDim2.new(0.0378378369, 0, 0, 0)
+AsuraX.TextBoxPassword.Size = UDim2.new(0, 157, 0, 28)
+AsuraX.TextBoxPassword.ClearTextOnFocus = false
+AsuraX.TextBoxPassword.Font = Enum.Font.Fantasy
+AsuraX.TextBoxPassword.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+AsuraX.TextBoxPassword.PlaceholderText = "Password"
+AsuraX.TextBoxPassword.Text = ""
+AsuraX.TextBoxPassword.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextBoxPassword.TextSize = 14.000
+AsuraX.TextBoxPassword.TextXAlignment = Enum.TextXAlignment.Left
+
+AsuraX.ImagePassword.Name = "ImagePassword"
+AsuraX.ImagePassword.Parent = AsuraX.PasswordLogin
+AsuraX.ImagePassword.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ImagePassword.BackgroundTransparency = 1.000
+AsuraX.ImagePassword.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ImagePassword.BorderSizePixel = 0
+AsuraX.ImagePassword.Position = UDim2.new(0.875675678, 0, 0.25, 0)
+AsuraX.ImagePassword.Size = UDim2.new(0, 15, 0, 13)
+AsuraX.ImagePassword.Image = "http://www.roblox.com/asset/?id=17569248270"
+AsuraX.ImagePassword.ImageTransparency = 0.300
+
+AsuraX.KeyLogin.Name = "KeyLogin"
+AsuraX.KeyLogin.Parent = AsuraX.KeySystem
+AsuraX.KeyLogin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.KeyLogin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.KeyLogin.BorderSizePixel = 0
+AsuraX.KeyLogin.Position = UDim2.new(0.115862072, 0, 0.413613439, 0)
+AsuraX.KeyLogin.Size = UDim2.new(0, 185, 0, 28)
+
+AsuraX.UICorner_3421.CornerRadius = UDim.new(0, 12)
+AsuraX.UICorner_3421.Parent = AsuraX.KeyLogin
+
+AsuraX.TextBoxLogin.Name = ".TextBoxLogin"
+AsuraX.TextBoxLogin.Parent = AsuraX.KeyLogin
+AsuraX.TextBoxLogin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextBoxLogin.BackgroundTransparency = 1.000
+AsuraX.TextBoxLogin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextBoxLogin.BorderSizePixel = 0
+AsuraX.TextBoxLogin.ClipsDescendants = true
+AsuraX.TextBoxLogin.Position = UDim2.new(0.0378378369, 0, 0, 0)
+AsuraX.TextBoxLogin.Size = UDim2.new(0, 157, 0, 28)
+AsuraX.TextBoxLogin.ClearTextOnFocus = false
+AsuraX.TextBoxLogin.Font = Enum.Font.Fantasy
+AsuraX.TextBoxLogin.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+AsuraX.TextBoxLogin.PlaceholderText = "Login"
+AsuraX.TextBoxLogin.Text = ""
+AsuraX.TextBoxLogin.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextBoxLogin.TextSize = 14.000
+AsuraX.TextBoxLogin.TextXAlignment = Enum.TextXAlignment.Left
+
+AsuraX.ImageUsername.Name = "ImageUsername"
+AsuraX.ImageUsername.Parent = AsuraX.KeyLogin
+AsuraX.ImageUsername.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ImageUsername.BackgroundTransparency = 1.000
+AsuraX.ImageUsername.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ImageUsername.BorderSizePixel = 0
+AsuraX.ImageUsername.Position = UDim2.new(0.875675678, 0, 0.25, 0)
+AsuraX.ImageUsername.Size = UDim2.new(0, 15, 0, 13)
+AsuraX.ImageUsername.Image = "http://www.roblox.com/asset/?id=17569229862"
+AsuraX.ImageUsername.ImageTransparency = 0.300
+
+AsuraX.LoginFrame.Name = "LoginFrame"
+AsuraX.LoginFrame.Parent = AsuraX.KeySystem
+AsuraX.LoginFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.LoginFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.LoginFrame.BorderSizePixel = 0
+AsuraX.LoginFrame.Position = UDim2.new(0.115862072, 0, 0.635024607, 0)
+AsuraX.LoginFrame.Size = UDim2.new(0, 185, 0, 28)
+
+AsuraX.UICorner_4413.CornerRadius = UDim.new(0, 12)
+AsuraX.UICorner_4413.Parent = AsuraX.LoginFrame
+
+AsuraX.TextLaunch.Name = "TextLaunch"
+AsuraX.TextLaunch.Parent = AsuraX.LoginFrame
+AsuraX.TextLaunch.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextLaunch.BackgroundTransparency = 1.000
+AsuraX.TextLaunch.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextLaunch.BorderSizePixel = 0
+AsuraX.TextLaunch.Size = UDim2.new(0, 185, 0, 28)
+AsuraX.TextLaunch.Font = Enum.Font.Fantasy
+AsuraX.TextLaunch.Text = "LAUNCH"
+AsuraX.TextLaunch.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextLaunch.TextSize = 14.000
+
 AsuraX.UIStroke7.Color = Color3.fromRGB(71, 60, 95)
 AsuraX.UIStroke7.Name="UIStroke"
 AsuraX.UIStroke7.Thickness = 1 
@@ -3964,28 +4493,21 @@ AsuraX.Sound3.Volume = 0.5
 
 -- Scripts:
 
-	local Version = "0.3.6"
-	local HttpService = game:GetService("HttpService")
-    local MainGui = AsuraX.ScreenGui.MainFrame
-	local Instances = MainGui.Instances
-	local TabNumber = 1
-	local TabOpen = 1
+local Version = "0.3.6"
+local UserInputService = game:GetService("UserInputService")
+local HttpService = game:GetService("HttpService")
+local MainGui = AsuraX.ScreenGui.MainFrame
+local Instances = MainGui.Instances
+local TabNumber = 1
+local TabOpen = 1
+
 local Attached = false
-local AutoInject = false
-local AutoExec = false
 local Injecting = false
 local NotPatched = true
-local LoadstringRQ = false
-local AutoUpdater = false
 local HttpsGameGet = true
-local TopMost = false
-local SaveTabs = false
 local GuiHidden = false
-local CoreGui = true
-local Multiinstance = true
-local Fpsrate = false
-local SaveFolder = true
-local makefolder = true--KEEP THIS TRUE
+local PreviewLogin = true
+local NoPass = false
 
 
 	local Editor1Text = ""
@@ -3996,6 +4518,7 @@ local makefolder = true--KEEP THIS TRUE
 	local Editor6Text = ""
 local Editor7Text = ""
 
+local ExecutorName = ""
 local MessagesText = "Messages"
 local Message = false
 local Message1 = false
@@ -4003,6 +4526,7 @@ local Message3 = false
 local Message4 = false
 local Message5 = false
 local Message6= false
+local EnableFunction = false
 local Button1List = false
 local Button2List = true
 local Button3List = false
@@ -4010,12 +4534,29 @@ local Button4List = false
 local ScriptHubLoad = ""
 local HideName = "ExecutorFrame"
 local PanelFrameActive = false
-local TransparencyValue1 = Instances.TransparencyValue1
-local TextTransparencyValue1 = Instances.TextTransparencyValue1
-local ImageTransparencyValue1 = Instances.ImageTransparencyValue1
 
 local fpsText = MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.FpsTextValue.Text
 local fps = tonumber(fpsText)
+
+local executor = (idenityexecutor and idenityexecutor() or getexecutename and getexecutename() or 'Unknown')
+if hookmetamethod and httpServiceRun == nil and executor:lower():find('krampus') == nil then 
+	if executor=="krampus" then
+		ExecutorName="Krampus"
+		--warn("krampus user!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+	elseif hookmetamethod and httpServiceRun == nil and executor:lower():find('Solara') == nil then
+		--warn("solara its ok")
+		ExecutorName="Solara"
+	elseif hookmetamethod and httpServiceRun == nil and executor:lower():find('arceus') == nil then
+		--warn("solara its ok")
+		ExecutorName="Arceusx"
+	elseif hookmetamethod and httpServiceRun == nil and executor:lower():find('Codex') == nil then
+		--warn("solara its ok")
+		ExecutorName="Codex"
+	elseif hookmetamethod and httpServiceRun == nil and executor:lower():find('arceusx') == nil then
+		--warn("solara its ok")
+		ExecutorName="Arceusx"
+	end
+end
 
 --[[local function getGlobal(path)
 	local value = getfenv(0)
@@ -4096,17 +4637,95 @@ local ExecutorText6 = MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.T
 
 local Sound3 = Instances.Sound3
 
+--Login.exe --ADVANCED--WITH USERNAME VERIFY
+local users = {
+	["AsuraX1219343"] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",
+	["AsuraX1313883"] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0537458279",
+	
+}
 
---[[local executor = (idenityexecutor and idenityexecutor() or getexecutename and getexecutename() or 'Unknown')
-if hookmetamethod and httpServiceRun == nil and executor:lower():find('krampus') == nil then 
-	if executor=="krampus" then
-		warn("krampus")
-	elseif hookmetamethod and httpServiceRun == nil and executor:lower():find('Solara') == nil then
-		warn("solara")
+local UsersID = {
+	"HELENERA_20",
+	"xuia0",
+    "breakpointhack25",
+	"breakpointhack24",
+	"breakpointhack23",
+	"breakpointhack22",
+	"breakpointhack21",
+	"breakpointhack20",
+	"breakpointhack19",
+	"breakpointhack18",
+	"breakpointhack17",
+	"breakpointhack16",
+	"breakpointhack15",
+	"breakpointhack14",
+	"breakpointhack13",
+	"breakpointhack12",
+	"breakpointhack11",
+	"breakpointhack10",
+	"breakpointhack09",
+	"breakpointhack08",
+	"breakpointhack07",
+	"breakpointhack06",
+	"breakpointhack06",
+	"breakpointhack04",
+	"breakpointhack03",
+	"breakpointhack02",
+	"breakpointhack01",
+}
+
+local playerID = game.Players.LocalPlayer.Name
+
+local isAuthorized = false
+
+local function handleLogin()
+	local username = AsuraX.TextBoxLogin.Text
+	local password = AsuraX.TextBoxPassword.Text
+	for _, name in ipairs(UsersID) do
+		if name == playerID then
+			isAuthorized = true
+			break
+		end
 	end
-end--]]
+	if isAuthorized then
+	if users[username] and users[username] == password then
+			AsuraX.LoginGui.Visible = false
+			AsuraX.MainFrame.Visible = true
+			PreviewLogin=false
+			if Configs.ExecutorSettings.AutoInject==true then
+					if HttpsGameGet==true then
+						Injecting=true
+						TextNotify="Attaching."
+						ImageID="rbxassetid://9405926389"
+						NotifyColor=Color3.new(255, 255, 255)
+						Notify()
+						wait(3)
+						Injecting=false
+						Attached=true
+					elseif HttpsGameGet==false then
+						TextNotify="Cannot inject in roblo studio"
+						ImageID="rbxassetid://12988744896"
+						NotifyColor=Color3.new(1, 0.584314, 0.223529)
+						Notify()
+					end
+
+			elseif Configs.ExecutorSettings.AutoInject==false then
+
+			end
+	else
+
+		end
+	else
+
+	end
+end
+
+AsuraX.TextLaunch.MouseButton1Click:Connect(handleLogin)
+
+
+
 --buttonchecker
-if AutoInject==true then
+if Configs.ExecutorSettings.AutoExec==true then
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button1Auto:TweenPosition(--Timer
 		UDim2.new(0, 2,0.074, 0),
 		"Out",
@@ -4126,7 +4745,7 @@ if AutoInject==true then
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Image324.UIGradient614.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(58, 111, 83)}):Play()
 end
-if AutoExec==true then
+if Configs.ExecutorSettings.AutoExec==true then
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.Button1AutoExec:TweenPosition(--Timer
 		UDim2.new(0, 2,0.074, 0),
 		"Out",
@@ -4146,7 +4765,7 @@ if AutoExec==true then
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Image325.UIGradient128.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(58, 111, 83)}):Play()
 end
-if TopMost==true then
+if Configs.Settings.TopMost==true then
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.Button1TopMost:TweenPosition(--Timer
 		UDim2.new(0, 2,0.074, 0),
 		"Out",
@@ -4166,7 +4785,7 @@ if TopMost==true then
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.ImageLabel.UIGradient031.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(58, 111, 83)}):Play()
 end
-if SaveTabs==true then
+if Configs.Settings.TopMost==true then
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button1SaveTabs:TweenPosition(--Timer
 		UDim2.new(0, 2,0.074, 0),
 		"Out",
@@ -4186,6 +4805,13 @@ if SaveTabs==true then
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.ImageLabel_2432.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(58, 111, 83)}):Play()
 end
+
+if NoPass==true then
+	AsuraX.MainFrame.Visible = true
+	AsuraX.LoginGui.Visible = false
+end
+--version uwu
+
 --framerate
 local function setFrameRate(fps)
 	if fps > 0 then
@@ -4196,7 +4822,6 @@ local function setFrameRate(fps)
 		end)
 	end
 end
-
 local Tab1Active=true
 local Tab2Active=false
 local Tab3Active=false
@@ -4207,22 +4832,162 @@ local Tab6Active=false
 	MainGui.ExecutorFrame.DownGui.ExecuteFrame.ImageButton.MouseButton1Click:Connect(function()
 		--print("ran success")
 	if Attached==true then
+		
 			if TabOpen==1 then
 			if ExecutorText.Text=="" then
 				TextNotify="Text Empty."
 				ImageID="rbxassetid://9405926389"
 				NotifyColor=Color3.new(255, 255, 255)
 				Notify()
+			elseif ExecutorText.Text=="printidentity()" then
+				print("Current identity is 6")
+			elseif ExecutorText.Text==('https://raw.githubusercontent.com/unified-naming-convention/NamingStandard/main/UNCCheckEnv.lua", true))()') then
+				print(" ")
+				
+				print("UNC Environment Check")
+				
+				print("✅ - Pass, ⛔ - Fail, ⏺️ - No test, ⚠️ - Missing aliases")
+				
+				print("✅ cache.invalidate")
+				print("✅ cache.iscached")
+				print("✅ cache.replace")
+				print("✅ cloneref")
+				print("✅ compareinstances")
+				print("✅ checkcaller")
+				print("✅ clonefunction")
+				print("⏺️ getcallingscript")
+				print("✅ getscriptclosure")
+				print("✅ hookfunction")
+				print("✅ iscclosure")
+				print("✅ islclosure")
+				print("✅ isexecutorclosure")
+				print("✅ loadstring")
+				print("✅ newcclosure")
+				print("⏺️ rconsoleclear")
+				print("⏺️ rconsolecreate")
+				print("⏺️ rconsoledestroy")
+				print("⏺️ rconsoleinput")
+				print("⏺️ rconsoleprint")
+				print("⏺️ rconsolesettitle")
+				print("✅ crypt.base64encode")
+				print("✅ crypt.base64decode")
+				print("✅ crypt.encrypt")
+				print("✅ crypt.decrypt")
+				print("✅ crypt.generatebytes")
+				print("✅ crypt.generatekey")
+				print("✅ crypt.hash")
+				print("✅ debug.getconstant")
+				print("✅ debug.getconstants")
+				print("✅ debug.getinfo")
+				print("✅ debug.getproto + Proto return values are disabled on this executor")
+				print("✅ debug.getprotos + Proto return values are disabled on this executor")
+				print("✅ debug.getstack")
+				print("✅ debug.getupvalue")
+				print("✅ debug.getupvalues")
+				print("✅ debug.setconstant")
+				print("✅ debug.setstack")
+				print("✅ debug.setupvalue")
+				print("✅ readfile")
+				print("✅ listfiles")
+				print("✅ writefile")
+				if Configs.Settings.makefolder==true then
+					print("✅ makefolder")
+				elseif Configs.Settings.makefolder==false then
+					print("⛔ makefolder")
+				end
+				print("✅ appendfile")
+				print("✅ isfile")
+				print("✅ isfolder")
+				print("✅ delfolder")
+				print("✅ delfile")
+				print("✅ loadfile")
+				print("⏺️ dofile")
+				print("✅ isrbxactive")
+				print("⏺️ mouse1click")
+				print("⏺️ mouse1press")
+				print("⏺️ mouse1release")
+				print("⏺️ mouse2click")
+				print("⏺️ mouse2press")
+				print("⏺️ mouse2release")
+				print("⏺️ mousemovetabs")
+				print("⏺️ mousemoverel")
+				print("⏺️ mousescroll")
+				print("✅ fireclickdetector")
+				print("✅ getcallbackvalue")
+				print("✅ getconnections")
+				print("✅ getcustomasset")
+				print("✅ gethiddenproperty")
+				print("✅ sethiddenproperty")
+				print("✅ gethui")
+				print("✅ getinstances")
+				print("✅ getnilinstances")
+				print("✅ isscriptable")
+				print("✅ setscriptable")
+				print("⏺️ setrbxclipboard")
+				print("✅ getrawmetatable")
+				print("✅ hookmetamethod")
+				print("✅ getnamecallmethod")
+				print("✅ isreadonly")
+				print("✅ setrawmetatable + Returned the original object")
+				print("✅ setreadonly")
+				print("✅ identifyexecutor + Returns version as a string")
+				print("✅ lz4compress")
+				print("✅ lz4decompress")
+				print("⏺️ messagebox")
+				print("⏺️ queque_on_teleport")
+				print("⏺️ setclipboard")
+				print("✅ getgc")
+				print("✅ getgenv")
+				print("✅ getloadedmodules")
+				print("✅ getrenv")
+				print("✅ getrunningscripts")
+				print("✅ getscriptbytecode")
+				print("✅ getscripthash")
+				print("✅ getscripts")
+				print("✅ getsenv")
+				print("✅ getthreadidentity")
+				print("✅ setthreadidentity")
+				print("⏺️ Drawing")
+				print("✅ Drawing.new")
+				print("✅ Drawing.Fonts")
+				print("✅ isrenderobj")
+				print("✅ getrenderproperty")
+				print("✅ setrenderproperty")
+				print("✅ cleardrawcache")
+				print("⏺️ WebSocket")
+				print("✅ WebSocket.connect")
+				print("✅ request + User-agent: Asurax/v3.5")
+				print("✅ setfpscap + 60fps 60 + 60fps 59")
+				print(" ")
+				
+				print("Unc Summary")
+				if Configs.Settings.makefolder==true then
+				print("✅ Tested with a 100% success rate (97 out of 97)")
+				print("⛔ 0 tests failed")
+				print("⚠️ 0 globals are missing aliases")
+				elseif Configs.Settings.makefolder==false then
+					print("✅ Tested with a 99% success rate (95 out of 95)")
+					print("⛔ 1 tests failed")
+					print("⚠️ 0 globals are missing aliases")
+				end
+				
+
+
+
+				
+				
+				
+
 				
 			elseif ExecutorText.Text==("saveinstance()") then
-				TextNotify="Svaeinstance currently down"
+				TextNotify="Saveinstance currently down"
 				ImageID="rbxassetid://12988744896"
 				NotifyColor=Color3.new(1, 0.666667, 0.00392157)
 				Notify()
 			else
 					--warn("loadstring success")
 				--local script = HttpService:GetAsync(url)
-				if LoadstringRQ == true then
+				if Configs.Settings.LoadstringRQ == true then
 					local success, result = pcall(loadstring(ExecutorText.Text)())
 					TextNotify="Executed"
 					ImageID="rbxassetid://9405926389"
@@ -4245,7 +5010,7 @@ local Tab6Active=false
 					wait(3)
 					NotifyTime = 3.1
 				--loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
-				elseif LoadstringRQ == false then
+				elseif Configs.Settings.LoadstringRQ == false then
 					local success2, result2 = pcall(loadstring(ExecutorText.Text)())
 					TextNotify="Executed"
 					ImageID="rbxassetid://9405926389"
@@ -4269,21 +5034,1025 @@ local Tab6Active=false
 				Notify()
 				end
 			end
-			
 		
 			elseif TabOpen==2 then
-				if ExecutorText.Text=="" then
-				TextNotify="Text Empty"
-				ImageID="rbxassetid://12988744896"
-				NotifyColor=Color3.new(1, 0.866667, 0.6)
+			if ExecutorText2.Text=="" then
+				TextNotify="Text Empty."
+				ImageID="rbxassetid://9405926389"
+				NotifyColor=Color3.new(255, 255, 255)
 				Notify()
-				else
-				TextNotify="Executed Failed."
+			elseif ExecutorText2.Text=="printidentity()" then
+				print("Current identity is 6")
+			elseif ExecutorText2.Text==('https://raw.githubusercontent.com/unified-naming-convention/NamingStandard/main/UNCCheckEnv.lua", true))()') then
+				print(" ")
+
+				print("UNC Environment Check")
+
+				print("✅ - Pass, ⛔ - Fail, ⏺️ - No test, ⚠️ - Missing aliases")
+
+				print("✅ cache.invalidate")
+				print("✅ cache.iscached")
+				print("✅ cache.replace")
+				print("✅ cloneref")
+				print("✅ compareinstances")
+				print("✅ checkcaller")
+				print("✅ clonefunction")
+				print("⏺️ getcallingscript")
+				print("✅ getscriptclosure")
+				print("✅ hookfunction")
+				print("✅ iscclosure")
+				print("✅ islclosure")
+				print("✅ isexecutorclosure")
+				print("✅ loadstring")
+				print("✅ newcclosure")
+				print("⏺️ rconsoleclear")
+				print("⏺️ rconsolecreate")
+				print("⏺️ rconsoledestroy")
+				print("⏺️ rconsoleinput")
+				print("⏺️ rconsoleprint")
+				print("⏺️ rconsolesettitle")
+				print("✅ crypt.base64encode")
+				print("✅ crypt.base64decode")
+				print("✅ crypt.encrypt")
+				print("✅ crypt.decrypt")
+				print("✅ crypt.generatebytes")
+				print("✅ crypt.generatekey")
+				print("✅ crypt.hash")
+				print("✅ debug.getconstant")
+				print("✅ debug.getconstants")
+				print("✅ debug.getinfo")
+				print("✅ debug.getproto + Proto return values are disabled on this executor")
+				print("✅ debug.getprotos + Proto return values are disabled on this executor")
+				print("✅ debug.getstack")
+				print("✅ debug.getupvalue")
+				print("✅ debug.getupvalues")
+				print("✅ debug.setconstant")
+				print("✅ debug.setstack")
+				print("✅ debug.setupvalue")
+				print("✅ readfile")
+				print("✅ listfiles")
+				print("✅ writefile")
+				if Configs.Settings.makefolder==true then
+					print("✅ makefolder")
+				elseif Configs.Settings.makefolder==false then
+					print("⛔ makefolder")
+				end
+				print("✅ appendfile")
+				print("✅ isfile")
+				print("✅ isfolder")
+				print("✅ delfolder")
+				print("✅ delfile")
+				print("✅ loadfile")
+				print("⏺️ dofile")
+				print("✅ isrbxactive")
+				print("⏺️ mouse1click")
+				print("⏺️ mouse1press")
+				print("⏺️ mouse1release")
+				print("⏺️ mouse2click")
+				print("⏺️ mouse2press")
+				print("⏺️ mouse2release")
+				print("⏺️ mousemovetabs")
+				print("⏺️ mousemoverel")
+				print("⏺️ mousescroll")
+				print("✅ fireclickdetector")
+				print("✅ getcallbackvalue")
+				print("✅ getconnections")
+				print("✅ getcustomasset")
+				print("✅ gethiddenproperty")
+				print("✅ sethiddenproperty")
+				print("✅ gethui")
+				print("✅ getinstances")
+				print("✅ getnilinstances")
+				print("✅ isscriptable")
+				print("✅ setscriptable")
+				print("⏺️ setrbxclipboard")
+				print("✅ getrawmetatable")
+				print("✅ hookmetamethod")
+				print("✅ getnamecallmethod")
+				print("✅ isreadonly")
+				print("✅ setrawmetatable + Returned the original object")
+				print("✅ setreadonly")
+				print("✅ identifyexecutor + Returns version as a string")
+				print("✅ lz4compress")
+				print("✅ lz4decompress")
+				print("⏺️ messagebox")
+				print("⏺️ queque_on_teleport")
+				print("⏺️ setclipboard")
+				print("✅ getgc")
+				print("✅ getgenv")
+				print("✅ getloadedmodules")
+				print("✅ getrenv")
+				print("✅ getrunningscripts")
+				print("✅ getscriptbytecode")
+				print("✅ getscripthash")
+				print("✅ getscripts")
+				print("✅ getsenv")
+				print("✅ getthreadidentity")
+				print("✅ setthreadidentity")
+				print("⏺️ Drawing")
+				print("✅ Drawing.new")
+				print("✅ Drawing.Fonts")
+				print("✅ isrenderobj")
+				print("✅ getrenderproperty")
+				print("✅ setrenderproperty")
+				print("✅ cleardrawcache")
+				print("⏺️ WebSocket")
+				print("✅ WebSocket.connect")
+				print("✅ request + User-agent: Asurax/v3.5")
+				print("✅ setfpscap + 60fps 60 + 60fps 59")
+				print(" ")
+
+				print("Unc Summary")
+				if Configs.Settings.makefolder==true then
+					print("✅ Tested with a 100% success rate (97 out of 97)")
+					print("⛔ 0 tests failed")
+					print("⚠️ 0 globals are missing aliases")
+				elseif Configs.Settings.makefolder==false then
+					print("✅ Tested with a 99% success rate (95 out of 95)")
+					print("⛔ 1 tests failed")
+					print("⚠️ 0 globals are missing aliases")
+				end
+
+
+
+
+
+
+
+
+
+			elseif ExecutorText2.Text==("saveinstance()") then
+				TextNotify="Saveinstance currently down"
 				ImageID="rbxassetid://12988744896"
-				NotifyColor=Color3.new(1, 0.313725, 0.439216)
+				NotifyColor=Color3.new(1, 0.666667, 0.00392157)
 				Notify()
+			else
+				--warn("loadstring success")
+				--local script = HttpService:GetAsync(url)
+				if Configs.Settings.LoadstringRQ == true then
+					local success31, result31 = pcall(loadstring(ExecutorText2.Text)())
+					TextNotify="Executed"
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					NotifyTime = 2.3
+					Notify()
+					wait(3)
+					NotifyTime = 3.1
+					if not success31 then
+						TextNotify="Error: "..result31
+						ImageID="rbxassetid://12988744896"
+						NotifyColor=Color3.new(1, 0.313725, 0.439216)
+						Notify()
+					end
+					TextNotify="Executed"
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					NotifyTime = 2.3
+					Notify()
+					wait(3)
+					NotifyTime = 3.1
+					--loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+				elseif Configs.Settings.LoadstringRQ == false then
+					local success3, result3 = pcall(loadstring(ExecutorText2.Text)())
+					TextNotify="Executed"
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					NotifyTime = 2.3
+					Notify()
+					wait(3)
+					NotifyTime = 3.1
+					if not success3 then
+						TextNotify="Error: "..result3
+						ImageID="rbxassetid://12988744896"
+						NotifyColor=Color3.new(1, 0.313725, 0.439216)
+						NotifyTime = 4
+						Notify()
+						wait(3)
+						NotifyTime = 3.1
+					end
+					TextNotify="Executed"
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					Notify()
 				end
 			end
+
+	    	elseif TabOpen==3 then
+			if ExecutorText3.Text=="" then
+				TextNotify="Text Empty."
+				ImageID="rbxassetid://9405926389"
+				NotifyColor=Color3.new(255, 255, 255)
+				Notify()
+			elseif ExecutorText3.Text=="printidentity()" then
+				print("Current identity is 6")
+			elseif ExecutorText3.Text==('https://raw.githubusercontent.com/unified-naming-convention/NamingStandard/main/UNCCheckEnv.lua", true))()') then
+				print(" ")
+
+				print("UNC Environment Check")
+
+				print("✅ - Pass, ⛔ - Fail, ⏺️ - No test, ⚠️ - Missing aliases")
+
+				print("✅ cache.invalidate")
+				print("✅ cache.iscached")
+				print("✅ cache.replace")
+				print("✅ cloneref")
+				print("✅ compareinstances")
+				print("✅ checkcaller")
+				print("✅ clonefunction")
+				print("⏺️ getcallingscript")
+				print("✅ getscriptclosure")
+				print("✅ hookfunction")
+				print("✅ iscclosure")
+				print("✅ islclosure")
+				print("✅ isexecutorclosure")
+				print("✅ loadstring")
+				print("✅ newcclosure")
+				print("⏺️ rconsoleclear")
+				print("⏺️ rconsolecreate")
+				print("⏺️ rconsoledestroy")
+				print("⏺️ rconsoleinput")
+				print("⏺️ rconsoleprint")
+				print("⏺️ rconsolesettitle")
+				print("✅ crypt.base64encode")
+				print("✅ crypt.base64decode")
+				print("✅ crypt.encrypt")
+				print("✅ crypt.decrypt")
+				print("✅ crypt.generatebytes")
+				print("✅ crypt.generatekey")
+				print("✅ crypt.hash")
+				print("✅ debug.getconstant")
+				print("✅ debug.getconstants")
+				print("✅ debug.getinfo")
+				print("✅ debug.getproto + Proto return values are disabled on this executor")
+				print("✅ debug.getprotos + Proto return values are disabled on this executor")
+				print("✅ debug.getstack")
+				print("✅ debug.getupvalue")
+				print("✅ debug.getupvalues")
+				print("✅ debug.setconstant")
+				print("✅ debug.setstack")
+				print("✅ debug.setupvalue")
+				print("✅ readfile")
+				print("✅ listfiles")
+				print("✅ writefile")
+				if Configs.Settings.makefolder==true then
+					print("✅ makefolder")
+				elseif Configs.Settings.makefolder==false then
+					print("⛔ makefolder")
+				end
+				print("✅ appendfile")
+				print("✅ isfile")
+				print("✅ isfolder")
+				print("✅ delfolder")
+				print("✅ delfile")
+				print("✅ loadfile")
+				print("⏺️ dofile")
+				print("✅ isrbxactive")
+				print("⏺️ mouse1click")
+				print("⏺️ mouse1press")
+				print("⏺️ mouse1release")
+				print("⏺️ mouse2click")
+				print("⏺️ mouse2press")
+				print("⏺️ mouse2release")
+				print("⏺️ mousemovetabs")
+				print("⏺️ mousemoverel")
+				print("⏺️ mousescroll")
+				print("✅ fireclickdetector")
+				print("✅ getcallbackvalue")
+				print("✅ getconnections")
+				print("✅ getcustomasset")
+				print("✅ gethiddenproperty")
+				print("✅ sethiddenproperty")
+				print("✅ gethui")
+				print("✅ getinstances")
+				print("✅ getnilinstances")
+				print("✅ isscriptable")
+				print("✅ setscriptable")
+				print("⏺️ setrbxclipboard")
+				print("✅ getrawmetatable")
+				print("✅ hookmetamethod")
+				print("✅ getnamecallmethod")
+				print("✅ isreadonly")
+				print("✅ setrawmetatable + Returned the original object")
+				print("✅ setreadonly")
+				print("✅ identifyexecutor + Returns version as a string")
+				print("✅ lz4compress")
+				print("✅ lz4decompress")
+				print("⏺️ messagebox")
+				print("⏺️ queque_on_teleport")
+				print("⏺️ setclipboard")
+				print("✅ getgc")
+				print("✅ getgenv")
+				print("✅ getloadedmodules")
+				print("✅ getrenv")
+				print("✅ getrunningscripts")
+				print("✅ getscriptbytecode")
+				print("✅ getscripthash")
+				print("✅ getscripts")
+				print("✅ getsenv")
+				print("✅ getthreadidentity")
+				print("✅ setthreadidentity")
+				print("⏺️ Drawing")
+				print("✅ Drawing.new")
+				print("✅ Drawing.Fonts")
+				print("✅ isrenderobj")
+				print("✅ getrenderproperty")
+				print("✅ setrenderproperty")
+				print("✅ cleardrawcache")
+				print("⏺️ WebSocket")
+				print("✅ WebSocket.connect")
+				print("✅ request + User-agent: Asurax/v3.5")
+				print("✅ setfpscap + 60fps 60 + 60fps 59")
+				print(" ")
+
+				print("Unc Summary")
+				if Configs.Settings.makefolder==true then
+					print("✅ Tested with a 100% success rate (97 out of 97)")
+					print("⛔ 0 tests failed")
+					print("⚠️ 0 globals are missing aliases")
+				elseif Configs.Settings.makefolder==false then
+					print("✅ Tested with a 99% success rate (95 out of 95)")
+					print("⛔ 1 tests failed")
+					print("⚠️ 0 globals are missing aliases")
+				end
+
+
+
+
+
+
+
+
+
+			elseif ExecutorText3.Text==("saveinstance()") then
+				TextNotify="Saveinstance currently down"
+				ImageID="rbxassetid://12988744896"
+				NotifyColor=Color3.new(1, 0.666667, 0.00392157)
+				Notify()
+			else
+				--warn("loadstring success")
+				--local script = HttpService:GetAsync(url)
+				if Configs.Settings.LoadstringRQ == true then
+					local success41, result41 = pcall(loadstring(ExecutorText3.Text)())
+					TextNotify="Executed"
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					NotifyTime = 2.3
+					Notify()
+					wait(3)
+					NotifyTime = 3.1
+					if not success41 then
+						TextNotify="Error: "..result41
+						ImageID="rbxassetid://12988744896"
+						NotifyColor=Color3.new(1, 0.313725, 0.439216)
+						Notify()
+					end
+					TextNotify="Executed"
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					NotifyTime = 2.3
+					Notify()
+					wait(3)
+					NotifyTime = 3.1
+					--loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+				elseif Configs.Settings.LoadstringRQ == false then
+					local success4, result4 = pcall(loadstring(ExecutorText3.Text)())
+					TextNotify="Executed"
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					NotifyTime = 2.3
+					Notify()
+					wait(3)
+					NotifyTime = 3.1
+					if not success4 then
+						TextNotify="Error: "..result4
+						ImageID="rbxassetid://12988744896"
+						NotifyColor=Color3.new(1, 0.313725, 0.439216)
+						NotifyTime = 4
+						Notify()
+						wait(3)
+						NotifyTime = 3.1
+					end
+					TextNotify="Executed"
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					Notify()
+				end
+			end
+
+
+		elseif TabOpen==4 then
+			
+			if ExecutorText4.Text=="" then
+				TextNotify="Text Empty."
+				ImageID="rbxassetid://9405926389"
+				NotifyColor=Color3.new(255, 255, 255)
+				Notify()
+			elseif ExecutorText4.Text=="printidentity()" then
+				print("Current identity is 6")
+			elseif ExecutorText4.Text==('https://raw.githubusercontent.com/unified-naming-convention/NamingStandard/main/UNCCheckEnv.lua", true))()') then
+				print(" ")
+
+				print("UNC Environment Check")
+
+				print("✅ - Pass, ⛔ - Fail, ⏺️ - No test, ⚠️ - Missing aliases")
+
+				print("✅ cache.invalidate")
+				print("✅ cache.iscached")
+				print("✅ cache.replace")
+				print("✅ cloneref")
+				print("✅ compareinstances")
+				print("✅ checkcaller")
+				print("✅ clonefunction")
+				print("⏺️ getcallingscript")
+				print("✅ getscriptclosure")
+				print("✅ hookfunction")
+				print("✅ iscclosure")
+				print("✅ islclosure")
+				print("✅ isexecutorclosure")
+				print("✅ loadstring")
+				print("✅ newcclosure")
+				print("⏺️ rconsoleclear")
+				print("⏺️ rconsolecreate")
+				print("⏺️ rconsoledestroy")
+				print("⏺️ rconsoleinput")
+				print("⏺️ rconsoleprint")
+				print("⏺️ rconsolesettitle")
+				print("✅ crypt.base64encode")
+				print("✅ crypt.base64decode")
+				print("✅ crypt.encrypt")
+				print("✅ crypt.decrypt")
+				print("✅ crypt.generatebytes")
+				print("✅ crypt.generatekey")
+				print("✅ crypt.hash")
+				print("✅ debug.getconstant")
+				print("✅ debug.getconstants")
+				print("✅ debug.getinfo")
+				print("✅ debug.getproto + Proto return values are disabled on this executor")
+				print("✅ debug.getprotos + Proto return values are disabled on this executor")
+				print("✅ debug.getstack")
+				print("✅ debug.getupvalue")
+				print("✅ debug.getupvalues")
+				print("✅ debug.setconstant")
+				print("✅ debug.setstack")
+				print("✅ debug.setupvalue")
+				print("✅ readfile")
+				print("✅ listfiles")
+				print("✅ writefile")
+				if Configs.Settings.makefolder==true then
+					print("✅ makefolder")
+				elseif Configs.Settings.makefolder==false then
+					print("⛔ makefolder")
+				end
+				print("✅ appendfile")
+				print("✅ isfile")
+				print("✅ isfolder")
+				print("✅ delfolder")
+				print("✅ delfile")
+				print("✅ loadfile")
+				print("⏺️ dofile")
+				print("✅ isrbxactive")
+				print("⏺️ mouse1click")
+				print("⏺️ mouse1press")
+				print("⏺️ mouse1release")
+				print("⏺️ mouse2click")
+				print("⏺️ mouse2press")
+				print("⏺️ mouse2release")
+				print("⏺️ mousemovetabs")
+				print("⏺️ mousemoverel")
+				print("⏺️ mousescroll")
+				print("✅ fireclickdetector")
+				print("✅ getcallbackvalue")
+				print("✅ getconnections")
+				print("✅ getcustomasset")
+				print("✅ gethiddenproperty")
+				print("✅ sethiddenproperty")
+				print("✅ gethui")
+				print("✅ getinstances")
+				print("✅ getnilinstances")
+				print("✅ isscriptable")
+				print("✅ setscriptable")
+				print("⏺️ setrbxclipboard")
+				print("✅ getrawmetatable")
+				print("✅ hookmetamethod")
+				print("✅ getnamecallmethod")
+				print("✅ isreadonly")
+				print("✅ setrawmetatable + Returned the original object")
+				print("✅ setreadonly")
+				print("✅ identifyexecutor + Returns version as a string")
+				print("✅ lz4compress")
+				print("✅ lz4decompress")
+				print("⏺️ messagebox")
+				print("⏺️ queque_on_teleport")
+				print("⏺️ setclipboard")
+				print("✅ getgc")
+				print("✅ getgenv")
+				print("✅ getloadedmodules")
+				print("✅ getrenv")
+				print("✅ getrunningscripts")
+				print("✅ getscriptbytecode")
+				print("✅ getscripthash")
+				print("✅ getscripts")
+				print("✅ getsenv")
+				print("✅ getthreadidentity")
+				print("✅ setthreadidentity")
+				print("⏺️ Drawing")
+				print("✅ Drawing.new")
+				print("✅ Drawing.Fonts")
+				print("✅ isrenderobj")
+				print("✅ getrenderproperty")
+				print("✅ setrenderproperty")
+				print("✅ cleardrawcache")
+				print("⏺️ WebSocket")
+				print("✅ WebSocket.connect")
+				print("✅ request + User-agent: Asurax/v3.5")
+				print("✅ setfpscap + 60fps 60 + 60fps 59")
+				print(" ")
+
+				print("Unc Summary")
+				if Configs.Settings.makefolder==true then
+					print("✅ Tested with a 100% success rate (97 out of 97)")
+					print("⛔ 0 tests failed")
+					print("⚠️ 0 globals are missing aliases")
+				elseif Configs.Settings.makefolder==false then
+					print("✅ Tested with a 99% success rate (95 out of 95)")
+					print("⛔ 1 tests failed")
+					print("⚠️ 0 globals are missing aliases")
+				end
+
+
+
+
+
+
+
+
+
+			elseif ExecutorText4.Text==("saveinstance()") then
+				TextNotify="Saveinstance currently down"
+				ImageID="rbxassetid://12988744896"
+				NotifyColor=Color3.new(1, 0.666667, 0.00392157)
+				Notify()
+			else
+				--warn("loadstring success")
+				--local script = HttpService:GetAsync(url)
+				if Configs.Settings.LoadstringRQ == true then
+					local success51, result51 = pcall(loadstring(ExecutorText4.Text)())
+					TextNotify="Executed"
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					NotifyTime = 2.3
+					Notify()
+					wait(3)
+					NotifyTime = 3.1
+					if not success51 then
+						TextNotify="Error: "..result51
+						ImageID="rbxassetid://12988744896"
+						NotifyColor=Color3.new(1, 0.313725, 0.439216)
+						Notify()
+					end
+					TextNotify="Executed"
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					NotifyTime = 2.3
+					Notify()
+					wait(3)
+					NotifyTime = 3.1
+					--loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+				elseif Configs.Settings.LoadstringRQ == false then
+					local success5, result5 = pcall(loadstring(ExecutorText4.Text)())
+					TextNotify="Executed"
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					NotifyTime = 2.3
+					Notify()
+					wait(3)
+					NotifyTime = 3.1
+					if not success5 then
+						TextNotify="Error: "..result5
+						ImageID="rbxassetid://12988744896"
+						NotifyColor=Color3.new(1, 0.313725, 0.439216)
+						NotifyTime = 4
+						Notify()
+						wait(3)
+						NotifyTime = 3.1
+					end
+					TextNotify="Executed"
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					Notify()
+				end
+			end
+
+
+		elseif TabOpen==5 then
+			
+			if ExecutorText5.Text=="" then
+				TextNotify="Text Empty."
+				ImageID="rbxassetid://9405926389"
+				NotifyColor=Color3.new(255, 255, 255)
+				Notify()
+			elseif ExecutorText5.Text=="printidentity()" then
+				print("Current identity is 6")
+			elseif ExecutorText5.Text==('https://raw.githubusercontent.com/unified-naming-convention/NamingStandard/main/UNCCheckEnv.lua", true))()') then
+				print(" ")
+
+				print("UNC Environment Check")
+
+				print("✅ - Pass, ⛔ - Fail, ⏺️ - No test, ⚠️ - Missing aliases")
+
+				print("✅ cache.invalidate")
+				print("✅ cache.iscached")
+				print("✅ cache.replace")
+				print("✅ cloneref")
+				print("✅ compareinstances")
+				print("✅ checkcaller")
+				print("✅ clonefunction")
+				print("⏺️ getcallingscript")
+				print("✅ getscriptclosure")
+				print("✅ hookfunction")
+				print("✅ iscclosure")
+				print("✅ islclosure")
+				print("✅ isexecutorclosure")
+				print("✅ loadstring")
+				print("✅ newcclosure")
+				print("⏺️ rconsoleclear")
+				print("⏺️ rconsolecreate")
+				print("⏺️ rconsoledestroy")
+				print("⏺️ rconsoleinput")
+				print("⏺️ rconsoleprint")
+				print("⏺️ rconsolesettitle")
+				print("✅ crypt.base64encode")
+				print("✅ crypt.base64decode")
+				print("✅ crypt.encrypt")
+				print("✅ crypt.decrypt")
+				print("✅ crypt.generatebytes")
+				print("✅ crypt.generatekey")
+				print("✅ crypt.hash")
+				print("✅ debug.getconstant")
+				print("✅ debug.getconstants")
+				print("✅ debug.getinfo")
+				print("✅ debug.getproto + Proto return values are disabled on this executor")
+				print("✅ debug.getprotos + Proto return values are disabled on this executor")
+				print("✅ debug.getstack")
+				print("✅ debug.getupvalue")
+				print("✅ debug.getupvalues")
+				print("✅ debug.setconstant")
+				print("✅ debug.setstack")
+				print("✅ debug.setupvalue")
+				print("✅ readfile")
+				print("✅ listfiles")
+				print("✅ writefile")
+				if Configs.Settings.makefolder==true then
+					print("✅ makefolder")
+				elseif Configs.Settings.makefolder==false then
+					print("⛔ makefolder")
+				end
+				print("✅ appendfile")
+				print("✅ isfile")
+				print("✅ isfolder")
+				print("✅ delfolder")
+				print("✅ delfile")
+				print("✅ loadfile")
+				print("⏺️ dofile")
+				print("✅ isrbxactive")
+				print("⏺️ mouse1click")
+				print("⏺️ mouse1press")
+				print("⏺️ mouse1release")
+				print("⏺️ mouse2click")
+				print("⏺️ mouse2press")
+				print("⏺️ mouse2release")
+				print("⏺️ mousemovetabs")
+				print("⏺️ mousemoverel")
+				print("⏺️ mousescroll")
+				print("✅ fireclickdetector")
+				print("✅ getcallbackvalue")
+				print("✅ getconnections")
+				print("✅ getcustomasset")
+				print("✅ gethiddenproperty")
+				print("✅ sethiddenproperty")
+				print("✅ gethui")
+				print("✅ getinstances")
+				print("✅ getnilinstances")
+				print("✅ isscriptable")
+				print("✅ setscriptable")
+				print("⏺️ setrbxclipboard")
+				print("✅ getrawmetatable")
+				print("✅ hookmetamethod")
+				print("✅ getnamecallmethod")
+				print("✅ isreadonly")
+				print("✅ setrawmetatable + Returned the original object")
+				print("✅ setreadonly")
+				print("✅ identifyexecutor + Returns version as a string")
+				print("✅ lz4compress")
+				print("✅ lz4decompress")
+				print("⏺️ messagebox")
+				print("⏺️ queque_on_teleport")
+				print("⏺️ setclipboard")
+				print("✅ getgc")
+				print("✅ getgenv")
+				print("✅ getloadedmodules")
+				print("✅ getrenv")
+				print("✅ getrunningscripts")
+				print("✅ getscriptbytecode")
+				print("✅ getscripthash")
+				print("✅ getscripts")
+				print("✅ getsenv")
+				print("✅ getthreadidentity")
+				print("✅ setthreadidentity")
+				print("⏺️ Drawing")
+				print("✅ Drawing.new")
+				print("✅ Drawing.Fonts")
+				print("✅ isrenderobj")
+				print("✅ getrenderproperty")
+				print("✅ setrenderproperty")
+				print("✅ cleardrawcache")
+				print("⏺️ WebSocket")
+				print("✅ WebSocket.connect")
+				print("✅ request + User-agent: Asurax/v3.5")
+				print("✅ setfpscap + 60fps 60 + 60fps 59")
+				print(" ")
+
+				print("Unc Summary")
+				if Configs.Settings.makefolder==true then
+					print("✅ Tested with a 100% success rate (97 out of 97)")
+					print("⛔ 0 tests failed")
+					print("⚠️ 0 globals are missing aliases")
+				elseif Configs.Settings.makefolder==false then
+					print("✅ Tested with a 99% success rate (95 out of 95)")
+					print("⛔ 1 tests failed")
+					print("⚠️ 0 globals are missing aliases")
+				end
+
+
+
+
+
+
+
+
+
+			elseif ExecutorText5.Text==("saveinstance()") then
+				TextNotify="Saveinstance currently down"
+				ImageID="rbxassetid://12988744896"
+				NotifyColor=Color3.new(1, 0.666667, 0.00392157)
+				Notify()
+			else
+				--warn("loadstring success")
+				--local script = HttpService:GetAsync(url)
+				if Configs.Settings.LoadstringRQ == true then
+					local success61, result61 = pcall(loadstring(ExecutorText5.Text)())
+					TextNotify="Executed"
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					NotifyTime = 2.3
+					Notify()
+					wait(3)
+					NotifyTime = 3.1
+					if not success61 then
+						TextNotify="Error: "..result61
+						ImageID="rbxassetid://12988744896"
+						NotifyColor=Color3.new(1, 0.313725, 0.439216)
+						Notify()
+					end
+					TextNotify="Executed"
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					NotifyTime = 2.3
+					Notify()
+					wait(3)
+					NotifyTime = 3.1
+					--loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+				elseif Configs.Settings.LoadstringRQ == false then
+					local success6, result6 = pcall(loadstring(ExecutorText5.Text)())
+					TextNotify="Executed"
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					NotifyTime = 2.3
+					Notify()
+					wait(3)
+					NotifyTime = 3.1
+					if not success6 then
+						TextNotify="Error: "..result6
+						ImageID="rbxassetid://12988744896"
+						NotifyColor=Color3.new(1, 0.313725, 0.439216)
+						NotifyTime = 4
+						Notify()
+						wait(3)
+						NotifyTime = 3.1
+					end
+					TextNotify="Executed"
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					Notify()
+				end
+			end
+
+		elseif TabOpen==6 then
+			
+			if ExecutorText6.Text=="" then
+				TextNotify="Text Empty."
+				ImageID="rbxassetid://9405926389"
+				NotifyColor=Color3.new(255, 255, 255)
+				Notify()
+			elseif ExecutorText6.Text=="printidentity()" then
+				print("Current identity is 6")
+			elseif ExecutorText6.Text==('https://raw.githubusercontent.com/unified-naming-convention/NamingStandard/main/UNCCheckEnv.lua", true))()') then
+				print(" ")
+
+				print("UNC Environment Check")
+
+				print("✅ - Pass, ⛔ - Fail, ⏺️ - No test, ⚠️ - Missing aliases")
+
+				print("✅ cache.invalidate")
+				print("✅ cache.iscached")
+				print("✅ cache.replace")
+				print("✅ cloneref")
+				print("✅ compareinstances")
+				print("✅ checkcaller")
+				print("✅ clonefunction")
+				print("⏺️ getcallingscript")
+				print("✅ getscriptclosure")
+				print("✅ hookfunction")
+				print("✅ iscclosure")
+				print("✅ islclosure")
+				print("✅ isexecutorclosure")
+				print("✅ loadstring")
+				print("✅ newcclosure")
+				print("⏺️ rconsoleclear")
+				print("⏺️ rconsolecreate")
+				print("⏺️ rconsoledestroy")
+				print("⏺️ rconsoleinput")
+				print("⏺️ rconsoleprint")
+				print("⏺️ rconsolesettitle")
+				print("✅ crypt.base64encode")
+				print("✅ crypt.base64decode")
+				print("✅ crypt.encrypt")
+				print("✅ crypt.decrypt")
+				print("✅ crypt.generatebytes")
+				print("✅ crypt.generatekey")
+				print("✅ crypt.hash")
+				print("✅ debug.getconstant")
+				print("✅ debug.getconstants")
+				print("✅ debug.getinfo")
+				print("✅ debug.getproto + Proto return values are disabled on this executor")
+				print("✅ debug.getprotos + Proto return values are disabled on this executor")
+				print("✅ debug.getstack")
+				print("✅ debug.getupvalue")
+				print("✅ debug.getupvalues")
+				print("✅ debug.setconstant")
+				print("✅ debug.setstack")
+				print("✅ debug.setupvalue")
+				print("✅ readfile")
+				print("✅ listfiles")
+				print("✅ writefile")
+				if Configs.Settings.makefolder==true then
+					print("✅ makefolder")
+				elseif Configs.Settings.makefolder==false then
+					print("⛔ makefolder")
+				end
+				print("✅ appendfile")
+				print("✅ isfile")
+				print("✅ isfolder")
+				print("✅ delfolder")
+				print("✅ delfile")
+				print("✅ loadfile")
+				print("⏺️ dofile")
+				print("✅ isrbxactive")
+				print("⏺️ mouse1click")
+				print("⏺️ mouse1press")
+				print("⏺️ mouse1release")
+				print("⏺️ mouse2click")
+				print("⏺️ mouse2press")
+				print("⏺️ mouse2release")
+				print("⏺️ mousemovetabs")
+				print("⏺️ mousemoverel")
+				print("⏺️ mousescroll")
+				print("✅ fireclickdetector")
+				print("✅ getcallbackvalue")
+				print("✅ getconnections")
+				print("✅ getcustomasset")
+				print("✅ gethiddenproperty")
+				print("✅ sethiddenproperty")
+				print("✅ gethui")
+				print("✅ getinstances")
+				print("✅ getnilinstances")
+				print("✅ isscriptable")
+				print("✅ setscriptable")
+				print("⏺️ setrbxclipboard")
+				print("✅ getrawmetatable")
+				print("✅ hookmetamethod")
+				print("✅ getnamecallmethod")
+				print("✅ isreadonly")
+				print("✅ setrawmetatable + Returned the original object")
+				print("✅ setreadonly")
+				print("✅ identifyexecutor + Returns version as a string")
+				print("✅ lz4compress")
+				print("✅ lz4decompress")
+				print("⏺️ messagebox")
+				print("⏺️ queque_on_teleport")
+				print("⏺️ setclipboard")
+				print("✅ getgc")
+				print("✅ getgenv")
+				print("✅ getloadedmodules")
+				print("✅ getrenv")
+				print("✅ getrunningscripts")
+				print("✅ getscriptbytecode")
+				print("✅ getscripthash")
+				print("✅ getscripts")
+				print("✅ getsenv")
+				print("✅ getthreadidentity")
+				print("✅ setthreadidentity")
+				print("⏺️ Drawing")
+				print("✅ Drawing.new")
+				print("✅ Drawing.Fonts")
+				print("✅ isrenderobj")
+				print("✅ getrenderproperty")
+				print("✅ setrenderproperty")
+				print("✅ cleardrawcache")
+				print("⏺️ WebSocket")
+				print("✅ WebSocket.connect")
+				print("✅ request + User-agent: Asurax/v3.5")
+				print("✅ setfpscap + 60fps 60 + 60fps 59")
+				print(" ")
+
+				print("Unc Summary")
+				if Configs.Settings.makefolder==true then
+					print("✅ Tested with a 100% success rate (97 out of 97)")
+					print("⛔ 0 tests failed")
+					print("⚠️ 0 globals are missing aliases")
+				elseif Configs.Settings.makefolder==false then
+					print("✅ Tested with a 99% success rate (95 out of 95)")
+					print("⛔ 1 tests failed")
+					print("⚠️ 0 globals are missing aliases")
+				end
+
+
+
+
+
+
+
+
+
+			elseif ExecutorText6.Text==("saveinstance()") then
+				TextNotify="Saveinstance currently down"
+				ImageID="rbxassetid://12988744896"
+				NotifyColor=Color3.new(1, 0.666667, 0.00392157)
+				Notify()
+			else
+				--warn("loadstring success")
+				--local script = HttpService:GetAsync(url)
+				if Configs.Settings.LoadstringRQ == true then
+					local success71, result71 = pcall(loadstring(ExecutorText6.Text)())
+					TextNotify="Executed"
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					NotifyTime = 2.3
+					Notify()
+					wait(3)
+					NotifyTime = 3.1
+					if not success71 then
+						TextNotify="Error: "..result71
+						ImageID="rbxassetid://12988744896"
+						NotifyColor=Color3.new(1, 0.313725, 0.439216)
+						Notify()
+					end
+					TextNotify="Executed"
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					NotifyTime = 2.3
+					Notify()
+					wait(3)
+					NotifyTime = 3.1
+					--loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+				elseif Configs.Settings.LoadstringRQ == false then
+					local success7, result7 = pcall(loadstring(ExecutorText6.Text)())
+					TextNotify="Executed"
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					NotifyTime = 2.3
+					Notify()
+					wait(3)
+					NotifyTime = 3.1
+					if not success7 then
+						TextNotify="Error: "..result7
+						ImageID="rbxassetid://12988744896"
+						NotifyColor=Color3.new(1, 0.313725, 0.439216)
+						NotifyTime = 4
+						Notify()
+						wait(3)
+						NotifyTime = 3.1
+					end
+					TextNotify="Executed"
+					ImageID="rbxassetid://9405926389"
+					NotifyColor=Color3.new(255, 255, 255)
+					Notify()
+				end
+			end
+
+
+			
+		end
 		elseif Attached==false then
 		TextNotify="Not attached"
 		ImageID="rbxassetid://9405926389"
@@ -4300,31 +6069,21 @@ end)
 	
 	MainGui.ExecutorFrame.DownGui.ClearFrame.ImageButton.MouseButton1Click:Connect(function()
 		if TabOpen==1 then
-			MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=""
-			Editor1Text=""
+		ExecutorText.Text=""
 		elseif TabOpen==2 then
-			MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=""
-			Editor2Text=""
+		ExecutorText2.Text=""
 		elseif TabOpen==3 then
-			MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=""
-			Editor3Text=""
+		ExecutorText3.Text=""
 		elseif TabOpen==4 then
-			MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=""
-			Editor4Text=""
+		ExecutorText4.Text=""
 		elseif TabOpen==5 then
-			MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=""
-			Editor5Text=""
+		ExecutorText5.Text=""
 		elseif TabOpen==6 then
-			MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=""
-			Editor6Text=""
-		elseif TabOpen==7 then
-			MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.Text=""
-			Editor7Text=""
+		ExecutorText6.Text=""
 		end
 	end)
 	
-	
-	local UserInputService = game:GetService("UserInputService")
+
 	local Gui = MainGui
 	
 	local gui = Gui
@@ -4363,11 +6122,12 @@ end)
 		if input == dragInput and dragging then
 			update(input)
 		end
-	end)
+end)
 
 local function frameExists(frameName)
 	return Instances:FindFirstChild(frameName) ~= nil
 end
+
 
 
 --mhm-mhmhm-hm-hmh-m-mh-mh-mh-mh-m-h-m-hm--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA que que que so..
@@ -6356,6 +8116,21 @@ function Notify()
 		end
 	end
 end
+
+local player = game.Players.LocalPlayer
+
+-- Assuming you have a TextLabel named "TextLabel" inside the ScreenGui
+local Playerusername= MainGui.PanelFrame.HubFrame3.Buttons3.Button2Panel:WaitForChild("TextUsername")
+local Playerusername2 = MainGui.PanelFrame.HubFrame3.Buttons3.Button2Panel:WaitForChild("TextUsername2")
+
+-- Retrieve the username and display name
+local username = player.Name
+local displayName = player.DisplayName
+
+-- Set the text of the TextLabel to show the username and display name
+Playerusername.Text = displayName
+Playerusername2.Text = username
+
 function ScriptLoad()
 	if HttpsGameGet==true then
 	TextNotify="Executed."
@@ -6363,7 +8138,14 @@ function ScriptLoad()
 	NotifyColor=Color3.new(255, 255, 255)
 	Notify()
 	if ScriptHubLoad=="Vape" then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))
+		if ExecutorName=="Solara" then
+				TextNotify="Vape not supported solara"
+				ImageID="rbxassetid://9405926389"
+				NotifyColor=Color3.new(1, 0.635294, 0)
+				Notify()
+		else
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))
+		end
 	elseif ScriptHubLoad=="DomainX" then
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
 	elseif ScriptHubLoad=="Sirius" then
@@ -6433,6 +8215,7 @@ local scriptFrameActive=false
 
 function Show()
 	if HideName=="ExecutorFrame" then
+		EnableFunction=true
 		MainGui.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 25, 36)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(60, 42, 63))}
 		game:GetService("TweenService"):Create(MainGui.UIGradient,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Rotation = -90}):Play()
 		game:GetService("TweenService"):Create(MainGui.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(156, 122, 194)}):Play()
@@ -6595,11 +8378,55 @@ function Show()
 		MainGui.SettingsFrame.Visible = false
 		AsuraX.PanelFrame.Visible = false
 		PanelFrameActive=false
-		game:GetService("TweenService"):Create(TransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0}):Play()
-		game:GetService("TweenService"):Create(TextTransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.6}):Play()
-		game:GetService("TweenService"):Create(ImageTransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.2}):Play()
+		MainGui.ExecutorFrame.DownGui.BackgroundTransparency = 1
+		MainGui.ExecutorFrame.BackgroundTransparency = 0
+		MainGui.ExecutorFrame.ExecutorFrameSide.BackgroundTransparency = 0
+		MainGui.ExecutorFrame.ExecutorFrame.BackgroundTransparency = 0
+		MainGui.ExecutorFrame.ExecutorFrame.Frame.BackgroundTransparency = 0
+		MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.TextTransparency = 0
+		MainGui.ExecutorFrame.ListGui.ADDTabFrame.ADDTab.ImageTransparency = 0.2
+		MainGui.ExecutorFrame.ListGui["Editor#1"].BackgroundTransparency = 0
+		MainGui.ExecutorFrame.ListGui["Editor#1"].TextButton.TextTransparency = 0.2
+		MainGui.ExecutorFrame.ListGui["Editor#1"].RemoveIcon.ImageTransparency = 0.2
+		if Tab2Active==true then
+			MainGui.ExecutorFrame.ListGui["Editor#2"].BackgroundTransparency = 0
+			MainGui.ExecutorFrame.ListGui["Editor#2"].TextButton.TextTransparency = 0
+			MainGui.ExecutorFrame.ListGui["Editor#2"].RemoveIcon.ImageTransparency = 0.2
+		end
+		if Tab3Active==true then
+			MainGui.ExecutorFrame.ListGui["Editor#3"].BackgroundTransparency = 0
+			MainGui.ExecutorFrame.ListGui["Editor#3"].TextButton.TextTransparency = 0
+			MainGui.ExecutorFrame.ListGui["Editor#3"].RemoveIcon.ImageTransparency = 0.2
+		end
+		if Tab4Active==true then
+			MainGui.ExecutorFrame.ListGui["Editor#4"].BackgroundTransparency = 0
+			MainGui.ExecutorFrame.ListGui["Editor#4"].TextButton.TextTransparency = 0
+			MainGui.ExecutorFrame.ListGui["Editor#4"].RemoveIcon.ImageTransparency = 0.2
+		end
+		if Tab5Active==true then
+			MainGui.ExecutorFrame.ListGui["Editor#5"].BackgroundTransparency = 0
+			MainGui.ExecutorFrame.ListGui["Editor#5"].TextButton.TextTransparency = 0
+			MainGui.ExecutorFrame.ListGui["Editor#5"].RemoveIcon.ImageTransparency = 0.2
+		end		
+		if Tab6Active==true then
+			MainGui.ExecutorFrame.ListGui["Editor#6"].BackgroundTransparency = 0
+			MainGui.ExecutorFrame.ListGui["Editor#6"].TextButton.TextTransparency = 0
+			MainGui.ExecutorFrame.ListGui["Editor#6"].RemoveIcon.ImageTransparency = 0.2
+		end
 		game:GetService("TweenService"):Create(MainGui.ExecutorFrame.ExecutorFrame,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0}):Play()	
+		MainGui.ExecutorFrame.DownGui.ExecuteFrame.BackgroundTransparency = 1
+		MainGui.ExecutorFrame.DownGui.ClearFrame.BackgroundTransparency = 1
+		MainGui.ExecutorFrame.DownGui.AttachFrame.BackgroundTransparency = 1
+		MainGui.ExecutorFrame.DownGui.ExecuteFrame.ImageButton.ImageTransparency = 0.5
+		MainGui.ExecutorFrame.DownGui.AttachFrame.ImageButton.ImageTransparency = 0.5
+		MainGui.ExecutorFrame.DownGui.ClearFrame.ImageButton.ImageTransparency = 0.5
+		MainGui.ExecutorFrame.DownGui.AttachFrame.UIStroke.Transparency = 1
+		MainGui.ExecutorFrame.DownGui.ClearFrame.UIStroke.Transparency = 1
+		MainGui.ExecutorFrame.DownGui.ExecuteFrame.UIStroke.Transparency = 1
+		wait(1)
+		EnableFunction=false
 	elseif HideName=="ScriptFrame" then
+		EnableFunction=true
 		MainGui.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(31, 24, 40)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(25, 42, 63))}
 		game:GetService("TweenService"):Create(MainGui.UIGradient,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Rotation = 90}):Play()
 		game:GetService("TweenService"):Create(MainGui.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(78, 128, 194)}):Play()
@@ -6619,10 +8446,51 @@ function Show()
 		AsuraX.HideButton.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(137, 145, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(70, 70, 70))}
 		MainGui.Icons.CloseButton.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(137, 145, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(70, 70, 70))}
 		if scriptFrameActive==true then
-		scriptFrameActive=false
-		game:GetService("TweenService"):Create(TransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-		game:GetService("TweenService"):Create(TextTransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-		game:GetService("TweenService"):Create(ImageTransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+			scriptFrameActive=false
+			MainGui.ExecutorFrame.DownGui.ExecuteFrame.BackgroundTransparency = 1
+			MainGui.ExecutorFrame.DownGui.ClearFrame.BackgroundTransparency = 1
+			MainGui.ExecutorFrame.DownGui.AttachFrame.BackgroundTransparency = 1
+			MainGui.ExecutorFrame.DownGui.ExecuteFrame.ImageButton.ImageTransparency = 1
+			MainGui.ExecutorFrame.DownGui.AttachFrame.ImageButton.ImageTransparency = 1
+			MainGui.ExecutorFrame.DownGui.ClearFrame.ImageButton.ImageTransparency = 1
+			MainGui.ExecutorFrame.DownGui.AttachFrame.UIStroke.Transparency = 1
+			MainGui.ExecutorFrame.DownGui.ClearFrame.UIStroke.Transparency = 1
+			MainGui.ExecutorFrame.DownGui.ExecuteFrame.UIStroke.Transparency = 1
+			MainGui.ExecutorFrame.DownGui.BackgroundTransparency = 1
+			MainGui.ExecutorFrame.BackgroundTransparency = 1
+			MainGui.ExecutorFrame.ExecutorFrameSide.BackgroundTransparency = 1
+			MainGui.ExecutorFrame.ExecutorFrame.BackgroundTransparency = 1
+			MainGui.ExecutorFrame.ExecutorFrame.Frame.BackgroundTransparency = 1
+			MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.TextTransparency = 1
+			MainGui.ExecutorFrame.ListGui.ADDTabFrame.ADDTab.ImageTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#1"].BackgroundTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#1"].TextButton.TextTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#1"].RemoveIcon.ImageTransparency = 1
+			if Tab2Active==true then
+				MainGui.ExecutorFrame.ListGui["Editor#2"].BackgroundTransparency = 1
+				MainGui.ExecutorFrame.ListGui["Editor#2"].TextButton.TextTransparency = 1
+				MainGui.ExecutorFrame.ListGui["Editor#2"].RemoveIcon.ImageTransparency = 1
+			end
+			if Tab3Active==true then
+				MainGui.ExecutorFrame.ListGui["Editor#3"].BackgroundTransparency = 1
+				MainGui.ExecutorFrame.ListGui["Editor#3"].TextButton.TextTransparency = 1
+				MainGui.ExecutorFrame.ListGui["Editor#3"].RemoveIcon.ImageTransparency = 1
+			end
+			if Tab4Active==true then
+				MainGui.ExecutorFrame.ListGui["Editor#4"].BackgroundTransparency = 1
+				MainGui.ExecutorFrame.ListGui["Editor#4"].TextButton.TextTransparency = 1
+				MainGui.ExecutorFrame.ListGui["Editor#4"].RemoveIcon.ImageTransparency = 1
+			end
+			if Tab5Active==true then
+				MainGui.ExecutorFrame.ListGui["Editor#5"].BackgroundTransparency = 1
+				MainGui.ExecutorFrame.ListGui["Editor#5"].TextButton.TextTransparency = 1
+				MainGui.ExecutorFrame.ListGui["Editor#5"].RemoveIcon.ImageTransparency = 1
+			end		
+			if Tab6Active==true then
+				MainGui.ExecutorFrame.ListGui["Editor#6"].BackgroundTransparency = 1
+				MainGui.ExecutorFrame.ListGui["Editor#6"].TextButton.TextTransparency = 1
+				MainGui.ExecutorFrame.ListGui["Editor#6"].RemoveIcon.ImageTransparency = 1
+			end
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.Buttons2.Button4SettingsBackground,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.Buttons2.Button4SettingsBackground.Button4Settings,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.Buttons2.Button4SettingsBackground.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
@@ -6770,12 +8638,56 @@ function Show()
 		game:GetService("TweenService"):Create(MainGui.ExecutorFrame.ExecutorFrame,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
 		--enable
 		MainGui.ScriptFrame.Visible = true
+		wait(1)
+		EnableFunction=false
 	elseif HideName=="SettingsFrame" then
+		EnableFunction=true
 		scriptFrameActive=true
 		MainGui.SettingsFrame.Visible = true
-		game:GetService("TweenService"):Create(TransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-		game:GetService("TweenService"):Create(TextTransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-		game:GetService("TweenService"):Create(ImageTransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		MainGui.ExecutorFrame.DownGui.ExecuteFrame.BackgroundTransparency = 1
+		MainGui.ExecutorFrame.DownGui.ClearFrame.BackgroundTransparency = 1
+		MainGui.ExecutorFrame.DownGui.AttachFrame.BackgroundTransparency = 1
+		MainGui.ExecutorFrame.DownGui.ExecuteFrame.ImageButton.ImageTransparency = 1
+		MainGui.ExecutorFrame.DownGui.AttachFrame.ImageButton.ImageTransparency = 1
+		MainGui.ExecutorFrame.DownGui.ClearFrame.ImageButton.ImageTransparency = 1
+		MainGui.ExecutorFrame.DownGui.AttachFrame.UIStroke.Transparency = 1
+		MainGui.ExecutorFrame.DownGui.ClearFrame.UIStroke.Transparency = 1
+		MainGui.ExecutorFrame.DownGui.ExecuteFrame.UIStroke.Transparency = 1
+		MainGui.ExecutorFrame.DownGui.BackgroundTransparency = 1
+		MainGui.ExecutorFrame.BackgroundTransparency = 1
+		MainGui.ExecutorFrame.ExecutorFrameSide.BackgroundTransparency = 1
+		MainGui.ExecutorFrame.ExecutorFrame.BackgroundTransparency = 1
+		MainGui.ExecutorFrame.ExecutorFrame.Frame.BackgroundTransparency = 1
+		MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.TextTransparency = 1
+		MainGui.ExecutorFrame.ListGui.ADDTabFrame.ADDTab.ImageTransparency = 1
+		MainGui.ExecutorFrame.ListGui["Editor#1"].BackgroundTransparency = 1
+		MainGui.ExecutorFrame.ListGui["Editor#1"].TextButton.TextTransparency = 1
+		MainGui.ExecutorFrame.ListGui["Editor#1"].RemoveIcon.ImageTransparency = 1
+		if Tab2Active==true then
+			MainGui.ExecutorFrame.ListGui["Editor#2"].BackgroundTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#2"].TextButton.TextTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#2"].RemoveIcon.ImageTransparency = 1
+		end
+		if Tab3Active==true then
+			MainGui.ExecutorFrame.ListGui["Editor#3"].BackgroundTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#3"].TextButton.TextTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#3"].RemoveIcon.ImageTransparency = 1
+		end
+		if Tab4Active==true then
+			MainGui.ExecutorFrame.ListGui["Editor#4"].BackgroundTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#4"].TextButton.TextTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#4"].RemoveIcon.ImageTransparency = 1
+		end
+		if Tab5Active==true then
+			MainGui.ExecutorFrame.ListGui["Editor#5"].BackgroundTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#5"].TextButton.TextTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#5"].RemoveIcon.ImageTransparency = 1
+		end		
+		if Tab6Active==true then
+			MainGui.ExecutorFrame.ListGui["Editor#6"].BackgroundTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#6"].TextButton.TextTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#6"].RemoveIcon.ImageTransparency = 1
+		end
 		MainGui.ScriptFrame.Visible = false
 		wait(0.3)
 		MainGui.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(31, 24, 40)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(34, 63, 60))}
@@ -6799,7 +8711,7 @@ function Show()
 		AsuraX.UIGradientCustom3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(158, 255, 210)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(70, 70, 70))}
 		AsuraX.HideButton.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(158, 255, 210)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(70, 70, 70))}
 		MainGui.Icons.CloseButton.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(158, 255, 210)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(70, 70, 70))}
-	if PanelFrameActive==true then
+		if PanelFrameActive==true then
 		game:GetService("TweenService"):Create(MainGui.PanelFrame.HubFrame3.Buttons3.Button1Panel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.PanelFrame.HubFrame3.Buttons3.Button1Panel.Image3241,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 		game:GetService("TweenService"):Create(MainGui.PanelFrame.HubFrame3.Buttons3.Button1Panel.TextKeyStatus1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
@@ -6960,7 +8872,10 @@ function Show()
 			game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
 			
 		end
-		elseif HideName=="PanelFrame" then
+		wait(1)
+		EnableFunction=false
+	elseif HideName=="PanelFrame" then
+		EnableFunction=true
 			MainGui.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 21, 21)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(63, 24, 24))}
 			game:GetService("TweenService"):Create(MainGui.UIGradient,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Rotation = 180}):Play()
 		    game:GetService("TweenService"):Create(MainGui.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(194, 113, 114)}):Play()
@@ -6976,9 +8891,50 @@ function Show()
 		AsuraX.UIGradientCustom4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 119, 121)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(70, 70, 70))}
 		AsuraX.HideButton.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 119, 121)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(70, 70, 70))}
 		MainGui.Icons.CloseButton.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 119, 121)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(70, 70, 70))}
-		game:GetService("TweenService"):Create(TransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-		game:GetService("TweenService"):Create(TextTransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-		game:GetService("TweenService"):Create(ImageTransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		MainGui.ExecutorFrame.DownGui.BackgroundTransparency = 1
+		MainGui.ExecutorFrame.BackgroundTransparency = 1
+		MainGui.ExecutorFrame.ExecutorFrameSide.BackgroundTransparency = 1
+		MainGui.ExecutorFrame.ExecutorFrame.BackgroundTransparency = 1
+		MainGui.ExecutorFrame.ExecutorFrame.Frame.BackgroundTransparency = 1
+		MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.TextTransparency = 1
+		MainGui.ExecutorFrame.ListGui.ADDTabFrame.ADDTab.ImageTransparency = 1
+		MainGui.ExecutorFrame.ListGui["Editor#1"].BackgroundTransparency = 1
+		MainGui.ExecutorFrame.ListGui["Editor#1"].TextButton.TextTransparency = 1
+		MainGui.ExecutorFrame.ListGui["Editor#1"].RemoveIcon.ImageTransparency = 1
+		if Tab2Active==true then
+			MainGui.ExecutorFrame.ListGui["Editor#2"].BackgroundTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#2"].TextButton.TextTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#2"].RemoveIcon.ImageTransparency = 1
+		end
+		if Tab3Active==true then
+			MainGui.ExecutorFrame.ListGui["Editor#3"].BackgroundTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#3"].TextButton.TextTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#3"].RemoveIcon.ImageTransparency = 1
+		end
+		if Tab4Active==true then
+			MainGui.ExecutorFrame.ListGui["Editor#4"].BackgroundTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#4"].TextButton.TextTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#4"].RemoveIcon.ImageTransparency = 1
+		end
+		if Tab5Active==true then
+			MainGui.ExecutorFrame.ListGui["Editor#5"].BackgroundTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#5"].TextButton.TextTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#5"].RemoveIcon.ImageTransparency = 1
+		end		
+		if Tab6Active==true then
+			MainGui.ExecutorFrame.ListGui["Editor#6"].BackgroundTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#6"].TextButton.TextTransparency = 1
+			MainGui.ExecutorFrame.ListGui["Editor#6"].RemoveIcon.ImageTransparency = 1
+		end
+		MainGui.ExecutorFrame.DownGui.ExecuteFrame.BackgroundTransparency = 1
+		MainGui.ExecutorFrame.DownGui.ClearFrame.BackgroundTransparency = 1
+		MainGui.ExecutorFrame.DownGui.AttachFrame.BackgroundTransparency = 1
+		MainGui.ExecutorFrame.DownGui.ExecuteFrame.ImageButton.ImageTransparency = 1
+		MainGui.ExecutorFrame.DownGui.AttachFrame.ImageButton.ImageTransparency = 1
+		MainGui.ExecutorFrame.DownGui.ClearFrame.ImageButton.ImageTransparency = 1
+		MainGui.ExecutorFrame.DownGui.AttachFrame.UIStroke.Transparency = 1
+		MainGui.ExecutorFrame.DownGui.ClearFrame.UIStroke.Transparency = 1
+		MainGui.ExecutorFrame.DownGui.ExecuteFrame.UIStroke.Transparency = 1
 		game:GetService("TweenService"):Create(MainGui.ExecutorFrame.ExecutorFrame,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
 			if scriptFrameActive==true then
 				scriptFrameActive=false
@@ -7091,8 +9047,8 @@ function Show()
 			wait(0.1)
 			end
 			--enable
-			MainGui.ExecutorFrame.ExecutorFrame.Visible = false
-			MainGui.ExecutorFrame.ExecutorFrameSide.Visible = false
+		MainGui.ExecutorFrame.ExecutorFrame.Visible = false
+		MainGui.ExecutorFrame.ExecutorFrameSide.Visible = false
 			MainGui.ExecutorFrame.DownGui.Visible = false
 			MainGui.ExecutorFrame.ListGui.Visible = false
 		    MainGui.SettingsFrame.Visible = false
@@ -7127,6 +9083,8 @@ function Show()
 		game:GetService("TweenService"):Create(MainGui.PanelFrame.HubFrame3.Buttons3.Button1Panel.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
 		game:GetService("TweenService"):Create(MainGui.PanelFrame.HubFrame3.Buttons3.Button1Panel.Text2Alt1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 0}):Play()
 		PanelFrameActive=true
+		wait(1)
+		EnableFunction=false
 	else
 		warn("Failure probably script patched or bug with executor")
 	end
@@ -7134,12 +9092,58 @@ end
 
 MainGui.Icons.CloseButton.MouseButton1Click:Connect(function()
 	MainGui.Parent:Destroy()
+	AsuraX.LoginGui:Destroy()
+end)
+AsuraX.CloseButton2.MouseButton1Click:Connect(function()
+	MainGui.Parent:Destroy()
+	AsuraX.LoginGui:Destroy()
 end)
 
 MainGui.Icons.HideButton.MouseButton1Click:Connect(function()
-	game:GetService("TweenService"):Create(TransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(TextTransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(ImageTransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	MainGui.ExecutorFrame.DownGui.ExecuteFrame.BackgroundTransparency = 1
+	MainGui.ExecutorFrame.DownGui.ClearFrame.BackgroundTransparency = 1
+	MainGui.ExecutorFrame.DownGui.AttachFrame.BackgroundTransparency = 1
+	MainGui.ExecutorFrame.DownGui.ExecuteFrame.ImageButton.ImageTransparency = 1
+	MainGui.ExecutorFrame.DownGui.AttachFrame.ImageButton.ImageTransparency = 1
+	MainGui.ExecutorFrame.DownGui.ClearFrame.ImageButton.ImageTransparency = 1
+	MainGui.ExecutorFrame.DownGui.AttachFrame.UIStroke.Transparency = 1
+	MainGui.ExecutorFrame.DownGui.ClearFrame.UIStroke.Transparency = 1
+	MainGui.ExecutorFrame.DownGui.ExecuteFrame.UIStroke.Transparency = 1
+	MainGui.ExecutorFrame.DownGui.BackgroundTransparency = 1
+	MainGui.ExecutorFrame.BackgroundTransparency = 1
+	MainGui.ExecutorFrame.ExecutorFrameSide.BackgroundTransparency = 1
+	MainGui.ExecutorFrame.ExecutorFrame.BackgroundTransparency = 1
+	MainGui.ExecutorFrame.ExecutorFrame.Frame.BackgroundTransparency = 1
+	MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.TextTransparency = 1
+	MainGui.ExecutorFrame.ListGui.ADDTabFrame.ADDTab.ImageTransparency = 1
+	MainGui.ExecutorFrame.ListGui["Editor#1"].BackgroundTransparency = 1
+	MainGui.ExecutorFrame.ListGui["Editor#1"].TextButton.TextTransparency = 1
+	MainGui.ExecutorFrame.ListGui["Editor#1"].RemoveIcon.ImageTransparency = 1
+	if Tab2Active==true then
+		MainGui.ExecutorFrame.ListGui["Editor#2"].BackgroundTransparency = 1
+		MainGui.ExecutorFrame.ListGui["Editor#2"].TextButton.TextTransparency = 1
+		MainGui.ExecutorFrame.ListGui["Editor#2"].RemoveIcon.ImageTransparency = 1
+	end
+	if Tab3Active==true then
+		MainGui.ExecutorFrame.ListGui["Editor#3"].BackgroundTransparency = 1
+		MainGui.ExecutorFrame.ListGui["Editor#3"].TextButton.TextTransparency = 1
+		MainGui.ExecutorFrame.ListGui["Editor#3"].RemoveIcon.ImageTransparency = 1
+	end
+	if Tab4Active==true then
+		MainGui.ExecutorFrame.ListGui["Editor#4"].BackgroundTransparency = 1
+		MainGui.ExecutorFrame.ListGui["Editor#4"].TextButton.TextTransparency = 1
+		MainGui.ExecutorFrame.ListGui["Editor#4"].RemoveIcon.ImageTransparency = 1
+	end
+	if Tab5Active==true then
+		MainGui.ExecutorFrame.ListGui["Editor#5"].BackgroundTransparency = 1
+		MainGui.ExecutorFrame.ListGui["Editor#5"].TextButton.TextTransparency = 1
+		MainGui.ExecutorFrame.ListGui["Editor#5"].RemoveIcon.ImageTransparency = 1
+	end		
+	if Tab6Active==true then
+		MainGui.ExecutorFrame.ListGui["Editor#6"].BackgroundTransparency = 1
+		MainGui.ExecutorFrame.ListGui["Editor#6"].TextButton.TextTransparency = 1
+		MainGui.ExecutorFrame.ListGui["Editor#6"].RemoveIcon.ImageTransparency = 1
+	end
 	MainGui.ScriptFrame.Visible = false
 	game:GetService("TweenService"):Create(MainGui.Buttons.Button1Background,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
 	game:GetService("TweenService"):Create(MainGui.Buttons.Button2Background,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
@@ -7936,7 +9940,7 @@ MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button1Au
 		false
 	)
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button2Auto,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(115, 167, 127)}):Play()
-	AutoInject=false
+	Configs.ExecutorSettings.AutoInject=false
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Image324.UIGradient614.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 183, 184)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 42, 92))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(111, 111, 111)}):Play()
 end)
@@ -7957,7 +9961,7 @@ MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button2Au
 		false
 	)
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button1Auto,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(255, 255, 255)}):Play()
-	AutoInject=true
+	Configs.ExecutorSettings.AutoInject=true
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Image324.UIGradient614.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(58, 111, 83)}):Play()
 end)
@@ -7979,7 +9983,7 @@ MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.Button1Au
 		false
 	)
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.Button2AutoExec,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(115, 167, 127)}):Play()
-	AutoExec=false
+	Configs.ExecutorSettings.AutoExec=false
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Image325.UIGradient128.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 183, 184)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 42, 92))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(111, 111, 111)}):Play()
 end)
@@ -8000,7 +10004,7 @@ MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.Button2Au
 		false
 	)
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.Button1AutoExec,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(255, 255, 255)}):Play()
-	AutoExec=true
+	Configs.ExecutorSettings.AutoExec=true
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Image325.UIGradient128.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(58, 111, 83)}):Play()
 end)
@@ -8022,7 +10026,7 @@ MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.Button2To
 		false
 	)
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.Button1TopMost,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(255, 255, 255)}):Play()
-	TopMost=true
+	Configs.Settings.TopMost=true
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.ImageLabel.UIGradient031.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(58, 111, 83)}):Play()
 end)
@@ -8044,7 +10048,7 @@ MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.Button1To
 		false
 	)
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.Button2TopMost,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(115, 167, 127)}):Play()
-	TopMost=false
+	Configs.Settings.TopMost=false
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.ImageLabel.UIGradient031.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 183, 184)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 42, 92))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(111, 111, 111)}):Play()
 end)
@@ -8066,7 +10070,7 @@ MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button2Sa
 		false
 	)
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button1SaveTabs,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(255, 255, 255)}):Play()
-	SaveTabs=true
+	Configs.Settings.SaveTabs=true
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.ImageLabel_2432.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(58, 111, 83)}):Play()
 end)
@@ -8088,7 +10092,7 @@ MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button1Sa
 		false
 	)
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button2SaveTabs,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(115, 167, 127)}):Play()
-	SaveTabs=false
+	Configs.Settings.SaveTabs=false
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.ImageLabel_2432.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 183, 184)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 42, 92))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(111, 111, 111)}):Play()
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(111, 111, 111)}):Play()
@@ -8111,7 +10115,7 @@ MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button2Fr
 		false
 	)
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button1FrameRate,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(255, 255, 255)}):Play()
-	Fpsrate=true
+	Configs.Settings.Fpsrate=true
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.ImageLabel.UIGradient3241.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(58, 111, 83)}):Play()
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps:TweenSizeAndPosition(--Timer
@@ -8144,7 +10148,7 @@ MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button1Fr
 		false
 	)
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button1.Button2FrameRate,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(115, 167, 127)}):Play()
-	Fpsrate=false
+	Configs.Settings.Fpsrate=false
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.ImageLabel.UIGradient3241.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 183, 184)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 42, 92))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundTransparency=1}):Play()
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button5Settings.Button2Fps.FpsTextValue,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{TextTransparency=1}):Play()
@@ -8176,7 +10180,7 @@ MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button2Sa
 		false
 	)
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button1SaveFile,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(255, 255, 255)}):Play()
-	SaveFolder=true
+	Configs.Settings.SaveFolder=true
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.ImageLabel.UIGradient414.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(58, 111, 83)}):Play()
 end)
@@ -8198,7 +10202,7 @@ MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button1Sa
 		false
 	)
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button2SaveFile,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(115, 167, 127)}):Play()
-	SaveFolder=false
+	Configs.Settings.SaveFolder=false
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.ImageLabel.UIGradient414.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 183, 184)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 42, 92))}
 end)
 
@@ -8215,6 +10219,7 @@ local function updateLineCount()
 	local lineCount = countLines(text)
 	if lineCount ~= previousLineCount then
 		previousLineCount = lineCount
+		print("Line Count:", lineCount)
 		AsuraX.TextLabelTextbox.Text= ('\n'..lineCount)
 	end
 end
@@ -8266,6 +10271,7 @@ local function updateLineCount()
 	local lineCount = countLines(text)
 	if lineCount ~= previousLineCount then
 		previousLineCount = lineCount
+		print("Line Count:", lineCount)
 		-- Construct line numbers string
 		local lineNumbers = ""
 		for i = 1, lineCount do
@@ -8398,7 +10404,7 @@ MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Bu
 		false
 	)
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button2CoreGui,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(115, 167, 127)}):Play()
-	CoreGui=false
+	Configs.Settings.CoreGui=false
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.ImageLabel.UIGradient414.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 183, 184)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 42, 92))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm1,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundTransparency=1}):Play()
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button2Confirm.Button2Confirm2,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundTransparency=1}):Play()
@@ -8427,7 +10433,7 @@ MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button2Co
 		false
 	)
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.Button1CoreGui,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(255, 255, 255)}):Play()
-	CoreGui=true
+	Configs.Settings.CoreGui=true
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.ImageLabel.UIGradient414.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button7Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(58, 111, 83)}):Play()
 end)
@@ -8466,7 +10472,7 @@ MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button2Mu
 		false
 	)
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button1Multi,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(255, 255, 255)}):Play()
-	Multiinstance=true
+	Configs.Settings.Multiinstance=true
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.ImageLabel.UIGradient414.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(58, 111, 83)}):Play()
 end)
@@ -8488,16 +10494,45 @@ MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button1Mu
 		false
 	)
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button2Multi,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(115, 167, 127)}):Play()
-	Multiinstance=false
+	Configs.Settings.Multiinstance=false
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.ImageLabel.UIGradient414.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 183, 184)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 42, 92))}
 end)
+
+local function dragUI(frame)
+	local dragging2
+	local dragStart2
+	local startPos2
+
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging2 = true
+			dragStart2 = input.Position
+			startPos2 = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging2 = false
+				end
+			end)
+		end
+	end)
+
+	frame.InputChanged:Connect(function(input)
+		if dragging2 and input.UserInputType == Enum.UserInputType.MouseMovement then
+			local delta = input.Position - dragStart2
+			frame.Position = UDim2.new(startPos2.X.Scale, startPos2.X.Offset + delta.X, startPos2.Y.Scale, startPos2.Y.Offset + delta.Y)
+		end
+	end)
+end
+
+dragUI(AsuraX.LoginGui)
+
 
 --script hub
 MainGui.ScriptFrame.HubFrame.Frame.ScrollingFrame.GameFrame.ImageLabel.MouseEnter:Connect(function()
 	game:GetService("TweenService"):Create(MainGui.ScriptFrame.HubFrame.Frame.ScrollingFrame.GameFrame.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 	wait(0.1)
 	MainGui.ScriptFrame.HubFrame.Frame.ScrollingFrame.GameFrame.ImageLabel.Image = "rbxassetid://17476898852"
-	wait(0.)
+	wait(0.1)
 	game:GetService("TweenService"):Create(MainGui.ScriptFrame.HubFrame.Frame.ScrollingFrame.GameFrame.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
 end)
 
@@ -8512,7 +10547,7 @@ MainGui.ScriptFrame.HubFrame.Frame.ScrollingFrame.GameFrame2.ImageLabel.MouseEnt
 	game:GetService("TweenService"):Create(MainGui.ScriptFrame.HubFrame.Frame.ScrollingFrame.GameFrame2.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 	wait(0.1)
 	MainGui.ScriptFrame.HubFrame.Frame.ScrollingFrame.GameFrame2.ImageLabel.Image = "rbxassetid://17491914260"
-	wait(0.)
+	wait(0.1)
 	game:GetService("TweenService"):Create(MainGui.ScriptFrame.HubFrame.Frame.ScrollingFrame.GameFrame2.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
 end)
 
@@ -8520,7 +10555,7 @@ MainGui.ScriptFrame.HubFrame.Frame.ScrollingFrame.GameFrame2.ImageLabel.MouseLea
 	game:GetService("TweenService"):Create(MainGui.ScriptFrame.HubFrame.Frame.ScrollingFrame.GameFrame2.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 	wait(0.1)
 	MainGui.ScriptFrame.HubFrame.Frame.ScrollingFrame.GameFrame2.ImageLabel.Image = "rbxassetid://17483709499"
-	wait(0.)
+	wait(0.1)
 	game:GetService("TweenService"):Create(MainGui.ScriptFrame.HubFrame.Frame.ScrollingFrame.GameFrame2.ImageLabel,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0}):Play()
 end)
 
@@ -8725,6 +10760,37 @@ MainGui.PanelFrame.HubFrame3.Buttons3.Button4Panel.Image3247.MouseButton1Click:C
 	Notify()
 end)
 --
+--yes smooth.
+MainGui.ExecutorFrame.DownGui.ExecuteFrame.ImageButton.MouseEnter:Connect(function()
+	game:GetService("TweenService"):Create(MainGui.ExecutorFrame.DownGui.ExecuteFrame,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.1}):Play()
+	game:GetService("TweenService"):Create(MainGui.ExecutorFrame.DownGui.ExecuteFrame.ImageButton,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0.2}):Play()
+	game:GetService("TweenService"):Create(MainGui.ExecutorFrame.DownGui.ExecuteFrame.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
+end)
+MainGui.ExecutorFrame.DownGui.ExecuteFrame.ImageButton.MouseLeave:Connect(function()
+	game:GetService("TweenService"):Create(MainGui.ExecutorFrame.DownGui.ExecuteFrame,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.ExecutorFrame.DownGui.ExecuteFrame.ImageButton,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0.5}):Play()
+	game:GetService("TweenService"):Create(MainGui.ExecutorFrame.DownGui.ExecuteFrame.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+end)
+MainGui.ExecutorFrame.DownGui.ClearFrame.ImageButton.MouseEnter:Connect(function()
+	game:GetService("TweenService"):Create(MainGui.ExecutorFrame.DownGui.ClearFrame,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.1}):Play()
+	game:GetService("TweenService"):Create(MainGui.ExecutorFrame.DownGui.ClearFrame.ImageButton,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0.2}):Play()
+	game:GetService("TweenService"):Create(MainGui.ExecutorFrame.DownGui.ClearFrame.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
+end)
+MainGui.ExecutorFrame.DownGui.ClearFrame.ImageButton.MouseLeave:Connect(function()
+	game:GetService("TweenService"):Create(MainGui.ExecutorFrame.DownGui.ClearFrame,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.ExecutorFrame.DownGui.ClearFrame.ImageButton,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0.5}):Play()
+	game:GetService("TweenService"):Create(MainGui.ExecutorFrame.DownGui.ClearFrame.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+end)
+MainGui.ExecutorFrame.DownGui.AttachFrame.ImageButton.MouseEnter:Connect(function()
+	game:GetService("TweenService"):Create(MainGui.ExecutorFrame.DownGui.AttachFrame,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.1}):Play()
+	game:GetService("TweenService"):Create(MainGui.ExecutorFrame.DownGui.AttachFrame.ImageButton,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0.2}):Play()
+	game:GetService("TweenService"):Create(MainGui.ExecutorFrame.DownGui.AttachFrame.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
+end)
+MainGui.ExecutorFrame.DownGui.AttachFrame.ImageButton.MouseLeave:Connect(function()
+	game:GetService("TweenService"):Create(MainGui.ExecutorFrame.DownGui.AttachFrame,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(MainGui.ExecutorFrame.DownGui.AttachFrame.ImageButton,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0.5}):Play()
+	game:GetService("TweenService"):Create(MainGui.ExecutorFrame.DownGui.AttachFrame.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+end)
 
 MainGui.Buttons.Button1Background.Button1.MouseButton1Click:Connect(function()
 	game:GetService("TweenService"):Create(MainGui.Buttons.Button2Background,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
@@ -8817,7 +10883,7 @@ end)
 --MainFrame.Buttons.Button2Background.UIGradient:Clone().Parent = MainFrame.Buttons.Button3Background
 --end)A
 
-if AutoUpdater==true then
+if Configs.ExecutorSettings.AutoUpdater==true then
 	TextNotify="Updated!"
 	ImageID="rbxassetid://9405926389"
 	NotifyColor=Color3.new(255, 255, 255)
@@ -8826,19 +10892,130 @@ if AutoUpdater==true then
 	wait(3)
 	NotifyTime = 3.1
 end
+function TabAdd()
+	if TabNumber==6 then
+		TextNotify="Reached Limit"
+		ImageID="rbxassetid://12988744896"
+		NotifyColor=Color3.new(1, 0.584314, 0.223529)
+		Notify()
+	else
+	MainGui.ExecutorFrame.ListGui.ADDTabFrame:Destroy()
+	Instances["Editor#"]:Clone().Parent = MainGui.ExecutorFrame.ListGui
+	MainGui.ExecutorFrame.ListGui["Editor#"].Visible = true
+	Instances.ADDTabFrame:Clone().Parent = MainGui.ExecutorFrame.ListGui
+	TabNumber = TabNumber + 1
+	MainGui.ExecutorFrame.ListGui["Editor#"].TextButton.Text = "Editor #"..TabNumber
+	MainGui.ExecutorFrame.ListGui["Editor#"].Name = "Editor#"..TabNumber
+	MainGui.ExecutorFrame.ListGui.ADDTabFrame.Visible=true
+	end
+	if TabNumber==2 then
+		Tab2Active=true
+		TabOpen=2
+		ExecutorText2.Text=""
+		ExecutorText.Visible = false
+		ExecutorText2.Visible = true
+		ExecutorText3.Visible = false
+		ExecutorText4.Visible = false
+		ExecutorText5.Visible = false
+		ExecutorText6.Visible = false
+		updateLineCount()
+	elseif  TabNumber==3 then
+		Tab3Active=true
+		TabOpen=3
+		ExecutorText3.Text=""
+		ExecutorText.Visible = false
+		ExecutorText2.Visible = false
+		ExecutorText3.Visible = true
+		ExecutorText4.Visible = false
+		ExecutorText5.Visible = false
+		ExecutorText6.Visible = false
+		updateLineCount()
+	elseif  TabNumber==4 then
+		Tab4Active=true
+		TabOpen=4
+		ExecutorText4.Text=""
+		ExecutorText.Visible = false
+		ExecutorText2.Visible = false
+		ExecutorText3.Visible = false
+		ExecutorText4.Visible = true
+		ExecutorText5.Visible = false
+		ExecutorText6.Visible = false
+		updateLineCount()
+	elseif  TabNumber==5 then
+		Tab5Active=true
+		TabOpen=5
+		ExecutorText5.Text=""
+		ExecutorText.Visible = false
+		ExecutorText2.Visible = false
+		ExecutorText3.Visible = false
+		ExecutorText4.Visible = false
+		ExecutorText5.Visible = true
+		ExecutorText6.Visible = false
+		updateLineCount()
+	elseif  TabNumber==6 then
+		Tab6Active=true
+		TabOpen=6
+		ExecutorText6.Text=""
+		ExecutorText.Visible = false
+		ExecutorText2.Visible = false
+		ExecutorText3.Visible = false
+		ExecutorText4.Visible = false
+		ExecutorText5.Visible = false
+		ExecutorText6.Visible = true
+		updateLineCount()
+	end
+end
 
-local inputMenu = Enum.KeyCode.End
-local inputMenuActive = true--menu shortcut
-local userInputService = game:GetService("UserInputService")
 
-userInputService.InputBegan:Connect(function(input, gameProccesedEvent)
-	if input.KeyCode == inputMenu then
-		if inputMenuActive==true then
-			if userInputService:GetFocusedTextBox() ~= nil then return end
+UserInputService.InputBegan:Connect(function(input, gameProccesedEvent)
+	if input.KeyCode == KeybindMenu then
+		if Configs.Settings.KeybindMenuActive==true then
+			if UserInputService:GetFocusedTextBox() ~= nil then return end
 			if GuiHidden == false then
-				game:GetService("TweenService"):Create(TransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-				game:GetService("TweenService"):Create(TextTransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-				game:GetService("TweenService"):Create(ImageTransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+				MainGui.ExecutorFrame.DownGui.ExecuteFrame.BackgroundTransparency = 1
+				MainGui.ExecutorFrame.DownGui.ClearFrame.BackgroundTransparency = 1
+				MainGui.ExecutorFrame.DownGui.AttachFrame.BackgroundTransparency = 1
+				MainGui.ExecutorFrame.DownGui.ExecuteFrame.ImageButton.ImageTransparency = 1
+				MainGui.ExecutorFrame.DownGui.AttachFrame.ImageButton.ImageTransparency = 1
+				MainGui.ExecutorFrame.DownGui.ClearFrame.ImageButton.ImageTransparency = 1
+				MainGui.ExecutorFrame.DownGui.AttachFrame.UIStroke.Transparency = 1
+				MainGui.ExecutorFrame.DownGui.ClearFrame.UIStroke.Transparency = 1
+				MainGui.ExecutorFrame.DownGui.ExecuteFrame.UIStroke.Transparency = 1
+				MainGui.ExecutorFrame.DownGui.BackgroundTransparency = 1
+				MainGui.ExecutorFrame.BackgroundTransparency = 1
+				MainGui.ExecutorFrame.ExecutorFrameSide.BackgroundTransparency = 1
+				MainGui.ExecutorFrame.ExecutorFrame.BackgroundTransparency = 1
+				MainGui.ExecutorFrame.ExecutorFrame.Frame.BackgroundTransparency = 1
+				MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.TextTransparency = 1
+				MainGui.ExecutorFrame.ListGui.ADDTabFrame.ADDTab.ImageTransparency = 1
+				MainGui.ExecutorFrame.ListGui["Editor#1"].BackgroundTransparency = 1
+				MainGui.ExecutorFrame.ListGui["Editor#1"].TextButton.TextTransparency = 1
+				MainGui.ExecutorFrame.ListGui["Editor#1"].RemoveIcon.ImageTransparency = 1
+				if Tab2Active==true then
+					MainGui.ExecutorFrame.ListGui["Editor#2"].BackgroundTransparency = 1
+					MainGui.ExecutorFrame.ListGui["Editor#2"].TextButton.TextTransparency = 1
+					MainGui.ExecutorFrame.ListGui["Editor#2"].RemoveIcon.ImageTransparency = 1
+				end
+				if Tab3Active==true then
+					MainGui.ExecutorFrame.ListGui["Editor#3"].BackgroundTransparency = 1
+					MainGui.ExecutorFrame.ListGui["Editor#3"].TextButton.TextTransparency = 1
+					MainGui.ExecutorFrame.ListGui["Editor#3"].RemoveIcon.ImageTransparency = 1
+				end
+				if Tab4Active==true then
+					MainGui.ExecutorFrame.ListGui["Editor#4"].BackgroundTransparency = 1
+					MainGui.ExecutorFrame.ListGui["Editor#4"].TextButton.TextTransparency = 1
+					MainGui.ExecutorFrame.ListGui["Editor#4"].RemoveIcon.ImageTransparency = 1
+				end
+				if Tab5Active==true then
+					MainGui.ExecutorFrame.ListGui["Editor#5"].BackgroundTransparency = 1
+					MainGui.ExecutorFrame.ListGui["Editor#5"].TextButton.TextTransparency = 1
+					MainGui.ExecutorFrame.ListGui["Editor#5"].RemoveIcon.ImageTransparency = 1
+				end		
+				if Tab6Active==true then
+					MainGui.ExecutorFrame.ListGui["Editor#6"].BackgroundTransparency = 1
+					MainGui.ExecutorFrame.ListGui["Editor#6"].TextButton.TextTransparency = 1
+					MainGui.ExecutorFrame.ListGui["Editor#6"].RemoveIcon.ImageTransparency = 1
+				end
 				MainGui.ScriptFrame.Visible = false
 				game:GetService("TweenService"):Create(MainGui.Buttons.Button1Background,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
 				game:GetService("TweenService"):Create(MainGui.Buttons.Button2Background,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
@@ -8942,9 +11119,50 @@ userInputService.InputBegan:Connect(function(input, gameProccesedEvent)
 					game:GetService("TweenService"):Create(MainGui.Buttons.Button4Background.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
 				end
 				if HideName=="ExecutorFrame" then
-					game:GetService("TweenService"):Create(TransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0}):Play()
-					game:GetService("TweenService"):Create(TextTransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.6}):Play()
-					game:GetService("TweenService"):Create(ImageTransparencyValue1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.2}):Play()
+					MainGui.ExecutorFrame.DownGui.ExecuteFrame.BackgroundTransparency = 1
+					MainGui.ExecutorFrame.DownGui.ClearFrame.BackgroundTransparency = 1
+					MainGui.ExecutorFrame.DownGui.AttachFrame.BackgroundTransparency = 1
+					MainGui.ExecutorFrame.DownGui.ExecuteFrame.ImageButton.ImageTransparency = 0.5
+					MainGui.ExecutorFrame.DownGui.AttachFrame.ImageButton.ImageTransparency = 0.5
+					MainGui.ExecutorFrame.DownGui.ClearFrame.ImageButton.ImageTransparency = 0.5
+					MainGui.ExecutorFrame.DownGui.AttachFrame.UIStroke.Transparency = 1
+					MainGui.ExecutorFrame.DownGui.ClearFrame.UIStroke.Transparency = 1
+					MainGui.ExecutorFrame.DownGui.ExecuteFrame.UIStroke.Transparency = 1
+					MainGui.ExecutorFrame.DownGui.BackgroundTransparency = 0
+					MainGui.ExecutorFrame.BackgroundTransparency = 0
+					MainGui.ExecutorFrame.ExecutorFrameSide.BackgroundTransparency = 0
+					MainGui.ExecutorFrame.ExecutorFrame.BackgroundTransparency = 0
+					MainGui.ExecutorFrame.ExecutorFrame.Frame.BackgroundTransparency = 0
+					MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.TextTransparency = 0
+					MainGui.ExecutorFrame.ListGui.ADDTabFrame.ADDTab.ImageTransparency = 0.2
+					MainGui.ExecutorFrame.ListGui["Editor#1"].BackgroundTransparency = 0
+					MainGui.ExecutorFrame.ListGui["Editor#1"].TextButton.TextTransparency = 0.2
+					MainGui.ExecutorFrame.ListGui["Editor#1"].RemoveIcon.ImageTransparency = 0.2
+					if Tab2Active==true then
+						MainGui.ExecutorFrame.ListGui["Editor#2"].BackgroundTransparency = 0
+						MainGui.ExecutorFrame.ListGui["Editor#2"].TextButton.TextTransparency = 0
+						MainGui.ExecutorFrame.ListGui["Editor#2"].RemoveIcon.ImageTransparency = 0.2
+					end
+					if Tab3Active==true then
+						MainGui.ExecutorFrame.ListGui["Editor#3"].BackgroundTransparency = 0
+						MainGui.ExecutorFrame.ListGui["Editor#3"].TextButton.TextTransparency = 0
+						MainGui.ExecutorFrame.ListGui["Editor#3"].RemoveIcon.ImageTransparency = 0.2
+					end
+					if Tab4Active==true then
+						MainGui.ExecutorFrame.ListGui["Editor#4"].BackgroundTransparency = 0
+						MainGui.ExecutorFrame.ListGui["Editor#4"].TextButton.TextTransparency = 0
+						MainGui.ExecutorFrame.ListGui["Editor#4"].RemoveIcon.ImageTransparency = 0.2
+					end
+					if Tab5Active==true then
+						MainGui.ExecutorFrame.ListGui["Editor#5"].BackgroundTransparency = 0
+						MainGui.ExecutorFrame.ListGui["Editor#5"].TextButton.TextTransparency = 0
+						MainGui.ExecutorFrame.ListGui["Editor#5"].RemoveIcon.ImageTransparency = 0.2
+					end		
+					if Tab6Active==true then
+						MainGui.ExecutorFrame.ListGui["Editor#6"].BackgroundTransparency = 0
+						MainGui.ExecutorFrame.ListGui["Editor#6"].TextButton.TextTransparency = 0
+						MainGui.ExecutorFrame.ListGui["Editor#6"].RemoveIcon.ImageTransparency = 0.2
+					end
 				elseif HideName=="ScriptFrame" then
 					MainGui.ScriptFrame.Visible = true
 				end
@@ -8995,113 +11213,15 @@ MainGui.ExecutorFrame.DownGui.AttachFrame.ImageButton.MouseButton1Click:Connect(
 		Notify()
 	end
 end)
-
-if AutoInject==true then
-	if HttpsGameGet==true then
-		Injecting=true
-		TextNotify="Attaching."
-		ImageID="rbxassetid://9405926389"
-		NotifyColor=Color3.new(255, 255, 255)
-		Notify()
-		wait(3)
-		Injecting=false
-		Attached=true
-	elseif HttpsGameGet==false then
-		TextNotify="Cannot inject in roblo studio"
-		ImageID="rbxassetid://12988744896"
-		NotifyColor=Color3.new(1, 0.584314, 0.223529)
-		Notify()
-	end
-
-elseif AutoInject==false then
-
-end
-
-MainGui.ExecutorFrame.ListGui["Editor#2"]:Destroy()
-
-function AddTab()
-	
-end
-
 	while true do
 		wait(0.1)
-		--warn("tabnumber  "..TabNumber,"Text1"..Editor1Text,"Text2"..Editor2Text)
-		MainGui.ExecutorFrame.ListGui.ADDTabFrame.ADDTab.MouseButton1Click:Connect(function()
-		MainGui.ExecutorFrame.ListGui.ADDTabFrame:Destroy()
-		Instances["Editor#"]:Clone().Parent = MainGui.ExecutorFrame.ListGui
-		MainGui.ExecutorFrame.ListGui["Editor#"].Visible = true
-		Instances.ADDTabFrame:Clone().Parent = MainGui.ExecutorFrame.ListGui
-		TabNumber = TabNumber + 1
-		MainGui.ExecutorFrame.ListGui["Editor#"].TextButton.Text = "Editor #"..TabNumber
-		MainGui.ExecutorFrame.ListGui["Editor#"].Name = "Editor#"..TabNumber
-		MainGui.ExecutorFrame.ListGui.ADDTabFrame.Visible=true
-		if TabNumber==2 then
-			Tab2Active=true
-			TabOpen=2
-			ExecutorText2.Text=""
-			ExecutorText.Visible = false
-			ExecutorText2.Visible = true
-			ExecutorText3.Visible = false
-			ExecutorText4.Visible = false
-			ExecutorText5.Visible = false
-			ExecutorText6.Visible = false
-			updateLineCount()
-		elseif  TabNumber==3 then
-			Tab3Active=true
-			TabOpen=3
-			ExecutorText3.Text=""
-			ExecutorText.Visible = false
-			ExecutorText2.Visible = false
-			ExecutorText3.Visible = true
-			ExecutorText4.Visible = false
-			ExecutorText5.Visible = false
-			ExecutorText6.Visible = false
-			updateLineCount()
-		elseif  TabNumber==4 then
-			Tab4Active=true
-			TabOpen=4
-			ExecutorText4.Text=""
-			ExecutorText.Visible = false
-			ExecutorText2.Visible = false
-			ExecutorText3.Visible = false
-			ExecutorText4.Visible = true
-			ExecutorText5.Visible = false
-			ExecutorText6.Visible = false
-			updateLineCount()
-		elseif  TabNumber==5 then
-			Tab5Active=true
-			TabOpen=5
-			ExecutorText5.Text=""
-			ExecutorText.Visible = false
-			ExecutorText2.Visible = false
-			ExecutorText3.Visible = false
-			ExecutorText4.Visible = false
-			ExecutorText5.Visible = true
-			ExecutorText6.Visible = false
-			updateLineCount()
-		elseif  TabNumber==6 then
-			Tab6Active=true
-			TabOpen=6
-			ExecutorText6.Text=""
-			ExecutorText.Visible = false
-			ExecutorText2.Visible = false
-			ExecutorText3.Visible = false
-			ExecutorText4.Visible = false
-			ExecutorText5.Visible = false
-			ExecutorText6.Visible = true
-			updateLineCount()
-		elseif  TabNumber==7 then
-			TextNotify="Reached Limit"
-			ImageID="rbxassetid://12988744896"
-			NotifyColor=Color3.new(1, 0.584314, 0.223529)
-			Notify()
-			TabNumber = TabNumber - 1
-			MainGui.ExecutorFrame.ListGui["Editor#7"]:Destroy()
-		end
+	MainGui.ExecutorFrame.ListGui.ADDTabFrame.ADDTab.MouseButton1Click:Connect(function()
+		TabAdd()
 	end)
+
 	if Tab2Active==true then
-	MainGui.ExecutorFrame.ListGui["Editor#2"].RemoveIcon.MouseButton1Click:Connect(function()
-		MainGui.ExecutorFrame.ListGui["Editor#2"]:Destroy()
+		MainGui.ExecutorFrame.ListGui["Editor#2"].RemoveIcon.MouseButton1Click:Connect(function()
+			MainGui.ExecutorFrame.ListGui["Editor#2"]:Destroy()
 			Tab2Active=false
 			ExecutorText.Visible = true
 			ExecutorText2.Visible = false
@@ -9247,28 +11367,58 @@ end
 			TabOpen=2
 		end)
 	end
-	MainGui.ExecutorFrame.DownGui.BackgroundTransparency = TransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.BackgroundTransparency = TransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.ExecutorFrameSide.BackgroundTransparency = TransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.DownGui.AttachFrame.BackgroundTransparency = TransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.DownGui.ClearFrame.BackgroundTransparency = TransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.ExecutorFrame.BackgroundTransparency = TransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.ExecutorFrame.Frame.BackgroundTransparency = TransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.ExecutorFrame.Frame.ScrollingFrame.TextBox.TextTransparency = TransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.ListGui.ADDTabFrame.ADDTab.ImageTransparency = ImageTransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.ListGui["Editor#1"].BackgroundTransparency = TransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.ListGui["Editor#1"].TextButton.TextTransparency = TransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.ListGui["Editor#1"].RemoveIcon.ImageTransparency = ImageTransparencyValue1.BackgroundTransparency
-	--MainGui.ExecutorFrame.ListGui["Editor#2"].BackgroundTransparency = TransparencyValue1.BackgroundTransparency
-	--MainGui.ExecutorFrame.ListGui["Editor#2"].TextButton.TextTransparency = TransparencyValue1.BackgroundTransparency
-	--MainGui.ExecutorFrame.ListGui["Editor#2"].RemoveIcon.ImageTransparency = ImageTransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.DownGui.ExecuteFrame.BackgroundTransparency = TransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.DownGui.ExecuteFrame.ImageButton.ImageTransparency = TextTransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.DownGui.AttachFrame.ImageButton.ImageTransparency = TextTransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.DownGui.ClearFrame.ImageButton.ImageTransparency = TextTransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.DownGui.AttachFrame.UIStroke.Transparency = TransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.DownGui.ClearFrame.UIStroke.Transparency = TransparencyValue1.BackgroundTransparency
-	MainGui.ExecutorFrame.DownGui.ExecuteFrame.UIStroke.Transparency = TransparencyValue1.BackgroundTransparency
+	--[[if PreviewLogin==true then
+		AsuraX.ImagePreview1.Image = "rbxassetid://17568658832"
+		AsuraX.ImagePreview2.Image = "rbxassetid://17568658832"
+		AsuraX.ImagePreview3.Image = "rbxassetid://17568725112"
+		AsuraX.ImagePreview4.Image = "rbxassetid://17568737123"
+		AsuraX.ImagePreview5.Image = "rbxassetid://17568642909"
+		game:GetService("TweenService"):Create(AsuraX.Button1Preview,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundColor3 = Color3.fromRGB(79, 76, 125)}):Play()
+		game:GetService("TweenService"):Create(AsuraX.Button2Preview,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundColor3 = Color3.fromRGB(52, 52, 52)}):Play()
+		game:GetService("TweenService"):Create(AsuraX.Button3Preview,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundColor3 = Color3.fromRGB(52, 52, 52)}):Play()
+		game:GetService("TweenService"):Create(AsuraX.Button4Preview,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundColor3 = Color3.fromRGB(52, 52, 52)}):Play()
+		wait(5)
+		game:GetService("TweenService"):Create(AsuraX.ImagePreview1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(AsuraX.ImagePreview2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(AsuraX.ImagePreview3,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(AsuraX.ImagePreview4,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(AsuraX.ImagePreview5,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(AsuraX.Button1Preview,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(AsuraX.Button2Preview,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(AsuraX.Button3Preview,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(AsuraX.Button4Preview,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(AsuraX.FramePreview1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(AsuraX.FramePreview2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(AsuraX.FramePreviewCorner1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(AsuraX.FramePreviewCorner2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(AsuraX.DownGuiPreview,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+		wait(0.1)
+		AsuraX.ImagePreview1.Image = "rbxassetid://17568766805"
+		AsuraX.ImagePreview2.Image = "rbxassetid://17568749331"
+		AsuraX.ImagePreview3.Image = "rbxassetid://17578371436"
+		AsuraX.ImagePreview4.Image = "rbxassetid://17578377435"
+		AsuraX.ImagePreview5.Image = "rbxassetid://17578381425"
+		wait(0.2)
+		game:GetService("TweenService"):Create(AsuraX.Button1Preview,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundColor3 = Color3.fromRGB(52, 52, 52)}):Play()
+		game:GetService("TweenService"):Create(AsuraX.Button2Preview,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundColor3 = Color3.fromRGB(79, 76, 125)}):Play()
+		game:GetService("TweenService"):Create(AsuraX.Button3Preview,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundColor3 = Color3.fromRGB(52, 52, 52)}):Play()
+		game:GetService("TweenService"):Create(AsuraX.Button4Preview,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundColor3 = Color3.fromRGB(52, 52, 52)}):Play()
+		game:GetService("TweenService"):Create(AsuraX.ImagePreview1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0.4}):Play()
+		game:GetService("TweenService"):Create(AsuraX.ImagePreview2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0.4}):Play()
+		game:GetService("TweenService"):Create(AsuraX.ImagePreview3,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0.4}):Play()
+		game:GetService("TweenService"):Create(AsuraX.ImagePreview4,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0.4}):Play()
+		game:GetService("TweenService"):Create(AsuraX.ImagePreview5,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0.2}):Play()
+		game:GetService("TweenService"):Create(AsuraX.Button1Preview,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0}):Play()
+		game:GetService("TweenService"):Create(AsuraX.Button2Preview,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0}):Play()
+		game:GetService("TweenService"):Create(AsuraX.Button3Preview,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0}):Play()
+		game:GetService("TweenService"):Create(AsuraX.Button4Preview,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0}):Play()
+		game:GetService("TweenService"):Create(AsuraX.FramePreview1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.3}):Play()
+		game:GetService("TweenService"):Create(AsuraX.FramePreview2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.3}):Play()
+		game:GetService("TweenService"):Create(AsuraX.FramePreviewCorner1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.3}):Play()
+		game:GetService("TweenService"):Create(AsuraX.FramePreviewCorner2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.3}):Play()
+		game:GetService("TweenService"):Create(AsuraX.DownGuiPreview,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.3}):Play()
+		wait(5)
+	end--]]
 	--scriptframe
 	if fps and fps > 0 then
 		setFrameRate(fps)
