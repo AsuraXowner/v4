@@ -1120,7 +1120,7 @@ else
 	if(isStudio)then
 		AsuraX.ScreenGui.Parent = --[[game.StarterGui--]]game.Players.LocalPlayer:WaitForChild("PlayerGui")
 	else
-		AsuraX.ScreenGui.Parent = game.CoreGui--game.Players.LocalPlayer:WaitForChild("PlayerGui")
+		AsuraX.ScreenGui.Parent = --[[game.CoreGui--]]game.Players.LocalPlayer:WaitForChild("PlayerGui")
 	end
 	AsuraX.ScreenGui.Enabled = true
 	AsuraX.ScreenGui.Name = randomString
